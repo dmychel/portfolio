@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-columns: 30% 70%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .header {
@@ -14,6 +15,7 @@ body {
     background-color: yellow;
     height: 100vh;
     width: 100%;
+    background-image: linear-gradient(#0D324D, #7F5A83);
 }
 
 .intro {
@@ -37,8 +39,7 @@ body {
 .main {
     grid-column: 2/3;
     height: 100%;
-    overflow: scroll;
-    background-color: purple;
+    overflow: scroll;   
 }
 
 .main h2 {
@@ -57,8 +58,15 @@ body {
 }
 
 .project_photo {
-    height: 175px;
+    height: 170px;
     width: 300px;
     border: 2px solid;
+    border-radius: 5px;
 }
 
+.project img:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
