@@ -1,7 +1,14 @@
-.user-info {
+.user-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
   gap: 0.5em;
   width: 50%;
   font-size: 1.25rem;
