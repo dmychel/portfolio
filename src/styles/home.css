@@ -1,0 +1,6 @@
+.home {
+  display: flex;
+  max-width: 100%;
+  min-height: 50vh;
+  padding: 50px;
+}

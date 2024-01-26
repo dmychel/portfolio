@@ -1,0 +1,13 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.user-info span {
+  display: flex;
+  gap: 1em;
+}
