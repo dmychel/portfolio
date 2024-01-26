@@ -1,0 +1,23 @@
+.command-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.type-commands {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.type-commands span {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75%;
+}
+.keyboard-shortcuts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
