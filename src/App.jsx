@@ -1,17 +1,22 @@
+// REACT
 import { useState } from "react";
-import "./App.css";
+
+// COMPONENTS
 import About from "./components/directories/About";
-import ArchLinux from "./components/home/ascii/ArchLinux";
 import CommandLine from "./components/CommandLine";
-import CommandList from "./components/commands/CommandList";
 import Home from "/src/components/home/Home";
 import Projects from "./components/directories/Projects";
-import UserInfo from "./components/home/UserInfo";
+
+// JS FUNCTIONS
+import boolToggle from "./components/boolToggle";
+
+// STYLES
+import "./App.css";
 
 function App() {
   const [command, setCommand] = useState("");
   const [renderComp, setRenderComp] = useState([]);
-  const [history, setHistory] = useState([]);
+  const [isClear, setIsClear] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +44,7 @@ function App() {
         break;
       }
       case "clear": {
-        console.log("clear");
+        setIsClear(true);
         break;
       }
 
@@ -53,18 +58,22 @@ function App() {
 
   return (
     <section className="app">
-      <Home />
-      <section className="renderedInput">
-        {renderComp.map((comp) => {
-          const CompName = comp;
-          return <CompName key={crypto.randomUUID()} />;
-        })}
-      </section>
-      <CommandLine
-        handleSubmit={handleSubmit}
-        command={command}
-        setCommand={setCommand}
-      />
+      {isClear ? null : (
+        <>
+          <Home />
+          <section className="renderedInput">
+            {renderComp.map((comp) => {
+              const CompName = comp;
+              return <CompName key={crypto.randomUUID()} />;
+            })}
+          </section>
+          <CommandLine
+            handleSubmit={handleSubmit}
+            command={command}
+            setCommand={setCommand}
+          />
+        </>
+      )}
     </section>
   );
 }
