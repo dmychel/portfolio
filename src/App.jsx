@@ -47,6 +47,11 @@ function App() {
         break;
       }
 
+      case "~": {
+        setRenderComp([...renderComp, Home]);
+        break;
+      }
+
       default: {
         console.log(
           `'${input}' is not a command. Type 'help' for a list of commands`
