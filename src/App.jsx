@@ -16,12 +16,14 @@ import "./App.css";
 
 function App() {
   const [command, setCommand] = useState("");
+  const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const input = command;
     const adjustedStr = handleString(input);
+    setCommandHist([...commandHist, adjustedStr]);
     return handleCommand(adjustedStr);
   };
 
