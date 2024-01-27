@@ -1,15 +1,7 @@
 import "/src/styles/command.css";
 import PropTypes from "prop-types";
 
-const CommandLine = ({ handleSubmit, command, setCommand }) => {
-  const handleKeyDown = (key) => {
-    if (key === "ArrowUp") {
-      console.log("working");
-    } else if (key === "ArrowDown") {
-      console.log("working down");
-    }
-  };
-
+const CommandLine = ({ handleSubmit, handleKeyDown, command, setCommand }) => {
   return (
     <section className="command-line">
       <form onSubmit={handleSubmit}>
@@ -27,6 +19,7 @@ const CommandLine = ({ handleSubmit, command, setCommand }) => {
 
 CommandLine.propTypes = {
   handleSubmit: PropTypes.func,
+  handleKeyDown: PropTypes.func,
   command: PropTypes.string,
   setCommand: PropTypes.func,
 };

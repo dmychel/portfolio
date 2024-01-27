@@ -27,6 +27,14 @@ function App() {
     return handleCommand(adjustedStr);
   };
 
+  const handleKeyDown = (key) => {
+    if (key === "ArrowUp") {
+      console.log("working");
+    } else if (key === "ArrowDown") {
+      console.log("working down");
+    }
+  };
+
   const handleString = (string) => {
     return string.toLowerCase();
   };
@@ -78,6 +86,7 @@ function App() {
       </section>
       <CommandLine
         handleSubmit={handleSubmit}
+        handleKeyDown={handleKeyDown}
         command={command}
         setCommand={setCommand}
       />
