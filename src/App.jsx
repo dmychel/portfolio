@@ -15,8 +15,7 @@ import "./App.css";
 
 function App() {
   const [command, setCommand] = useState("");
-  const [renderComp, setRenderComp] = useState([]);
-  const [isClear, setIsClear] = useState(false);
+  const [renderComp, setRenderComp] = useState([Home]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,13 +43,13 @@ function App() {
         break;
       }
       case "clear": {
-        setIsClear(true);
+        setRenderComp([]);
         break;
       }
 
       default: {
         console.log(
-          `'${input}' is not a string. Type 'help' for a list of commands`
+          `'${input}' is not a command. Type 'help' for a list of commands`
         );
       }
     }
@@ -58,17 +57,12 @@ function App() {
 
   return (
     <section className="app">
-      {isClear ? null : (
-        <>
-          <Home />
-          <section className="renderedInput">
-            {renderComp.map((comp) => {
-              const CompName = comp;
-              return <CompName key={crypto.randomUUID()} />;
-            })}
-          </section>
-        </>
-      )}
+      <section className="renderedInput">
+        {renderComp.map((comp) => {
+          const CompName = comp;
+          return <CompName key={crypto.randomUUID()} />;
+        })}
+      </section>
       <CommandLine
         handleSubmit={handleSubmit}
         command={command}
