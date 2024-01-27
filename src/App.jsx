@@ -49,6 +49,7 @@ function App() {
       }
 
       case "help": {
+        setRenderComp([...renderComp, CommandList]);
         break;
       }
 
