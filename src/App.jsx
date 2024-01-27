@@ -4,6 +4,7 @@ import { useState } from "react";
 // COMPONENTS
 import About from "./components/directories/About";
 import CommandLine from "./components/CommandLine";
+import CommandList from "./components/commands/CommandList";
 import Home from "/src/components/home/Home";
 import Projects from "./components/directories/Projects";
 
@@ -44,6 +45,10 @@ function App() {
       }
       case "clear": {
         setRenderComp([]);
+        break;
+      }
+
+      case "help": {
         break;
       }
 
