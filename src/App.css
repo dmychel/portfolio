@@ -9,10 +9,12 @@
   background-color: #070b14;
   color: #dbcc89;
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   font-size: 1.5rem;
 }
 
 section {
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
