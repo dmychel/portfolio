@@ -7,8 +7,9 @@
 .type-commands {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   margin-bottom: 5%;
+  border: 1px solid;
 }
 
 .type-commands span {
