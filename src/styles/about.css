@@ -1,0 +1,46 @@
+.about {
+  width: 50%;
+}
+
+.intro {
+  margin-bottom: 3%;
+}
+
+.intro span {
+  color: cyan;
+}
+
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: cyan;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.contact img {
+  height: 40px;
+  width: auto;
+}
+
+.contact > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact span {
+  color: #dbcc89;
+}
+
+.contact div > p {
+  color: cyan;
+}

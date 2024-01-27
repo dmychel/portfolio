@@ -4,8 +4,11 @@ import "/src/styles/home.css";
 const Home = () => {
   return (
     <section className="home">
-      <ArchLinux />
-      <UserInfo />
+      <div className="hero">
+        <ArchLinux />
+        <UserInfo />
+      </div>
+      <span className="help">Type &apos;help&apos; for a list of commands</span>
     </section>
   );
 };
