@@ -6,7 +6,7 @@ const Projects = () => {
       <div className="tip">
         <span>Tip:</span> Try typing
         <span style={{ marginLeft: "1%" }}>
-          &apos;cd windfall-matchup&apos;
+          &apos;<span style={{ color: "cyan" }}>cd windfall-matchup</span>&apos;
         </span>
       </div>
       <span>Windfall Matchup</span>
