@@ -27,23 +27,19 @@ function App() {
   const handleCommand = (input) => {
     switch (input) {
       case "about": {
-        console.log("about command");
+        setRenderComp([...renderComp, About]);
         break;
       }
       case "projects": {
-        console.log("projects command");
-        break;
-      }
-      case "cd": {
-        console.log("cd command");
+        setRenderComp([...renderComp, Projects]);
         break;
       }
       case "exit": {
-        console.log("exit command");
+        console.log("exit");
         break;
       }
       case "clear": {
-        console.log("clear command");
+        console.log("clear");
         break;
       }
 
@@ -58,8 +54,12 @@ function App() {
   return (
     <section className="app">
       <Home />
-      <section className="content"></section>
-      <CommandList />
+      <section className="renderedInput">
+        {renderComp.map((comp) => {
+          const CompName = comp;
+          return <CompName key={crypto.randomUUID()} />;
+        })}
+      </section>
       <CommandLine
         handleSubmit={handleSubmit}
         command={command}
