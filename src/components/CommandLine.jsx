@@ -1,14 +1,25 @@
 import "/src/styles/command.css";
+import PropTypes from "prop-types";
 
-const CommandLine = () => {
+const CommandLine = ({ handleSubmit, command, setCommand }) => {
   return (
     <section className="command-line">
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>[visitor@OS ~]$</label>
-        <input type="text" />
+        <input
+          type="text"
+          value={command}
+          onChange={(e) => setCommand(e.target.value)}
+        />
       </form>
     </section>
   );
+};
+
+CommandLine.propTypes = {
+  handleSubmit: PropTypes.func,
+  command: PropTypes.string,
+  setCommand: PropTypes.func,
 };
 
 export default CommandLine;
