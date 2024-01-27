@@ -67,13 +67,13 @@ function App() {
               return <CompName key={crypto.randomUUID()} />;
             })}
           </section>
-          <CommandLine
-            handleSubmit={handleSubmit}
-            command={command}
-            setCommand={setCommand}
-          />
         </>
       )}
+      <CommandLine
+        handleSubmit={handleSubmit}
+        command={command}
+        setCommand={setCommand}
+      />
     </section>
   );
 }
