@@ -3,12 +3,17 @@
   padding-bottom: 0px;
 }
 
+.command-line form {
+  display: flex;
+  align-items: center;
+}
+
 .command-line input {
   background-color: #070b14;
   outline: none;
   border: none;
+  font-size: 1.5rem;
   color: #dbcc89;
-  font-size: 1.25rem;
 }
 
 .command-line form {
