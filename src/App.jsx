@@ -89,6 +89,24 @@ function App() {
         break;
       }
 
+      case "cd windfall-matchup": {
+        window.open(
+          "https://main--relaxed-medovik-632ef4.netlify.app/",
+          "_blank"
+        );
+        break;
+      }
+
+      case "cd video-game-archive": {
+        window.open("https://dmychel.github.io/game-archive/", "_blank");
+        break;
+      }
+
+      case "cd cv-maker": {
+        window.open("https://creative-gumption-e93819.netlify.app/", "_blank");
+        break;
+      }
+
       default: {
         console.log(
           `'${input}' is not a command. Type 'help' for a list of commands`
