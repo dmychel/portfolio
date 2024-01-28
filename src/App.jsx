@@ -22,10 +22,9 @@ function App() {
   const [os, setOs] = useState("windows");
 
   useEffect(() => {
-    if (navigator.appVersion.indexOf("Wind") != -1) console.log("windows");
-    if (navigator.appVersion.indexOf("Mac") != -1) console.log("Macontosh");
-    if (navigator.appVersion.indexOf("Linux") != -1) console.log("Linux");
-    if()
+    if (navigator.appVersion.indexOf("Wind") != -1) setOs("windows");
+    if (navigator.appVersion.indexOf("Mac") != -1) setOs("mac");
+    if (navigator.appVersion.indexOf("Linux") != -1) setOs("linux");
   }, []);
 
   const handleSubmit = (e) => {
