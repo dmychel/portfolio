@@ -39,17 +39,20 @@ function App() {
   const cycleHistoryUp = () => {
     let arr = commandHist;
     if (index === 0) {
-      console.log(arr.at(-1));
+      const input = arr.at(-1);
+      setCommand(input);
       setIndex(index - 1);
     } else {
-      console.log(arr.at(index - 1));
+      const input = arr.at(index - 1);
+      setCommand(input);
       return setIndex(index - 1);
     }
   };
 
   const cycleHistoryDown = () => {
     let arr = commandHist;
-    console.log(arr.at(index + 1));
+    const input = arr.at(index + 1);
+    setCommand(input);
     setIndex(index + 1);
   };
 
