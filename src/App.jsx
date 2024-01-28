@@ -1,5 +1,5 @@
 // REACT
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // COMPONENTS
 import About from "./components/directories/About";
@@ -19,6 +19,14 @@ function App() {
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
+  const [os, setOs] = useState("windows");
+
+  useEffect(() => {
+    if (navigator.appVersion.indexOf("Wind") != -1) console.log("windows");
+    if (navigator.appVersion.indexOf("Mac") != -1) console.log("Macontosh");
+    if (navigator.appVersion.indexOf("Linux") != -1) console.log("Linux");
+    if()
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
