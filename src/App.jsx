@@ -18,6 +18,7 @@ function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
+  const [index, setIndex] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,12 +28,29 @@ function App() {
     return handleCommand(adjustedStr);
   };
 
-  const handleKeyDown = (key) => {
-    if (key === "ArrowUp") {
-      console.log("working");
-    } else if (key === "ArrowDown") {
-      console.log("working down");
+  const handleKeyDown = (e) => {
+    if (e === "ArrowUp") {
+      return cycleHistoryUp();
+    } else if (e === "ArrowDown") {
+      return cycleHistoryDown();
     }
+  };
+
+  const cycleHistoryUp = () => {
+    let arr = commandHist;
+    if (index === 0) {
+      console.log(arr.at(-1));
+      setIndex(index - 1);
+    } else {
+      console.log(arr.at(index - 1));
+      return setIndex(index - 1);
+    }
+  };
+
+  const cycleHistoryDown = () => {
+    let arr = commandHist;
+    console.log(arr.at(index + 1));
+    setIndex(index + 1);
   };
 
   const handleString = (string) => {
