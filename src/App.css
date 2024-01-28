@@ -1,6 +1,12 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "8 bit";
+}
+
+@font-face {
+  font-family: "8 bit";
+  src: url("/assets/fonts/DotGothic16-Regular.ttf");
 }
 
 .app {
