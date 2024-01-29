@@ -1,11 +1,12 @@
 import UserInfo from "./UserInfo";
-import ArchLinux from "./ascii/ArchLinux";
+import Ascii from "./ascii/Ascii";
+
 import "/src/styles/home.css";
 const Home = () => {
   return (
     <section className="home">
       <div className="hero">
-        <ArchLinux />
+        <Ascii/>
         <UserInfo />
       </div>
       <span className="help">Type &apos;help&apos; for a list of commands</span>
