@@ -1,12 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "8 bit";
+  font-family:monospace
 }
 
 @font-face {
-  font-family: "8 bit";
-  src: url("/assets/fonts/DotGothic16-Regular.ttf");
+  font-family: "noto-sans";
+  src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
 
 .app {
