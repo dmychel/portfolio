@@ -18,7 +18,7 @@ import "./App.css";
 function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
-  const [renderComp, setRenderComp] = useState([Help]);
+  const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
 
   const handleSubmit = (e) => {
