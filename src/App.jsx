@@ -4,8 +4,9 @@ import { useState } from "react";
 // COMPONENTS
 import About from "./components/directories/About";
 import CommandLine from "./components/CommandLine";
-import CommandList from "./components/commands/CommandList";
-import Home from "/src/components/home/Home";
+import CommandList from "./components/directories/Help";
+import Help from "/src/components/directories/Help";
+import Home from "/src/components/directories/home/Home";
 import Projects from "./components/directories/Projects";
 
 // JS FUNCTIONS
@@ -13,12 +14,11 @@ import Projects from "./components/directories/Projects";
 
 // STYLES
 import "./App.css";
-import Ascii from "./components/home/ascii/Ascii";
 
 function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
-  const [renderComp, setRenderComp] = useState([Home]);
+  const [renderComp, setRenderComp] = useState([Help]);
   const [index, setIndex] = useState(0);
 
   const handleSubmit = (e) => {
@@ -85,7 +85,7 @@ function App() {
         break;
       }
 
-      case "~": {
+      case "cd ~": {
         setRenderComp([...renderComp, Home]);
         break;
       }
