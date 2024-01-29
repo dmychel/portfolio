@@ -1,6 +1,7 @@
 import '/src/styles/ascii.css'
 
-const ArchLinux = () => {
+const Linux = () => {
+
     return (
         <div className="ascii-art">
              <span>                  -`                   </span>
@@ -26,4 +27,4 @@ const ArchLinux = () => {
     )
 }
 
-export default ArchLinux
+export default Linux;
