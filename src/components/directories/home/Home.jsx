@@ -6,14 +6,16 @@ import Mac from "./ascii/Mac";
 import { useState, useEffect } from "react";
 
 import "/src/styles/home.css";
+
 const Home = () => {
+  const usersOS = navigator.userAgent;
   const [os, setOs] = useState([]);
+
   useEffect(() => {
-    console.log(navigator.appVersion);
-    if (window.navigator.appVersion.indexOf("Wind") != -1) setOs([Windows]);
-    if (window.navigator.appVersion.indexOf("Mac") != -1) setOs([Mac]);
-    if (window.navigator.appVersion.indexOf("X11" || "Linux") != -1)
-      setOs([Linux]);
+    console.log(navigator.userAgent);
+    if (usersOS.includes("Windows")) setOs([Windows]);
+    if (usersOS.includes("Mac")) setOs([Mac]);
+    if (usersOS.includes("X11" || "Linux")) setOs([Linux]);
   }, []);
   return (
     <section className="home">
