@@ -1,3 +1,7 @@
+.ascii-wrapper {
+display: flex;
+}
+
 .ascii-art {
   display: flex;
   flex-direction: column;
