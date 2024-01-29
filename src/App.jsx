@@ -1,5 +1,5 @@
 // REACT
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // COMPONENTS
 import About from "./components/directories/About";
@@ -9,23 +9,17 @@ import Home from "/src/components/home/Home";
 import Projects from "./components/directories/Projects";
 
 // JS FUNCTIONS
-import boolToggle from "./components/boolToggle";
+// import boolToggle from "./components/boolToggle";
 
 // STYLES
 import "./App.css";
+import Ascii from "./components/home/ascii/Ascii";
 
 function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
-  const [os, setOs] = useState("windows");
-
-  useEffect(() => {
-    if (navigator.appVersion.indexOf("Wind") != -1) setOs("windows");
-    if (navigator.appVersion.indexOf("Mac") != -1) setOs("mac");
-    if (navigator.appVersion.indexOf("Linux") != -1) setOs("linux");
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
