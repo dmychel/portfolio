@@ -4,7 +4,6 @@ import { useState } from "react";
 // COMPONENTS
 import About from "./components/directories/About";
 import CommandLine from "./components/CommandLine";
-import CommandList from "./components/directories/Help";
 import Help from "/src/components/directories/Help";
 import Home from "/src/components/directories/home/Home";
 import Projects from "./components/directories/Projects";
@@ -34,6 +33,8 @@ function App() {
       return cycleHistoryUp();
     } else if (e === "ArrowDown") {
       return cycleHistoryDown();
+    } else {
+      return;
     }
   };
 
@@ -81,7 +82,7 @@ function App() {
       }
 
       case "help": {
-        setRenderComp([...renderComp, CommandList]);
+        setRenderComp([...renderComp, Help]);
         break;
       }
 
