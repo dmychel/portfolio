@@ -9,22 +9,28 @@
   src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
 
-.terminal {
+.app {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 2em;
   background-color: #070b14;
   color: #dbcc89;
-  min-height: 100vh;
-  max-width: 100%;
-  font-size: 1.5rem;
+  border: 2px solid;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.title {
+  justify-content: left;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 span {
-  text-decoration: none;
-}
-
-section {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
+  cursor: pointer;
 }
