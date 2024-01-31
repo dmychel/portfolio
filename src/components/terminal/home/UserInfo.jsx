@@ -1,4 +1,4 @@
-import "/src/styles/userInfo.css";
+import "/src/styles/terminal/userInfo.css";
 
 const UserInfo = () => {
   return (

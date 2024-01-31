@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import "/src/styles/ascii.css";
+import "/src/styles/terminal/ascii.css";
 
 const Linux = () => {
   return (

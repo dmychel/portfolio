@@ -2,7 +2,7 @@ import UserInfo from "./UserInfo";
 import Ascii from "./ascii/Ascii";
 import PropTypes from "prop-types";
 
-import "/src/styles/home.css";
+import "/src/styles/terminal/home.css";
 
 const Home = ({ os }) => {
   return (

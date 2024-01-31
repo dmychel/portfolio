@@ -1,4 +1,4 @@
-import "/src/styles/projects.css";
+import "/src/styles/terminal/projects.css";
 
 const Projects = () => {
   return (

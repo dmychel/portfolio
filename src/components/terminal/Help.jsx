@@ -1,4 +1,4 @@
-import "/src/styles/commandList.css";
+import "/src/styles/terminal/commandList.css";
 
 const CommandList = () => {
   return (

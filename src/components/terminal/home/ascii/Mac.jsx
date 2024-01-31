@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+import '/src/styles/terminal/ascii.css'
 const Mac = () => {
     return (
         <div className="ascii-art">
-
            <span>                        .8            </span>
            <span>                      .888            </span>
            <span>                    .8888'            </span>

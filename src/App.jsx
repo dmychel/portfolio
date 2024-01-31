@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 
 // COMPONENTS
-import About from "./components/directories/About";
-import CommandLine from "./components/CommandLine";
-import Help from "/src/components/directories/Help";
-import Home from "/src/components/directories/home/Home";
-import Projects from "./components/directories/Projects";
+import About from "/src/components/terminal/About";
+import CommandLine from "/src/components/terminal/CommandLine";
+import Help from "/src/components/terminal/Help";
+import Home from "/src/components/terminal/home/Home";
+import Projects from "/src/components/terminal/Projects";
 
 // JS FUNCTIONS
 // import boolToggle from "./components/boolToggle";

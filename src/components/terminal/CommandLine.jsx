@@ -1,4 +1,4 @@
-import "/src/styles/command.css";
+import "/src/styles/terminal/command.css";
 import PropTypes from "prop-types";
 
 const CommandLine = ({ handleSubmit, handleKeyDown, command, setCommand }) => {
