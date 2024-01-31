@@ -1,6 +1,6 @@
-import "/src/styles/normie.css";
-import Header from "./Header";
-import Content from "./content/Content";
+import "/src/styles/normie/normie.css";
+import Header from "./components/normie/Header";
+import Content from "./components/normie/content/Content";
 import { useState } from "react";
 
 const NormieView = () => {
