@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="contact-imgs">
           <a href="mailto:dyloncrowley86@gmail.com">
             <img
-              src="/assets/icons/mail.svg"
+              src="/assets/icons/mail.png"
               alt="Email"
               target="_blank"
               rel="noreferrer"
@@ -28,10 +28,10 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/assets/icons/linkedin.svg" alt="LinkedIN" />
+            <img src="/assets/icons/linkedin.png" alt="LinkedIN" />
           </a>
           <a href="https://github.com/dmychel" target="_blank" rel="noreferrer">
-            <img src="/assets/icons/github.svg" alt="Github" />
+            <img src="/assets/icons/github.png" alt="Github" />
           </a>
         </div>
       </div>

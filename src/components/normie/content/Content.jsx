@@ -1,6 +1,6 @@
-import About from "./About";
-import Projects from "./projects/Projects";
-import Contact from "./Contact";
+import About from "/src/components/normie/content/About";
+import Projects from "/src/components/normie/content/projects/Projects";
+import Contact from "/src/components/normie/content/Contact";
 
 import "/src/styles/normie/content.css";
 

@@ -1,17 +1,22 @@
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import "/src/styles/normie/about.css";
 
-import "/src/styles/normie/content.css";
-
-const Content = () => {
+const About = () => {
   return (
-    <section className="content-master">
-      <About />
-      <Projects />
-      <Contact />
+    <section className="about-master">
+      <div className="about">
+        <div className="left-about">
+          <h1>Yo, my name is Dylon</h1>
+          <p>
+            A self taught web developer with a burning passion to learn and
+            create.
+          </p>
+        </div>
+        <div className="right-about">
+          <img src="/assets/imgs/hero.JPG" alt="hero image" />
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Content;
+export default About;
