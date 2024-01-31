@@ -65,6 +65,11 @@ function App() {
 
   const checkAutoComplete = () => {
     if (command.includes("cd")) cycleCdComms();
+    if (command.includes("ab")) setCommand("about");
+    if (command.includes("pro")) setCommand("projects");
+    if (command.includes("ex")) setCommand("exit");
+    if (command.includes("cl")) setCommand("clear");
+    if (command.includes("he")) setCommand("help");
   };
 
   const cycleHistoryUp = () => {
@@ -89,7 +94,6 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    console.log(cdIndex);
     if (cdIndex === 4) {
       const input = arr.at(0);
       setCommand("cd " + input);
