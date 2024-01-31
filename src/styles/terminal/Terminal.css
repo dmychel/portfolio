@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:monospace
+}
+
+@font-face {
+  font-family: "noto-sans";
+  src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: #070b14;
+  color: #dbcc89;
+  min-height: 100vh;
+  max-width: 100%;
+  font-size: 1.5rem;
+}
+
+section {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
