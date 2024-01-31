@@ -19,12 +19,14 @@ function App() {
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
-  const usersOS = navigator.userAgent;
   const [os, setOs] = useState();
+  const usersOS = navigator.userAgent;
 
   useEffect(() => {
     console.log(navigator.userAgent);
     if (usersOS.includes("Windows")) setOs("windows");
+    if (usersOS.includes("Mac")) setOs("mac");
+    if (usersOS.includes("X11" || "Linux")) setOs("linux");
   }, [usersOS]);
 
   const handleSubmit = (e) => {
