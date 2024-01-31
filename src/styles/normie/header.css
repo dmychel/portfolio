@@ -1,0 +1,22 @@
+.header-master {
+    background-color: rgba(2, 90, 89, 0.63);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+  }
+  
+  .header-master h1 {
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media screen and (max-width: 829px) {
+    .header-master {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

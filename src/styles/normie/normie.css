@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .normie-app {
+    background-color: purple;
+    background: linear-gradient(240deg, #00e1a7, #020e0b);
+    background-size: 400% 400%;
+  
+    -webkit-animation: colorTransition 17s ease infinite;
+    -moz-animation: colorTransition 17s ease infinite;
+    animation: colorTransition 17s ease infinite;
+  }
+  
+  .background {
+    position: absolute;
+  }
+  
+  
+  
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 72% 0%
+    }
+  
+    50% {
+      background-position: 29% 100%
+    }
+  
+    100% {
+      background-position: 72% 0%
+    }
+  }
+  
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 72% 0%
+    }
+  
+    50% {
+      background-position: 29% 100%
+    }
+  
+    100% {
+      background-position: 72% 0%
+    }
+  }
+  
+  @keyframes AnimationName {
+    0% {
+      background-position: 72% 0%
+    }
+  
+    50% {
+      background-position: 29% 100%
+    }
+  
+    100% {
+      background-position: 72% 0%
+    }
+  }
