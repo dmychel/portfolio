@@ -1,75 +1,74 @@
 .about-master {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    color: white;
-  }
-  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.about {
+  display: flex;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.left-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 1.5em;
+  z-index: 1;
+}
+
+.left-about h1 {
+  width: 85%;
+}
+
+.left-about p {
+  width: 85%;
+}
+
+.right-about {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-about img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: -0.5%;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem rgba(11, 233, 200, 0.233));
+}
+
+.about-name {
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+
+@media (max-width: 960px) {
   .about {
-    display: flex;
-    height: 100vh;
-    font-size: 1.5rem;
-  }
-  
-  .left-about {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    gap: 1.5em;
-    z-index: 1;
+    gap: 2em;
   }
-  
-  .left-about h1 {
-    width: 85%;
+
+  .left-about {
+    text-align: center;
+    width: 100%;
   }
-  
-  .left-about p {
-    width: 85%;
-  }
-  
-  .right-about {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-  }
-  
+}
+
+@media screen and (max-width: 524px) {
   .right-about img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    object-position: -0.5%;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 0.75rem rgba(11, 233, 200, 0.233));
+    height: 300px;
+    width: 300px;
   }
-  
-  .about-name {
-    font-size: 3rem;
-    color: var(--accent-color);
-  }
-  
-  
-  @media (max-width: 960px) {
-    .about {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2em;
-    }
-  
-    .left-about {
-      text-align: center;
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 524px) {
-    .right-about img {
-      height: 300px;
-      width: 300px;
-    }
-  }
+}
