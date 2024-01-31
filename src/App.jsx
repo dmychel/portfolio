@@ -29,6 +29,11 @@ function App() {
     if (usersOS.includes("X11" || "Linux")) setOs("linux");
   }, [usersOS]);
 
+  useEffect(() => {
+    console.log('window scroll run')
+    window.scrollTo(0, document.body.scrollHeight);
+  },[renderComp])
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const input = command;
