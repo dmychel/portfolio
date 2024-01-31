@@ -11,20 +11,22 @@
   }
   
   .title {
-    text-align: right;
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .project-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
-  .project-container {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    padding: 20px;
-  }
   
   .project {
-    position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -32,20 +34,24 @@
     align-items: center;
     gap: 1em;
     text-align: left;
-    width: 40%;
-    height: auto;
+    width: 20%;
+    height: 50%;
     padding: 20px;
     transition-duration: 0.25s;
     background-color: rgba(3, 181, 187, 0.299);
-    border-style: solid;
-    border-width: 2px;
-    border-image: linear-gradient(rgb(114, 1, 114), #c50042 67%, #ff0090 100%) 1;
+    border: 2px solid;
+  }
+
+  .project-title {
+    text-align: center;
   }
   
+
   .project:hover {
     transition-duration: 0.25s;
-    transform: perspective(2000px) rotateY(-30deg) scale(1.1);
+    transform: perspective(2000px) rotateX(-10deg) scale(1.1);
     filter: drop-shadow(0 -2mm 1mm rgb(3, 181, 187));
+    cursor: pointer;
     color: white;
   }
   
@@ -57,11 +63,6 @@
     z-index: -1;
     opacity: 0;
     transition: 0.25s;
-  }
-  
-  .project-background img {
-    height: 100%;
-    width: 100%;
   }
   
   .description {
@@ -97,66 +98,10 @@
     width: auto;
   }
   
-  .preview-img {
-    display: flex;
-    min-height: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
+
+
   
-  .preview-img img {
-    height: 400px;
-    width: auto;
-    position: relative;
-    left: -5000px;
-    transition: 1s;
-    border-radius: 5px;
-  }
+
   
-  @media screen and (max-width: 1200px) {
-    .description {
-      font-size: 1rem;
-    }
   
-    .preview-img img {
-      height: 300px;
-    }
-  }
   
-  @media screen and (max-width: 960px) {
-    .preview-img img {
-      height: 250px;
-    }
-  }
-  
-  @media screen and (max-width: 845px) {
-    .title {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .preview-img {
-      display: none;
-    }
-  
-    .project:hover {
-      transition-duration: 0.25s;
-      transform: perspective(2000px) rotateX(-10deg) scale(1.1);
-      filter: drop-shadow(0 -2mm 1mm rgb(3, 181, 187));
-      color: white;
-    }
-  }
-  
-  @media screen and (max-width: 715px) {
-    .project {
-      width: 80%;
-    }
-  }
-  
-  @media screen and (max-width: 524px) {
-    .project-container {
-      width: 80%;
-    }
-  }
