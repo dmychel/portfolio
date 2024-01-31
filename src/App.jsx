@@ -19,8 +19,18 @@ function App() {
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
+  const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState();
   const usersOS = navigator.userAgent;
+
+  const cdCommands = [
+    "windfall-matchup",
+    "video-game-archive",
+    "cv-maker",
+    "email",
+    "linkedin",
+    "github",
+  ];
 
   useEffect(() => {
     console.log(navigator.userAgent);
@@ -48,13 +58,13 @@ function App() {
   };
 
   const handleKeyDown = (e) => {
-    if (e === "ArrowUp") {
-      return cycleHistoryUp();
-    } else if (e === "ArrowDown") {
-      return cycleHistoryDown();
-    } else {
-      return;
-    }
+    if (e.key === "ArrowUp") cycleHistoryUp();
+    if (e.key === "ArrowDown") cycleHistoryDown();
+    if (e.key === "Tab") e.preventDefault(), checkAutoComplete();
+  };
+
+  const checkAutoComplete = () => {
+    if (command.includes("cd")) cycleCdComms();
   };
 
   const cycleHistoryUp = () => {
@@ -75,6 +85,20 @@ function App() {
     const input = arr.at(index + 1);
     setCommand(input);
     setIndex(index + 1);
+  };
+
+  const cycleCdComms = () => {
+    let arr = cdCommands;
+    console.log(cdIndex);
+    if (cdIndex === 4) {
+      const input = arr.at(0);
+      setCommand("cd " + input);
+      setCdIndex(1);
+    } else {
+      const input = arr.at(cdIndex + 1);
+      setCommand("cd " + input);
+      setCdIndex(cdIndex + 1);
+    }
   };
 
   const handleString = (string) => {
