@@ -5,7 +5,6 @@ const Projects = () => {
   const projectArr = [
     {
       name: "Windfall Matchup",
-      image: "/assets/imgs/memory-preview.png",
       background: "/assets/imgs/memory-background.jpeg",
       link: "https://relaxed-medovik-632ef4.netlify.app/",
       repo: "https://github.com/dmychel/memory-game",
@@ -32,31 +31,7 @@ const Projects = () => {
       ],
     },
     {
-      name: "Terminal",
-      image: "/assets/imgs/terminal-background.jpg",
-      background: "/assets/imgs/terminal-background.jpg",
-      link: "https://dmychel.github.io/terminal-portfolio/",
-      repo: "https://github.com/dmychel/terminal-portfolio",
-      description:
-        "A fun take on a personal development portfolio. This project isn't necessarily built to display my technical skill, but rather to show my passion for web development and GNU Linux.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "HTML",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        },
-        {
-          name: "CSS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
-      ],
-    },
-    {
       name: "Game Archive",
-      image: "/assets/imgs/game-archive-background.png",
       background: "/assets/imgs/game-archive-background.png",
       link: "https://dmychel.github.io/game-archive/",
       repo: "https://github.com/dmychel/game-archive",
@@ -83,7 +58,6 @@ const Projects = () => {
     },
     {
       name: "CV Maker",
-      image: "/assets/imgs/cv-background.png",
       background: "/assets/imgs/cv-background.png",
       link: "https://creative-gumption-e93819.netlify.app/",
       repo: "https://github.com/dmychel/cv-maker",
