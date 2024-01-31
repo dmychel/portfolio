@@ -94,7 +94,7 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    if (cdIndex === 4) {
+    if (cdIndex === 5) {
       const input = arr.at(0);
       setCommand("cd " + input);
       setCdIndex(1);
@@ -153,6 +153,24 @@ function App() {
 
       case "cd cv-maker": {
         window.open("https://creative-gumption-e93819.netlify.app/", "_blank");
+        break;
+      }
+
+      case "cd email": {
+        window.open("mailto:dyloncrowley86@gmail.com");
+        break;
+      }
+
+      case "cd github": {
+        window.open("https://github.com/dmychel", "_blank");
+        break;
+      }
+
+      case "cd linkedin": {
+        window.open(
+          "https://www.linkedin.com/in/dylon-crowley-perez-248b0823b/",
+          "_blank"
+        );
         break;
       }
 
