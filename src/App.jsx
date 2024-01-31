@@ -12,7 +12,7 @@ import Projects from "/src/components/terminal/Projects";
 // import boolToggle from "./components/boolToggle";
 
 // STYLES
-import "./App.css";
+import "/src/styles/terminal/Terminal.css";
 
 function App() {
   const [command, setCommand] = useState("");
