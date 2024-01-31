@@ -5,10 +5,9 @@ const About = () => {
     <section className="about-master">
       <div className="about">
         <div className="left-about">
-          <h1>Yo, my name is Dylon</h1>
+          <h1>Whats up! My name is Dylon</h1>
           <p>
-            A self taught web developer with a burning passion to learn and
-            create.
+            A self taught developer with a burning passion to learn and create.
           </p>
         </div>
         <div className="right-about">
