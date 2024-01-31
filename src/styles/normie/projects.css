@@ -99,7 +99,6 @@ a:hover {
 @media screen and (max-width: 1246px) {
   .project-wrapper {
     height: 100%;
-    border: 2px solid;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
