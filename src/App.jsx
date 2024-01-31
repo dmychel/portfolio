@@ -1,5 +1,5 @@
 // REACT
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // COMPONENTS
 import About from "./components/directories/About";
@@ -17,8 +17,15 @@ import "./App.css";
 function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
-  const [renderComp, setRenderComp] = useState([Home]);
+  const [renderComp, setRenderComp] = useState([]);
   const [index, setIndex] = useState(0);
+  const usersOS = navigator.userAgent;
+  const [os, setOs] = useState();
+
+  useEffect(() => {
+    console.log(navigator.userAgent);
+    if (usersOS.includes("Windows")) setOs("windows");
+  }, [usersOS]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -122,7 +129,7 @@ function App() {
       <section className="renderedInput">
         {renderComp.map((comp) => {
           const CompName = comp;
-          return <CompName key={crypto.randomUUID()} />;
+          return <CompName key={crypto.randomUUID()} os={os} />;
         })}
       </section>
       <CommandLine

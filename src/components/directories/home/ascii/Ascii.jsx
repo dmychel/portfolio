@@ -1,19 +1,17 @@
 import PropTypes from "prop-types";
 import "/src/styles/ascii.css";
+import Windows from "./Windows";
 
 const Ascii = ({ os }) => {
-  return (
-    <section className="ascii-wrapper">
-      {os.map((comp) => {
-        const CompName = comp;
-        return <CompName key={crypto.randomUUID()} />;
-      })}
-    </section>
-  );
+  const dynamicComp = () => {
+    if (os === "windows") return <Windows />;
+    console.log("run");
+  };
+  return <section className="ascii-wrapper">{dynamicComp()}</section>;
 };
 
 Ascii.propTypes = {
-  os: PropTypes.array,
+  os: PropTypes.string,
 };
 
 export default Ascii;
