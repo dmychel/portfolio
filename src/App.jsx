@@ -17,7 +17,7 @@ import "./App.css";
 function App() {
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
-  const [renderComp, setRenderComp] = useState([]);
+  const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
   const usersOS = navigator.userAgent;
   const [os, setOs] = useState();
