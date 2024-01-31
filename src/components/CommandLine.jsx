@@ -10,7 +10,7 @@ const CommandLine = ({ handleSubmit, handleKeyDown, command, setCommand }) => {
           type="text"
           value={command}
           onChange={(e) => setCommand(e.target.value)}
-          onKeyDown={(e) => handleKeyDown(e.key)}
+          onKeyDown={(e) => handleKeyDown(e)}
         />
       </form>
     </section>
