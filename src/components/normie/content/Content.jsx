@@ -2,7 +2,7 @@ import About from "./About";
 import Projects from "./projects/Projects";
 import Contact from "./Contact";
 
-import "../styles/content.css";
+import "/src/styles/normie/content.css";
 
 const Content = () => {
   return (
