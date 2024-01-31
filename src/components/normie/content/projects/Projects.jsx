@@ -89,11 +89,12 @@ const Projects = () => {
       <div className="title">
         <h2>Work</h2>
       </div>
+      <div className="project-wrapper">
       {projectArr.map((obj, index) => (
-        <section className="project-container" key={index}>
-          <ProjectChild project={obj} />
-        </section>
+          <ProjectChild project={obj} key={index} />
       ))}
+      </div>
+  
     </section>
   );
 };
