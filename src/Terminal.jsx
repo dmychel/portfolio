@@ -120,7 +120,7 @@ function App() {
         break;
       }
       case "exit": {
-        console.log("exit");
+        window.open("/normie");
         break;
       }
       case "clear": {
