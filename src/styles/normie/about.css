@@ -7,9 +7,10 @@
   color: white;
 }
 
-.about {
+.about-master .about {
   display: flex;
   height: 100vh;
+  width: 100%;
   font-size: 2rem;
 }
 
@@ -53,9 +54,10 @@
 }
 
 @media (max-width: 960px) {
-  .about {
+  .about-master .about {
     flex-direction: column;
     justify-content: center;
+    margin-top: 5%;
     align-items: center;
     gap: 2em;
   }

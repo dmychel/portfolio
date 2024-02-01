@@ -19,11 +19,7 @@
   font-size: 1.5rem;
 }
 
-span {
-  text-decoration: none;
-}
-
-section {
+.terminal section {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;

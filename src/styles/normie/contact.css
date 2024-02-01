@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.contact {
+.contact-master .contact {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
@@ -16,16 +16,16 @@
   gap: 2em;
 }
 
-.title {
+.contact .title {
   text-align: right;
   width: 60%;
 }
 
-.contact-text {
+.contact-master .contact-text {
   width: 50%;
 }
 
-.contact-imgs {
+.contact-master .contact-imgs {
   display: flex;
   justify-content: right;
   gap: 2em;
@@ -33,13 +33,13 @@
   width: 50%;
 }
 
-.contact img {
+.contact-master .contact img {
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
 
-span {
+.contact-master .contact span {
   text-decoration: underline;
 }
 
@@ -50,7 +50,7 @@ span {
 }
 
 @media screen and (max-width: 1364px) {
-  .title {
+  .contact > .title {
     width: 90%;
   }
 
@@ -60,14 +60,14 @@ span {
 }
 
 @media (max-width: 1020px) {
-  .title {
+  .contact-master > .contact > .title {
     display: flex;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
   }
 
-  .contact {
+  .contact-master .contact {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -76,19 +76,19 @@ span {
     padding: 20px;
   }
 
-  .contact-imgs {
+  .contact-master .contact-imgs {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 715px) {
-  .contact-text {
+  .contact-master > .contact-text {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 524px) {
-  .contact span {
+  .contact-master > .contact span {
     font-size: 1.5rem;
   }
 }

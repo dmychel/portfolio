@@ -10,7 +10,7 @@
   color: cyan;
 }
 
-.contact span {
+.about .contact span {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -18,14 +18,14 @@
   font-weight: bold;
 }
 
-.contact {
+.about .contact {
   display: flex;
   flex-direction: column;
   gap: 1em;
   width: 100%;
 }
 
-.contact img {
+.about .contact img {
   height: 40px;
   width: auto;
 }
