@@ -21,3 +21,28 @@
   flex-direction: column;
   width: 50%;
 }
+
+@media screen and (max-width: 840px) {
+  .type-commands {
+    width: 100%;
+  }
+
+  .keyboard-shortcuts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 616px) {
+  .type-commands {
+    gap: 1em;
+  }
+
+  .type-commands span {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .type-commands .command {
+    color: cyan;
+  }
+}

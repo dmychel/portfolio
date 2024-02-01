@@ -1,5 +1,5 @@
 .about {
-  width: 50%;
+  max-width: 50%;
 }
 
 .intro {
@@ -37,10 +37,25 @@
   align-items: center;
 }
 
-.contact span {
+.about .contact span {
   color: #dbcc89;
 }
 
 .contact div > p {
   color: cyan;
+}
+
+@media screen and (max-width: 840px) {
+  .about {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .about .contact div {
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: fit-content;
+  }
 }

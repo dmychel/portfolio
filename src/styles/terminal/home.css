@@ -8,9 +8,23 @@
 
 .hero {
   display: flex;
+  justify-content: space-between;
 }
 
 .help {
   margin-top: 5%;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .hero {
+    align-items: center;
+  }
 }
