@@ -127,7 +127,7 @@ function App() {
         break;
       }
       case "exit": {
-        window.open("/normie");
+        window.open("/", "_self");
         break;
       }
       case "clear": {
