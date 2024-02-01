@@ -5,23 +5,23 @@ const CommandList = () => {
     <section className="command-list">
       <div className="type-commands">
         <span>
-          <p>&apos;about&apos;</p>
+          <p className="command">&apos;about&apos;</p>
           <p>About this cool guy</p>
         </span>
         <span>
-          <p>&apos;projects&apos;</p>
+          <p className="command">&apos;projects&apos;</p>
           <p>A reason for you to hire me</p>
         </span>
         <span>
-          <p>&apos;cd&apos;</p>
+          <p className="command">&apos;cd&apos;</p>
           <p>Change directory</p>
         </span>
         <span>
-          <p>&apos;exit&apos;</p>
+          <p className="command">&apos;exit&apos;</p>
           <p>Normie view</p>
         </span>
         <span>
-          <p>&apos;clear&apos;</p>
+          <p className="command">&apos;clear&apos;</p>
           <p>Clear the terminal</p>
         </span>
       </div>
