@@ -202,6 +202,7 @@ function App() {
         handleKeyDown={handleKeyDown}
         command={command}
         setCommand={setCommand}
+        os={os}
       />
     </section>
   );
