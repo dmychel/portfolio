@@ -9,9 +9,6 @@ import Home from "/src/components/terminal/home/Home";
 import LoadingPage from "/src/components/terminal/LoadingPage";
 import Projects from "/src/components/terminal/Projects";
 
-// JS FUNCTIONS
-// import boolToggle from "./components/boolToggle";
-
 // STYLES
 import "/src/styles/terminal/Terminal.css";
 
@@ -21,7 +18,7 @@ function App() {
   const [renderComp, setRenderComp] = useState([Home]);
   const [index, setIndex] = useState(0);
   const [cdIndex, setCdIndex] = useState(0);
-  const [os, setOs] = useState();
+  const [os, setOs] = useState("");
   const [uptime, setUptime] = useState(0);
   const [Loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
@@ -194,7 +191,7 @@ function App() {
   return (
     <>
       {Loading ? (
-        <LoadingPage />
+        <LoadingPage os={os} setLoading={setLoading} />
       ) : (
         <section className="terminal">
           <section className="renderedInput">
