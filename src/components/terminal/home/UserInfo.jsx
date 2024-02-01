@@ -18,7 +18,7 @@ const UserInfo = ({ os, uptime }) => {
           Packages: <p>351 packages audited (npm)</p>
         </span>
         <span>
-          Theme: <p>Qogir-manjaro-dark</p>
+          Theme: <p>Alacritty</p>
         </span>
         <span>
           Terminal: <p>Best terminal you&apos;ve ever used</p>
