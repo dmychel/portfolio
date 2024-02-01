@@ -12,6 +12,11 @@
   color: white;
 }
 
+.header-master a:link {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 829px) {
   .header-master {
     width: 100%;

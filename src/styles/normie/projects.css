@@ -34,7 +34,7 @@
   gap: 1em;
   text-align: left;
   width: 20%;
-  height: 50%;
+  height: 55%;
   padding: 20px;
   transition-duration: 0.25s;
   background-color: rgba(3, 181, 187, 0.299);
@@ -67,19 +67,19 @@
   font-size: 1.5rem;
 }
 
-.project > .links {
+.project .links {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   font-size: 1.5rem;
 }
 
-.project > .links a,
-.project > .links a:visited {
+.project .links a,
+.project .links a:visited {
   color: black;
 }
 
-.project > .links a:hover {
+.project .links a:hover {
   color: white;
   transform: scale(1.1);
 }
