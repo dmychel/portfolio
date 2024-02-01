@@ -6,6 +6,7 @@ import About from "/src/components/terminal/About";
 import CommandLine from "/src/components/terminal/CommandLine";
 import Help from "/src/components/terminal/Help";
 import Home from "/src/components/terminal/home/Home";
+import LoadingPage from "/src/components/terminal/LoadingPage";
 import Projects from "/src/components/terminal/Projects";
 
 // JS FUNCTIONS
@@ -22,6 +23,7 @@ function App() {
   const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState();
   const [uptime, setUptime] = useState(0);
+  const [Loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
 
   const cdCommands = [
@@ -190,21 +192,29 @@ function App() {
   };
 
   return (
-    <section className="terminal">
-      <section className="renderedInput">
-        {renderComp.map((comp) => {
-          const CompName = comp;
-          return <CompName key={crypto.randomUUID()} os={os} uptime={uptime} />;
-        })}
-      </section>
-      <CommandLine
-        handleSubmit={handleSubmit}
-        handleKeyDown={handleKeyDown}
-        command={command}
-        setCommand={setCommand}
-        os={os}
-      />
-    </section>
+    <>
+      {Loading ? (
+        <LoadingPage />
+      ) : (
+        <section className="terminal">
+          <section className="renderedInput">
+            {renderComp.map((comp) => {
+              const CompName = comp;
+              return (
+                <CompName key={crypto.randomUUID()} os={os} uptime={uptime} />
+              );
+            })}
+          </section>
+          <CommandLine
+            handleSubmit={handleSubmit}
+            handleKeyDown={handleKeyDown}
+            command={command}
+            setCommand={setCommand}
+            os={os}
+          />
+        </section>
+      )}
+    </>
   );
 }
 
