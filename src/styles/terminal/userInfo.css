@@ -9,12 +9,18 @@
 .user-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0.5em;
-  width: 50%;
+  width: 60%;
+  height: 100%;
   font-size: 1.25rem;
 }
 
 .user-info span {
   display: flex;
   gap: 1em;
+}
+
+.user-info p {
+  color: cyan;
 }
