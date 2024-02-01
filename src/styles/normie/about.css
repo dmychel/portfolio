@@ -9,7 +9,6 @@
 
 .about-master .about {
   display: flex;
-  border: 2px solid;
   height: 100vh;
   min-width: 100%;
   font-size: 2rem;
