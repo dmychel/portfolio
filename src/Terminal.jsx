@@ -21,6 +21,7 @@ function App() {
   const [index, setIndex] = useState(0);
   const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState();
+  const [uptime, setUptime] = useState(0);
   const usersOS = navigator.userAgent;
 
   const cdCommands = [
@@ -31,6 +32,12 @@ function App() {
     "linkedin",
     "github",
   ];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setUptime(uptime + 1);
+    }, 1000);
+  });
 
   useEffect(() => {
     console.log(navigator.userAgent);
@@ -187,7 +194,7 @@ function App() {
       <section className="renderedInput">
         {renderComp.map((comp) => {
           const CompName = comp;
-          return <CompName key={crypto.randomUUID()} os={os} />;
+          return <CompName key={crypto.randomUUID()} os={os} uptime={uptime} />;
         })}
       </section>
       <CommandLine
