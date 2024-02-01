@@ -1,33 +1,36 @@
 import "/src/styles/terminal/userInfo.css";
+import PropTypes from "prop-types";
 
-const UserInfo = () => {
+const UserInfo = ({ os, uptime }) => {
   return (
     <section className="user-info-container">
       <div className="user-info">
         <span>
-          OS: <p>Arch Linux</p>
+          OS: <p>{os}</p>
         </span>
         <span>
           Kernal: <p>1.0.0-lts</p>
         </span>
         <span>
-          Uptime: <p>1 hour, 5 mins</p>
+          Uptime: <p>{uptime} s</p>
         </span>
         <span>
-          Packages: <p>100 (npm)</p>
-        </span>
-        <span>
-          Resolutuin: <p>1920x1080</p>
+          Packages: <p>351 packages audited (npm)</p>
         </span>
         <span>
           Theme: <p>Qogir-manjaro-dark</p>
         </span>
         <span>
-          Terminal: <p>Font</p>
+          Terminal: <p>Best terminal you&apos;ve ever used</p>
         </span>
       </div>
     </section>
   );
+};
+
+UserInfo.propTypes = {
+  os: PropTypes.string,
+  uptime: PropTypes.number,
 };
 
 export default UserInfo;

@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 
 import "/src/styles/terminal/home.css";
 
-const Home = ({ os }) => {
+const Home = ({ os, uptime }) => {
   return (
     <section className="home">
       <div className="hero">
         <Ascii os={os} />
-        <UserInfo />
+        <UserInfo os={os} uptime={uptime} />
       </div>
       <span className="help">Type &apos;help&apos; for a list of commands</span>
     </section>
@@ -18,6 +18,7 @@ const Home = ({ os }) => {
 
 Home.propTypes = {
   os: PropTypes.string,
+  uptime: PropTypes.number,
 };
 
 export default Home;
