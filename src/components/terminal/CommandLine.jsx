@@ -1,11 +1,17 @@
 import "/src/styles/terminal/command.css";
 import PropTypes from "prop-types";
 
-const CommandLine = ({ handleSubmit, handleKeyDown, command, setCommand }) => {
+const CommandLine = ({
+  handleSubmit,
+  handleKeyDown,
+  command,
+  setCommand,
+  os,
+}) => {
   return (
     <section className="command-line">
       <form onSubmit={handleSubmit}>
-        <label>[visitor@OS ~]$</label>
+        <label>[visitor@{os} ~]$</label>
         <input
           type="text"
           value={command}
@@ -22,6 +28,7 @@ CommandLine.propTypes = {
   handleKeyDown: PropTypes.func,
   command: PropTypes.string,
   setCommand: PropTypes.func,
+  os: PropTypes.string,
 };
 
 export default CommandLine;
