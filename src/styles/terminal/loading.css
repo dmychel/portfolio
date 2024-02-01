@@ -1,0 +1,8 @@
+.loading {
+  font-size: 2rem;
+  padding-top: 50px;
+  padding-left: 20px;
+  height: 100vh;
+  background-color: #070b14;
+  color: #dbcc89;
+}
