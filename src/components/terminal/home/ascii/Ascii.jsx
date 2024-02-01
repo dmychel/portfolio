@@ -6,9 +6,9 @@ import Linux from "./Linux";
 
 const Ascii = ({ os }) => {
   const dynamicComp = () => {
-    if (os === "windows") return <Windows />;
-    if (os === "mac") return <Mac />;
-    if (os === "linux") return <Linux />;
+    if (os === "Windows") return <Windows />;
+    if (os === "Mac") return <Mac />;
+    if (os === "Linux") return <Linux />;
     console.log("run");
   };
   return <section className="ascii-wrapper">{dynamicComp()}</section>;

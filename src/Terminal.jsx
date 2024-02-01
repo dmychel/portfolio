@@ -34,9 +34,9 @@ function App() {
 
   useEffect(() => {
     console.log(navigator.userAgent);
-    if (usersOS.includes("Windows")) setOs("windows");
-    if (usersOS.includes("Mac")) setOs("mac");
-    if (usersOS.includes("X11" || "Linux")) setOs("linux");
+    if (usersOS.includes("Windows")) setOs("Windows");
+    if (usersOS.includes("Mac")) setOs("Mac");
+    if (usersOS.includes("X11" || "Linux")) setOs("Linux");
   }, [usersOS]);
 
   useEffect(() => {
