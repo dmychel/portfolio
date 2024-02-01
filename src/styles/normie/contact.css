@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+.contact-master .contact img:hover {
+  transform: scale(1.1);
+}
+
 .contact-master .contact span {
   text-decoration: underline;
 }
