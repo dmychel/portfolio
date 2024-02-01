@@ -86,7 +86,8 @@
 }
 
 @media screen and (max-width: 715px) {
-  .contact-master > .contact-text {
+  .contact-master .contact-text {
+    text-align: center;
     width: 80%;
   }
 }
