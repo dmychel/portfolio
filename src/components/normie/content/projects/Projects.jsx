@@ -6,7 +6,7 @@ const Projects = () => {
     {
       name: "Windfall Matchup",
       background: "/assets/imgs/memory-background.jpeg",
-      link: "https://relaxed-medovik-632ef4.netlify.app/",
+      link: "https://windfall-matchup.netlify.app/",
       repo: "https://github.com/dmychel/memory-game",
       description:
         "The traditional matching game we all played in elementary school, but with a Legend of Zelda Wind Waker coat of paint.",
@@ -59,7 +59,7 @@ const Projects = () => {
     {
       name: "CV Maker",
       background: "/assets/imgs/cv-background.png",
-      link: "https://creative-gumption-e93819.netlify.app/",
+      link: "https://cv-maker-webapp.netlify.app/",
       repo: "https://github.com/dmychel/cv-maker",
       description: "A fully editable resume buidler built with React and Vite.",
       tools: [
@@ -90,11 +90,10 @@ const Projects = () => {
         <h2>Work</h2>
       </div>
       <div className="project-wrapper">
-      {projectArr.map((obj, index) => (
+        {projectArr.map((obj, index) => (
           <ProjectChild project={obj} key={index} />
-      ))}
+        ))}
       </div>
-  
     </section>
   );
 };
