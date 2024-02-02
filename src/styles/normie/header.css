@@ -12,7 +12,7 @@
   color: white;
 }
 
-.header-master a:link {
+.header-master a:link, .header-master a:visited {
   color: white;
   text-decoration: none;
 }

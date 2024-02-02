@@ -38,7 +38,8 @@
   cursor: pointer;
 }
 
-.app a:link {
+.app a:link, .app a:visited {
   text-decoration: none;
   color: #dbcc89;
 }
+
