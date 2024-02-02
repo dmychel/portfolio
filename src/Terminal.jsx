@@ -50,9 +50,12 @@ function App() {
   }, [usersOS]);
 
   useEffect(() => {
-    console.log("window scroll run");
-    window.scrollTo(0, document.body.scrollHeight);
-  }, [renderComp]);
+    if (Loading === true) return;
+    else {
+      console.log("window scroll run");
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  }, [renderComp, Loading]);
 
   // EVENT HANDLERS
   const handleSubmit = (e) => {
