@@ -24,7 +24,7 @@
   font-size: 2rem;
 }
 
-.app > .title {
+.app>.title {
   text-align: left;
 }
 
@@ -38,8 +38,8 @@
   cursor: pointer;
 }
 
-.app a:link, .app a:visited {
+.app a:link,
+.app a:visited {
   text-decoration: none;
   color: #dbcc89;
 }
-
