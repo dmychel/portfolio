@@ -13,6 +13,7 @@ import Projects from "/src/components/terminal/Projects";
 import "/src/styles/terminal/Terminal.css";
 
 function App() {
+  // useState
   const [command, setCommand] = useState("");
   const [commandHist, setCommandHist] = useState([]);
   const [renderComp, setRenderComp] = useState([Home]);
@@ -23,6 +24,7 @@ function App() {
   const [Loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
 
+  // list of cd commands for autocomplete
   const cdCommands = [
     "windfall-matchup",
     "video-game-archive",
@@ -31,6 +33,8 @@ function App() {
     "linkedin",
     "github",
   ];
+
+  // all useEffect functions
 
   useEffect(() => {
     setTimeout(() => {
@@ -50,6 +54,8 @@ function App() {
     window.scrollTo(0, document.body.scrollHeight);
   }, [renderComp]);
 
+
+  // EVENT HANDLERS
   const handleSubmit = (e) => {
     e.preventDefault();
     const input = command;
@@ -59,16 +65,21 @@ function App() {
     return handleCommand(adjustedStr);
   };
 
-  const clearCommandInput = () => {
-    setCommand("");
-  };
-
   const handleKeyDown = (e) => {
     if (e.key === "ArrowUp") cycleHistoryUp();
     if (e.key === "ArrowDown") cycleHistoryDown();
     if (e.key === "Tab") e.preventDefault(), checkAutoComplete();
   };
 
+  const handleString = (string) => {
+    return string.toLowerCase();
+  };
+
+  const clearCommandInput = () => {
+    setCommand("");
+  };
+
+  
   const checkAutoComplete = () => {
     if (command.includes("cd")) cycleCdComms();
     if (command.includes("ab")) setCommand("about");
@@ -78,6 +89,7 @@ function App() {
     if (command.includes("he")) setCommand("help");
   };
 
+  // COMMAND AUTOCOMPLETE/HISTORY FUNCTIONS
   const cycleHistoryUp = () => {
     let arr = commandHist;
     if (index === 0) {
@@ -111,10 +123,10 @@ function App() {
     }
   };
 
-  const handleString = (string) => {
-    return string.toLowerCase();
-  };
 
+  
+
+// COMMAND HANDLER
   const handleCommand = (input) => {
     switch (input) {
       case "about": {
@@ -126,7 +138,7 @@ function App() {
         break;
       }
       case "exit": {
-        window.open("/", "_self");
+        window.open("/normie", "_self");
         break;
       }
       case "clear": {
