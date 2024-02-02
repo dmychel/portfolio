@@ -1,5 +1,5 @@
 .about {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .intro {
@@ -30,7 +30,7 @@
   width: auto;
 }
 
-.contact > div {
+.contact>div {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -41,15 +41,18 @@
   color: #dbcc89;
 }
 
-.contact div > p {
+.contact div>p {
   color: cyan;
 }
 
-@media screen and (max-width: 840px) {
-  .about {
-    max-width: 100%;
+@media screen and (max-width: 1000px) {
+  .about .contact div>p {
+    display: none
   }
+
+  ;
 }
+
 
 @media screen and (max-width: 510px) {
   .about .contact div {
