@@ -47,14 +47,9 @@
   text-decoration: underline;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 
 @media screen and (max-width: 1364px) {
-  .contact > .title {
+  .contact>.title {
     width: 90%;
   }
 
@@ -64,7 +59,7 @@
 }
 
 @media (max-width: 1020px) {
-  .contact-master > .contact > .title {
+  .contact-master .contact .title {
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -93,7 +88,7 @@
 }
 
 @media screen and (max-width: 524px) {
-  .contact-master > .contact span {
+  .contact-master .contact span {
     font-size: 1.5rem;
   }
 }
