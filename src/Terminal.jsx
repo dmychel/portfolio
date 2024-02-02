@@ -54,7 +54,6 @@ function App() {
     window.scrollTo(0, document.body.scrollHeight);
   }, [renderComp]);
 
-
   // EVENT HANDLERS
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -79,7 +78,6 @@ function App() {
     setCommand("");
   };
 
-  
   const checkAutoComplete = () => {
     if (command.includes("cd")) cycleCdComms();
     if (command.includes("ab")) setCommand("about");
@@ -123,10 +121,7 @@ function App() {
     }
   };
 
-
-  
-
-// COMMAND HANDLER
+  // COMMAND HANDLER
   const handleCommand = (input) => {
     switch (input) {
       case "about": {
@@ -157,10 +152,7 @@ function App() {
       }
 
       case "cd windfall-matchup": {
-        window.open(
-          "https://main--relaxed-medovik-632ef4.netlify.app/",
-          "_blank"
-        );
+        window.open("https://windfall-matchup.netlify.app/", "_blank");
         break;
       }
 
@@ -170,7 +162,7 @@ function App() {
       }
 
       case "cd cv-maker": {
-        window.open("https://creative-gumption-e93819.netlify.app/", "_blank");
+        window.open("https://cv-maker-webapp.netlify.app/", "_blank");
         break;
       }
 
