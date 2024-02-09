@@ -82,6 +82,33 @@ const Projects = () => {
         },
       ],
     },
+    {
+      name: "Serena Shopping",
+      background: "/assets/imgs/memory-background.jpeg",
+      link: "https://serena-shop.netlify.app/",
+      repo: "https://github.com/dmychel/shopping-cart",
+      description:
+        "A simple web app that mocks the checkout process of an ecommerce website.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: "HTML",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        },
+        {
+          name: "CSS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+      ],
+    },
   ];
 
   return (
