@@ -12,6 +12,7 @@ const Projects = () => {
       <span>Windfall Matchup</span>
       <span>Video Game Archive</span>
       <span>CV Maker</span>
+      <span>Serena Shopping</span>
     </section>
   );
 };

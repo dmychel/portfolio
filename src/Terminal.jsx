@@ -169,6 +169,11 @@ function App() {
         break;
       }
 
+      case "cd serena-shopping": {
+        window.open("https://serena-shop.netlify.app/", "_blank");
+        break;
+      }
+
       case "cd email": {
         window.open("mailto:dyloncrowley86@gmail.com");
         break;
