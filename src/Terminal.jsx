@@ -32,6 +32,7 @@ function App() {
     "email",
     "linkedin",
     "github",
+    "serena-shopping",
   ];
 
   // all useEffect functions
@@ -113,7 +114,7 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    if (cdIndex === 5) {
+    if (cdIndex === 6) {
       const input = arr.at(0);
       setCommand("cd " + input);
       setCdIndex(1);
