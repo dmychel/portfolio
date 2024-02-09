@@ -2,10 +2,13 @@ import PropTypes from "prop-types";
 import "/src/styles/normie/projects.css";
 
 const ProjectChild = ({ project }) => {
-
   return (
     <>
       <div className="project">
+        <div
+          className="project-background"
+          style={{ backgroundImage: `url(${project.background})` }}
+        ></div>
         <p className="project-title">{project.name}</p>
         <p className="description">{project.description}</p>
         <nav className="links">
