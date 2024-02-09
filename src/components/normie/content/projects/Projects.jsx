@@ -5,7 +5,7 @@ const Projects = () => {
   const projectArr = [
     {
       name: "Windfall Matchup",
-      background: "/assets/imgs/memory-background.jpeg",
+      background: "/assets/imgs/memory-preview.png",
       link: "https://windfall-matchup.netlify.app/",
       repo: "https://github.com/dmychel/memory-game",
       description:
@@ -84,7 +84,7 @@ const Projects = () => {
     },
     {
       name: "Serena Shopping",
-      background: "/assets/imgs/memory-background.jpeg",
+      background: "/assets/imgs/serena-preview.png",
       link: "https://serena-shop.netlify.app/",
       repo: "https://github.com/dmychel/shopping-cart",
       description:
