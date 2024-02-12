@@ -2,8 +2,9 @@
   font-size: 2rem;
   padding-left: 20px;
   padding-top: 5px;
-  height: 100vh;
+  height: 70vh;
+  width: 65vw;
   background-color: #070b14;
   color: #dbcc89;
-  border: 2px solid;
+  border: 3px solid;
 }

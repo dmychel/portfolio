@@ -9,6 +9,15 @@
   src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 100vw;
+  background-color: #070b14;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -24,7 +33,7 @@
   font-size: 2rem;
 }
 
-.app>.title {
+.app > .title {
   text-align: left;
 }
 
