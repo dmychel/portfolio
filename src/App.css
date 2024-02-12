@@ -16,6 +16,9 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: #070b14;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
 }
 
 .app {
