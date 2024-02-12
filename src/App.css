@@ -29,7 +29,8 @@ body {
   background-color: #070b14;
   color: #dbcc89;
   border: 2px solid;
-  height: 100vh;
+  height: 90vh;
+  width: 90vw;
   font-size: 2rem;
 }
 
