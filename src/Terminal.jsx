@@ -45,9 +45,18 @@ function App() {
 
   useEffect(() => {
     console.log(navigator.userAgent);
-    if (usersOS.includes("Windows")) setOs("Windows");
-    if (usersOS.includes("Mac")) setOs("Mac");
-    if (usersOS.includes("X11" || "Linux")) setOs("Linux");
+    if (usersOS.includes("Windows"))
+      setOs("Windows"),
+        (document.body.style.backgroundImage =
+          "url('/assets/imgs/windows-background.jpg')");
+    if (usersOS.includes("Mac"))
+      setOs("Mac"),
+        (document.body.style.backgroundImage =
+          "url('/assets/imgs/apple-background.jpg')");
+    if (usersOS.includes("X11" || "Linux"))
+      setOs("Linux"),
+        (document.body.style.backgroundImage =
+          "url('/assets/imgs/arch-background.png')");
   }, [usersOS]);
 
   useEffect(() => {
