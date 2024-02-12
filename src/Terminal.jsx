@@ -54,7 +54,8 @@ function App() {
     if (Loading === true) return;
     else {
       console.log("window scroll run");
-      window.scrollTo(0, document.body.scrollHeight);
+      const termEL = document.getElementById("terminal");
+      termEL.scrollTo(0, termEL.scrollHeight);
     }
   }, [renderComp, Loading]);
 
@@ -206,8 +207,8 @@ function App() {
       {Loading ? (
         <LoadingPage os={os} setLoading={setLoading} />
       ) : (
-        <section className="terminal">
-          <section className="renderedInput">
+        <section className="terminal" id="terminal">
+          <section className="rendered-input">
             {renderComp.map((comp) => {
               const CompName = comp;
               return (
