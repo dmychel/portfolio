@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "/src/styles/terminal/ascii.css";
+import "/src/styles/terminal/ascii.scss";
 import Windows from "./Windows";
 import Mac from "./Mac";
 import Linux from "./Linux";

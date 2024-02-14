@@ -1,4 +1,4 @@
-import "/src/styles/terminal/userInfo.css";
+import "/src/styles/terminal/userInfo.scss";
 import PropTypes from "prop-types";
 
 const UserInfo = ({ os, uptime }) => {

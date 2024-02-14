@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import '/src/styles/terminal/ascii.css'
+import '/src/styles/terminal/ascii.scss'
 const Mac = () => {
     return (
         <div className="ascii-art">
