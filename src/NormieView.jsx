@@ -1,4 +1,4 @@
-import "/src/styles/normie/normie.css";
+import "/src/styles/normie/normie.scss";
 import Header from "./components/normie/Header";
 import Content from "./components/normie/content/Content";
 import { useState } from "react";
