@@ -9,8 +9,7 @@
   src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
 
-$primary: #070b14;
-$secondary: #dbcc89;
+@import "/src/styles/colors";
 
 body {
   display: flex;
