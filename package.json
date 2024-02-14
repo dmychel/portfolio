@@ -27,7 +27,10 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^5.1.0",
     "jsdom": "^24.0.0",
+    "sass": "^1.70.0",
     "vite": "^5.0.8",
     "vitest": "^1.2.2"
   }
