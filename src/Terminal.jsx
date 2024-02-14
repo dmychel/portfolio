@@ -10,7 +10,7 @@ import LoadingPage from "/src/components/terminal/LoadingPage";
 import Projects from "/src/components/terminal/Projects";
 
 // STYLES
-import "/src/styles/terminal/Terminal.css";
+import "/src/styles/terminal/terminal.scss";
 
 function App() {
   // useState
