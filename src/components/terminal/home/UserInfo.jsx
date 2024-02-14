@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const UserInfo = ({ os, uptime }) => {
   return (
     <section className={styles.userInfoContainer}>
-      <div className={styles.unserInfo}>
+      <div className={styles.userInfo}>
         <span>
           OS: <p>{os}</p>
         </span>
