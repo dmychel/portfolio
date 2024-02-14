@@ -2,7 +2,7 @@
 
 I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.netlify.app'>Click Me</a>
 
-## Why did I make it?
+## Why a terminal view?
 
 The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure if I would've ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
 
