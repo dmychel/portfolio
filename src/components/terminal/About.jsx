@@ -2,7 +2,7 @@ import styles from "/src/styles/terminal/about.module.scss";
 
 const About = () => {
   return (
-    <section className={styles.About}>
+    <section className={styles.about}>
       <div className={styles.intro}>
         Hello stranger... My name is <span>Dylon</span>, I am a{" "}
         <span>self taught developer</span> with a strong passion to learn and
