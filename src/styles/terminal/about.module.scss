@@ -1,3 +1,7 @@
+@import "/src/styles/base";
+@import "/src/styles/colors";
+
+
 .about {
   max-width: 100%;
 }
@@ -10,7 +14,7 @@
   color: cyan;
 }
 
-.about .contact span {
+.contact span {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -18,48 +22,45 @@
   font-weight: bold;
 }
 
-.about .contact {
+.contact {
   display: flex;
   flex-direction: column;
   gap: 1em;
   width: 100%;
 }
 
-.about .contact img {
+.contact img {
   height: 40px;
   width: auto;
 }
 
-.contact>div {
-  width: 100%;
+.contact div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@import "/src/styles/base";
-@import "/src/styles/colors";
-
-
-.about .contact span {
+.contact span {
   color: #dbcc89;
 }
 
-.about .contact div>p {
+ .contact div p {
   color: cyan;
 }
 
-@media screen and (max-width: 1000px) {
-  .about .contact div>p {
-    display: none
+@media screen and (max-width: 925px) {
+  .contact {
+    justify-content: left;
+    align-items: left;
   }
-
-  ;
+  .contact div {
+    align-items: baseline;
+    flex-direction: column;
+  }
 }
 
-
 @media screen and (max-width: 510px) {
-  .about .contact div {
+ .contact div {
     flex-direction: column;
     justify-content: left;
     align-items: left;
