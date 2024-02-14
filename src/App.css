@@ -56,3 +56,10 @@ body {
   text-decoration: none;
   color: #dbcc89;
 }
+
+@media screen and (max-width: 1000px) {
+  .app {
+    height: 50vh;
+    width: 50vw;
+  }
+}

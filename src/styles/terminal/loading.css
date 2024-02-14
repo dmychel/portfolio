@@ -8,3 +8,10 @@
   color: #dbcc89;
   border: 3px solid;
 }
+
+@media screen and (max-width: 1000px) {
+  .loading {
+    height: 70vh;
+    width: 70vw;
+  }
+}

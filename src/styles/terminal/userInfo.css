@@ -27,17 +27,15 @@
 
 @media screen and (max-width: 938px) {
   .user-info-container {
-    width: 80%;
-  }
-  .user-info {
-    width: fit-content;
+    flex-direction: row;
+    justify-content: left;
+    align-content: left;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 610px) {
   .user-info span {
-    display: flex;
-    flex-direction: column;
     gap: 0.5em;
   }
 }
