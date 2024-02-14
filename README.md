@@ -4,11 +4,11 @@ I think it's pretty cool, you should check it out here => <a href='https://dylon
 
 ## Why did I make it?
 
-The simple reason - I am not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 or so years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for discovering Linux I'm not sure if I would've ever discovered or even attempted Web Development. And lets be honest, a terminal is pretty cool.
+The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure if I would've ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
 
 ## Version 1.0.0
 
-Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should no discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
+Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
 ## Version 1.1.0
 
