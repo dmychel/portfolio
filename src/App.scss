@@ -9,13 +9,16 @@
   src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
 
+$primary: #070b14;
+$secondary: #dbcc89;
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #070b14;
+  background-color: $primary;
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -29,8 +32,8 @@ body {
   padding-right: 50px;
   padding-bottom: 20px;
   gap: 2em;
-  background-color: #070b14;
-  color: #dbcc89;
+  background-color: $primary;
+  color: $secondary;
   border: 2px solid;
   height: 90vh;
   width: 90vw;
@@ -54,7 +57,7 @@ body {
 .app a:link,
 .app a:visited {
   text-decoration: none;
-  color: #dbcc89;
+  color: $secondary;
 }
 
 @media screen and (max-width: 1000px) {
