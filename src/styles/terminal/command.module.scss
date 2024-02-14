@@ -1,18 +1,17 @@
 @import "/src/styles/base";
 @import "/src/styles/colors";
 
-
-.command-line {
+.commandLine {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-.command-line form {
+.commandLine form {
   display: flex;
   align-items: center;
 }
 
-.command-line input {
+.commandLine input {
   background-color: #070b1400;
   outline: none;
   border: none;
@@ -20,7 +19,7 @@
   color: #dbcc89;
 }
 
-.command-line form {
+.commandLine form {
   display: flex;
   gap: 1em;
   width: 100%;

@@ -1,4 +1,4 @@
-.user-info-container {
+.userInfoContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   width: 50%;
 }
 
-.user-info {
+.userInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,17 +16,17 @@
   font-size: 1.25rem;
 }
 
-.user-info span {
+.userInfo span {
   display: flex;
   gap: 1em;
 }
 
-.user-info p {
+.userInfo p {
   color: cyan;
 }
 
 @media screen and (max-width: 938px) {
-  .user-info-container {
+  .userInfoContainer {
     flex-direction: row;
     justify-content: left;
     align-content: left;
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 610px) {
-  .user-info span {
+  .userInfo span {
     gap: 0.5em;
   }
 }
