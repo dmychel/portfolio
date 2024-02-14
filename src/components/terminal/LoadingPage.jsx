@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import PropTypes from "prop-types";
-import "/src/styles/terminal/loading.css";
+import "/src/styles/terminal/loading.scss";
 
 const Loading = ({ os, setLoading }) => {
   setTimeout(() => {
