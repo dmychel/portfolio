@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "/src/styles/normie/header.css";
+import "/src/styles/normie/header.scss";
 import { Link } from "react-router-dom";
 
 const Header = ({ setComponent }) => {

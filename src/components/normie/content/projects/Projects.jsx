@@ -1,4 +1,4 @@
-import "/src/styles/normie/projects.css";
+import "/src/styles/normie/projects.scss";
 import ProjectChild from "./ProjectChild";
 
 const Projects = () => {

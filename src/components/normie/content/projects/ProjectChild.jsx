@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "/src/styles/normie/projects.css";
+import "/src/styles/normie/projects.scss";
 
 const ProjectChild = ({ project }) => {
   return (

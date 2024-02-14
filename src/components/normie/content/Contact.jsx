@@ -1,4 +1,4 @@
-import "/src/styles/normie/contact.css";
+import "/src/styles/normie/contact.scss";
 
 const Contact = () => {
   return (
