@@ -1,31 +1,31 @@
-import "/src/styles/terminal/commandList.scss";
+import styles from "/src/styles/terminal/commandList.module.scss";
 
 const CommandList = () => {
   return (
-    <section className="command-list">
-      <div className="type-commands">
+    <section className={styles.commandList}>
+      <div className={styles.typeCommands}>
         <span>
-          <p className="command">&apos;about&apos;</p>
+          <p className={styles.command}>&apos;about&apos;</p>
           <p>About this cool guy</p>
         </span>
         <span>
-          <p className="command">&apos;projects&apos;</p>
+          <p className={styles.command}>&apos;projects&apos;</p>
           <p>A reason for you to hire me</p>
         </span>
         <span>
-          <p className="command">&apos;cd&apos;</p>
+          <p className={styles.command}>&apos;cd&apos;</p>
           <p>Change directory</p>
         </span>
         <span>
-          <p className="command">&apos;exit&apos;</p>
+          <p className={styles.command}>&apos;exit&apos;</p>
           <p>Normie view</p>
         </span>
         <span>
-          <p className="command">&apos;clear&apos;</p>
+          <p className={styles.command}>&apos;clear&apos;</p>
           <p>Clear the terminal</p>
         </span>
       </div>
-      <div className="keyboard-shortcuts">
+      <div className={styles.keyboardShortcuts}>
         <div>
           Press <span style={{ color: "cyan" }}>[Tab]</span> to auto complete
         </div>

@@ -1,4 +1,4 @@
-import "/src/styles/normie/projects.scss";
+import styles from "/src/styles/normie/projects.module.scss";
 import ProjectChild from "./ProjectChild";
 
 const Projects = () => {
@@ -112,11 +112,11 @@ const Projects = () => {
   ];
 
   return (
-    <section className="project-master">
+    <section className={styles.projectMaster}>
       <div className="title">
         <h2>Work</h2>
       </div>
-      <div className="project-wrapper">
+      <div className={styles.projectWrapper}>
         {projectArr.map((obj, index) => (
           <ProjectChild project={obj} key={index} />
         ))}

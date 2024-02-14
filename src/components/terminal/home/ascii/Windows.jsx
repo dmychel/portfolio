@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import '/src/styles/terminal/ascii.scss'
+import styles from '/src/styles/terminal/ascii.module.scss'
 
 const Windows = () => {
   return (
-    <div className="ascii-art">
+    <div className={styles.asciiArt}>
       <span>                            .oodMMMM</span>
         <span>                  .oodMMMMMMMMMMMMM</span>
         <span>      ..oodMMM   MMMMMMMMMMMMMMMMMMM</span>

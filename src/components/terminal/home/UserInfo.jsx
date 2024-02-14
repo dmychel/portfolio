@@ -1,10 +1,10 @@
-import "/src/styles/terminal/userInfo.scss";
+import styles from "/src/styles/terminal/userInfo.module.scss";
 import PropTypes from "prop-types";
 
 const UserInfo = ({ os, uptime }) => {
   return (
-    <section className="user-info-container">
-      <div className="user-info">
+    <section className={styles.userInfoContainer}>
+      <div className={styles.unserInfo}>
         <span>
           OS: <p>{os}</p>
         </span>

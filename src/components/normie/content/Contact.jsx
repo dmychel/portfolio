@@ -1,20 +1,20 @@
-import "/src/styles/normie/contact.scss";
+import styles from "/src/styles/normie/contact.module.scss";
 
 const Contact = () => {
   return (
-    <section className="contact-master">
-      <div className="title">
+    <section className={styles.contactMaster}>
+      <div className={styles.title}>
         <h2>Contact</h2>
       </div>
-      <div className="contact">
-        <div className="contact-text">
+      <div className={styles.contact}>
+        <div className={styles.contactText}>
           <p>
             Here are some of the ways you can reach out. I am most likely to see
             and respond to any messages sent to my email,
             <span> dyloncrowley86@gmail.com.</span>
           </p>
         </div>
-        <div className="contact-imgs">
+        <div className={styles.contactIMG}>
           <a href="mailto:dyloncrowley86@gmail.com">
             <img
               src="/assets/icons/mail.png"

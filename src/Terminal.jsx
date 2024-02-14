@@ -10,7 +10,7 @@ import LoadingPage from "/src/components/terminal/LoadingPage";
 import Projects from "/src/components/terminal/Projects";
 
 // STYLES
-import "/src/styles/terminal/terminal.scss";
+import styles from "/src/styles/terminal/terminal.module.scss";
 
 function App() {
   // useState
@@ -216,8 +216,8 @@ function App() {
       {Loading ? (
         <LoadingPage os={os} setLoading={setLoading} />
       ) : (
-        <section className="terminal" id="terminal">
-          <section className="rendered-input">
+        <section className={styles.terminal} id="terminal">
+          <section className={styles.renderedInput}>
             {renderComp.map((comp) => {
               const CompName = comp;
               return (

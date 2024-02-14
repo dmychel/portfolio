@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import "/src/styles/terminal/ascii.scss";
+import styles from "/src/styles/terminal/ascii.module.scss";
 
 const Linux = () => {
   return (
-    <div className="ascii-art">
+    <div className={styles.asciiArt}>
       <span>                 .88888888:.               </span>
       <span>                88888888.88888.            </span>
       <span>              .8888888888888888.           </span>

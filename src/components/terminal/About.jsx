@@ -1,9 +1,9 @@
-import "/src/styles/terminal/about.scss";
+import styles from "/src/styles/terminal/about.module.scss";
 
 const About = () => {
   return (
-    <section className="about">
-      <div className="intro">
+    <section className={styles.About}>
+      <div className={styles.intro}>
         Hello stranger... My name is <span>Dylon</span>, I am a{" "}
         <span>self taught developer</span> with a strong passion to learn and
         create. Hopefully I&apos;ve peaked your interest.
@@ -13,7 +13,7 @@ const About = () => {
           &apos;
         </span>
       </div>
-      <div className="contact">
+      <div className={styles.contact}>
         <div>
           <span>
             <img src="/assets/icons/mail.png" alt="mail" />
