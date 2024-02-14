@@ -1,8 +1,7 @@
 @import "/src/styles/base";
 @import "/src/styles/colors";
 
-
-.contact-master {
+.contactMaster {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,7 @@
   height: 100vh;
 }
 
-.contact-master .contact {
+.contact {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
@@ -20,16 +19,16 @@
   gap: 2em;
 }
 
-.contact .title {
+.title {
   text-align: right;
   width: 60%;
 }
 
-.contact-master .contact-text {
+.contactText {
   width: 50%;
 }
 
-.contact-master .contact-imgs {
+.contactIMG {
   display: flex;
   justify-content: right;
   gap: 2em;
@@ -37,23 +36,22 @@
   width: 50%;
 }
 
-.contact-master .contact img {
+.contact img {
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
 
-.contact-master .contact img:hover {
+.contact img:hover {
   transform: scale(1.1);
 }
 
-.contact-master .contact span {
+.contact span {
   text-decoration: underline;
 }
 
-
 @media screen and (max-width: 1364px) {
-  .contact>.title {
+  .title {
     width: 90%;
   }
 
@@ -63,14 +61,14 @@
 }
 
 @media (max-width: 1020px) {
-  .contact-master .contact .title {
+  .title {
     display: flex;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
   }
 
-  .contact-master .contact {
+  .contact {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -79,20 +77,20 @@
     padding: 20px;
   }
 
-  .contact-master .contact-imgs {
+  .contactIMG {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 715px) {
-  .contact-master .contact-text {
+  .contactText {
     text-align: center;
     width: 80%;
   }
 }
 
 @media screen and (max-width: 524px) {
-  .contact-master .contact span {
+  .contact span {
     font-size: 1.5rem;
   }
 }

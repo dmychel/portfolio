@@ -1,26 +1,25 @@
 @import "/src/styles/base";
 @import "/src/styles/colors";
 
-
-.project-master {
+.projectMaster {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  width: 100%;
+  gap: $baseGap;
+  width: $baseWidth;
+  color: $normSecondary;
   min-height: 100%;
-  color: white;
   text-align: left;
 }
 
-.project-master > .title {
+.projectMaster .title {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: $baseWidth;
 }
 
-.project-wrapper {
+.projectWrapper {
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -39,26 +38,24 @@
   height: 70%;
   padding: 20px;
   transition-duration: 0.25s;
-  background-color: rgba(3, 181, 187, 0.299);
+  background-color: $cardPrimary;
   border: 2px solid;
 }
 
-.project-title {
+.title {
   text-align: center;
 }
 
 .project:hover {
   transition-duration: 0.25s;
-  transform: perspective(2000px) rotateX(-10deg) scale(1.1);
+  transform: perspective(2000px) rotateX(-3deg) scale(1.1);
   filter: drop-shadow(0 -2mm 1mm rgb(3, 181, 187));
-  cursor: pointer;
-  color: white;
 }
 
-.project-background {
+.projectBackground {
   display: flex;
   height: 35%;
-  width: 100%;
+  width: $baseWidth;
   background-position: center;
   border: 2px solid;
   background-size: cover;
@@ -73,23 +70,13 @@
 .project .links {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: $baseWidth;
   font-size: 1.5rem;
-}
-
-.project .links a,
-.project .links a:visited {
-  color: black;
-}
-
-.project .links a:hover {
-  color: white;
-  transform: scale(1.1);
 }
 
 .tools {
   display: flex;
-  width: 100%;
+  width: $baseWidth;
   justify-content: space-around;
 }
 
@@ -98,13 +85,18 @@
   width: auto;
 }
 
+// links
+a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1246px) {
-  .project-wrapper {
+  .projectWrapper {
     height: 100%;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    gap: 2em;
+    gap: $baseGap;
   }
 
   .project {

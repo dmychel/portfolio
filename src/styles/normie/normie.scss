@@ -1,14 +1,13 @@
 @import "/src/styles/base";
 @import "/src/styles/colors";
 
-
 * {
   padding: 0;
   margin: 0;
 }
 
 .normie-app {
-  background-color: purple;
-  background: linear-gradient(240deg, #00e1a7, #020e0b);
+  background: $normPrimary;
+  color: $normSecondary;
   background-size: 400% 400%;
 }
