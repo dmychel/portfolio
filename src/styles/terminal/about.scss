@@ -37,6 +37,10 @@
   align-items: center;
 }
 
+@import "/src/styles/base";
+@import "/src/styles/colors";
+
+
 .about .contact span {
   color: #dbcc89;
 }
