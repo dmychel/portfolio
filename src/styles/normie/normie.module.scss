@@ -1,0 +1,15 @@
+@import "/src/styles/base";
+@import "/src/styles/colors";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.normieApp {
+  justify-content: center;
+  background: $normPrimary;
+  color: $normSecondary;
+  background-size: 400% 400%;
+  overflow-y: hidden;
+}

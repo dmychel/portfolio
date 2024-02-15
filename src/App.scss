@@ -16,10 +16,11 @@
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 2em;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
   background-color: $primary;
   background-size: cover;
   background-position: center;

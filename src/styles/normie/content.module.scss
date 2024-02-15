@@ -4,9 +4,8 @@
 .contentMaster {
   display: flex;
   flex-direction: column;
+  gap: 5em;
   height: 100%;
-  width: 100vw;
   font-size: 2rem;
   padding-top: 30px;
-  overflow-x: hidden;
 }

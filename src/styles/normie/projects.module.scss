@@ -6,26 +6,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: $baseGap;
-  width: $baseWidth;
+  height: 100vh;
+  max-width: $baseWidth;
   color: $normSecondary;
-  min-height: 100%;
   text-align: left;
 }
 
-.projectMaster .title {
+.title {
   display: flex;
   justify-content: center;
   width: $baseWidth;
 }
 
 .projectWrapper {
-  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  height: 100%;
 }
 
 .project {
@@ -35,7 +34,7 @@
   align-items: center;
   text-align: left;
   width: 20%;
-  height: 70%;
+  height: 65%;
   padding: 20px;
   transition-duration: 0.25s;
   background-color: $cardPrimary;
@@ -91,11 +90,11 @@ a {
 }
 
 @media screen and (max-width: 1246px) {
+  .projectMaster {
+    min-height: 100%;
+  }
   .projectWrapper {
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: row;
     gap: $baseGap;
   }
 
