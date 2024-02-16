@@ -16,7 +16,7 @@ const LinuxTerm = ({
     console.log("window scroll run");
     const termEL = document.getElementById("terminal");
     termEL.scrollTo(0, termEL.scrollHeight);
-  }, [setCommand]);
+  }, [renderComp]);
 
   return (
     <div className={styles.terminal} id="terminal">
