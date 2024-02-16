@@ -7,10 +7,12 @@ I think it's pretty cool, you should check it out here => <a href='https://dylon
 The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure if I would've ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
 
 ## Version 1.2.0 (Current)
+
 This version includes everything from the previous version excpet for the uptime tracker. 
 <br></br>
-After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
-
+Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
+<br></br>
+other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
 ## Version 1.0.0
 
