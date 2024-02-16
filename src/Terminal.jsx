@@ -8,6 +8,7 @@ import Home from "/src/components/terminal/home/Home";
 import Projects from "/src/components/terminal/Projects";
 import RenderTerminal from "./components/terminal/renders/RenderTerminal";
 import LoadingPage from "./components/terminal/LoadingPage";
+import PrintTheme from "./components/terminal/renders/PrintTheme";
 
 // STYLES
 
@@ -188,22 +189,22 @@ function App() {
 
       case "theme set alacritty":
         {
-          console.log("theme set to Alacritty");
           setOs("Linux");
+          setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set powershell":
         {
           setOs("Windows");
-          console.log("theme set to PowerShell");
+          setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set mac":
         {
           setOs("Mac");
-          console.log("theme set to Mac Terminal");
+          setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
