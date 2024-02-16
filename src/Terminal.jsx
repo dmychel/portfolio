@@ -186,6 +186,24 @@ function App() {
         break;
       }
 
+      case "theme set alacritty":
+        {
+          console.log("theme set to Alacritty");
+        }
+        break;
+
+      case "theme set powershell":
+        {
+          console.log("theme set to PowerShell");
+        }
+        break;
+
+      case "theme set mac":
+        {
+          console.log("theme set to Mac Terminal");
+        }
+        break;
+
       default: {
         console.log(
           `'${input}' is not a command. Type 'help' for a list of commands`
