@@ -12,7 +12,7 @@ This version includes everything from the previous version excpet for the uptime
 <br></br>
 Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
 <br></br>
-other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
+Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
 ## Version 1.0.0
 
