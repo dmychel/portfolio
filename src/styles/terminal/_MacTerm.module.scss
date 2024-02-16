@@ -1,0 +1,50 @@
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  color: $secondary;
+  background-color: rgba(255, 255, 255, 0.815);
+  border: 1.75px solid black;
+  border-radius: 8px;
+  overflow-y: scroll;
+  padding: 0;
+  color: black;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.87));
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(177, 177, 177);
+  color: black;
+  top: 0;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+nav span {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.exit {
+  background-color: red;
+}
+
+.min {
+  background-color: yellow;
+}
+
+.max {
+  background-color: green;
+}
