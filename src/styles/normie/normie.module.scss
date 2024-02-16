@@ -6,8 +6,10 @@
   margin: 0;
 }
 
-.normie-app {
+.normieApp {
+  justify-content: center;
   background: $normPrimary;
   color: $normSecondary;
   background-size: 400% 400%;
+  overflow-y: hidden;
 }

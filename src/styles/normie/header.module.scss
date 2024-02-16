@@ -4,14 +4,14 @@
 .headerMaster {
   background-color: rgba(2, 90, 89, 0.63);
   padding: 30px;
-  position: fixed;
-  width: $baseWidth;
-  z-index: 2;
   top: 0;
+  position: sticky;
+  z-index: 2;
 }
 
 .headerMaster h1 {
   cursor: pointer;
+  width: 100%;
 }
 
 a {
