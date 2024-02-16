@@ -19,7 +19,6 @@ function App() {
   const [index, setIndex] = useState(0);
   const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState("");
-  const [uptime, setUptime] = useState(0);
   const [loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
 
@@ -47,7 +46,7 @@ function App() {
         (document.body.style.backgroundImage =
           "url('/assets/imgs/apple-background.jpg')");
     if (usersOS.includes("X11" || "Linux"))
-      setOs("Mac"),
+      setOs("Linux"),
         (document.body.style.backgroundImage =
           "url('/assets/imgs/arch-background.png')");
   }, [usersOS]);

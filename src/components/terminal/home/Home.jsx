@@ -1,15 +1,16 @@
 import UserInfo from "./UserInfo";
 import Ascii from "./ascii/Ascii";
 import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 
 import styles from "/src/styles/terminal/home.module.scss";
 
-const Home = ({ os, uptime }) => {
+const Home = ({ os }) => {
   return (
     <section className={styles.home}>
       <div className={styles.hero}>
         <Ascii os={os} />
-        <UserInfo os={os} uptime={uptime} />
+        <UserInfo os={os} />
       </div>
       <span className={styles.help}>
         Type &apos;help&apos; for a list of commands
@@ -20,7 +21,6 @@ const Home = ({ os, uptime }) => {
 
 Home.propTypes = {
   os: PropTypes.string,
-  uptime: PropTypes.number,
 };
 
 export default Home;

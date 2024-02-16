@@ -1,7 +1,7 @@
 import styles from "/src/styles/terminal/userInfo.module.scss";
 import PropTypes from "prop-types";
 
-const UserInfo = ({ os, uptime }) => {
+const UserInfo = ({ os }) => {
   return (
     <section className={styles.userInfoContainer}>
       <div className={styles.userInfo}>
@@ -10,9 +10,6 @@ const UserInfo = ({ os, uptime }) => {
         </span>
         <span>
           Kernal: <p>1.0.0-lts</p>
-        </span>
-        <span>
-          Uptime: <p>{uptime} s</p>
         </span>
         <span>
           Packages: <p>351 packages audited (npm)</p>
@@ -30,7 +27,6 @@ const UserInfo = ({ os, uptime }) => {
 
 UserInfo.propTypes = {
   os: PropTypes.string,
-  uptime: PropTypes.number,
 };
 
 export default UserInfo;
