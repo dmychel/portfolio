@@ -1,3 +1,6 @@
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
 * {
   padding: 0;
   margin: 0;
@@ -8,9 +11,6 @@
   font-family: "noto-sans";
   src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
 }
-
-@import "/src/styles/base";
-@import "/src/styles/colors";
 
 .terminal {
   display: flex;

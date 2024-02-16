@@ -1,6 +1,5 @@
-@import "/src/styles/base";
-@import "/src/styles/colors";
-
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
 
 .about {
   max-width: 100%;
@@ -44,7 +43,7 @@
   color: #dbcc89;
 }
 
- .contact div p {
+.contact div p {
   color: cyan;
 }
 
@@ -60,7 +59,7 @@
 }
 
 @media screen and (max-width: 510px) {
- .contact div {
+  .contact div {
     flex-direction: column;
     justify-content: left;
     align-items: left;
