@@ -6,5 +6,5 @@
   width: $baseTermWidth;
   color: $secondary;
   background-color: $termPrimary;
-  padding: $basePadding;
+  overflow-y: scroll;
 }
