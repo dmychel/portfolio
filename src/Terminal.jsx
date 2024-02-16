@@ -189,17 +189,20 @@ function App() {
       case "theme set alacritty":
         {
           console.log("theme set to Alacritty");
+          setOs("Linux");
         }
         break;
 
       case "theme set powershell":
         {
+          setOs("Windows");
           console.log("theme set to PowerShell");
         }
         break;
 
       case "theme set mac":
         {
+          setOs("Mac");
           console.log("theme set to Mac Terminal");
         }
         break;
