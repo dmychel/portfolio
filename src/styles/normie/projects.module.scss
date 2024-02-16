@@ -10,12 +10,14 @@
   max-width: $baseWidth;
   color: $normSecondary;
   text-align: left;
+  margin-bottom: 5%;
 }
 
 .title {
   display: flex;
   justify-content: center;
   width: $baseWidth;
+  text-align: center;
 }
 
 .projectWrapper {
@@ -39,10 +41,6 @@
   transition-duration: 0.25s;
   background-color: $cardPrimary;
   border: 2px solid;
-}
-
-.title {
-  text-align: center;
 }
 
 .project:hover {
@@ -91,11 +89,17 @@ a {
 
 @media screen and (max-width: 1246px) {
   .projectMaster {
-    min-height: 100%;
+    height: 100%;
   }
+
   .projectWrapper {
-    flex-direction: row;
+    justify-content: space-around;
     gap: $baseGap;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    margin-bottom: 5%;
   }
 
   .project {

@@ -7,9 +7,9 @@
 }
 
 .normieApp {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   background: $normPrimary;
   color: $normSecondary;
-  background-size: 400% 400%;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
