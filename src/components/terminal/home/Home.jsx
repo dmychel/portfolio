@@ -1,7 +1,6 @@
 import UserInfo from "./UserInfo";
 import Ascii from "./ascii/Ascii";
 import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
 
 import styles from "/src/styles/terminal/home.module.scss";
 
