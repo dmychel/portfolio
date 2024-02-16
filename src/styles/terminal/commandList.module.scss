@@ -1,47 +1,48 @@
-.command-list {
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.commandList {
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
 }
 
-.type-commands {
+.typeCommands {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin-bottom: 5%;
 }
 
-.type-commands span {
+.typeCommands span {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.75%;
 }
-.keyboard-shortcuts {
+.keyBoardShortcuts {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
 @media screen and (max-width: 840px) {
-  .type-commands {
+  .typeCommands {
     width: 100%;
   }
 
-  .keyboard-shortcuts {
+  .keyBoardShortcuts {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 616px) {
-  .type-commands {
+  .typeCommands {
     gap: 1em;
   }
 
-  .type-commands span {
+  .typeCommands span {
     gap: 0.5em;
   }
-
-  .type-commands .command {
+  .command {
     color: cyan;
   }
 }

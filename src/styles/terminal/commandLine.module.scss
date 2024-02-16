@@ -1,22 +1,24 @@
-.command-line {
-  padding-top: 0px;
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.commandLine {
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
-.command-line form {
+.commandLine form {
   display: flex;
   align-items: center;
 }
 
-.command-line input {
+.commandLine input {
   background-color: #070b1400;
   outline: none;
   border: none;
-  font-size: 1.5rem;
   color: #dbcc89;
 }
 
-.command-line form {
+.commandLine form {
   display: flex;
   gap: 1em;
   width: 100%;

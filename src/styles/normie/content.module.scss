@@ -1,0 +1,10 @@
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.contentMaster {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  height: 100%;
+  font-size: 2rem;
+}

@@ -3,14 +3,13 @@ import { useState, useEffect } from "react";
 
 // COMPONENTS
 import About from "/src/components/terminal/About";
-import CommandLine from "/src/components/terminal/CommandLine";
 import Help from "/src/components/terminal/Help";
 import Home from "/src/components/terminal/home/Home";
-import LoadingPage from "/src/components/terminal/LoadingPage";
 import Projects from "/src/components/terminal/Projects";
+import RenderTerminal from "./components/terminal/renders/RenderTerminal";
+import LoadingPage from "./components/terminal/LoadingPage";
 
 // STYLES
-import "/src/styles/terminal/terminal.scss";
 
 function App() {
   // useState
@@ -20,8 +19,7 @@ function App() {
   const [index, setIndex] = useState(0);
   const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState("");
-  const [uptime, setUptime] = useState(0);
-  const [Loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
 
   // list of cd commands for autocomplete
@@ -38,12 +36,6 @@ function App() {
   // all useEffect functions
 
   useEffect(() => {
-    setTimeout(() => {
-      setUptime(uptime + 1);
-    }, 1000);
-  });
-
-  useEffect(() => {
     console.log(navigator.userAgent);
     if (usersOS.includes("Windows"))
       setOs("Windows"),
@@ -58,15 +50,6 @@ function App() {
         (document.body.style.backgroundImage =
           "url('/assets/imgs/arch-background.png')");
   }, [usersOS]);
-
-  useEffect(() => {
-    if (Loading === true) return;
-    else {
-      console.log("window scroll run");
-      const termEL = document.getElementById("terminal");
-      termEL.scrollTo(0, termEL.scrollHeight);
-    }
-  }, [renderComp, Loading]);
 
   // EVENT HANDLERS
   const handleSubmit = (e) => {
@@ -213,26 +196,17 @@ function App() {
 
   return (
     <>
-      {Loading ? (
+      {loading ? (
         <LoadingPage os={os} setLoading={setLoading} />
       ) : (
-        <section className="terminal" id="terminal">
-          <section className="rendered-input">
-            {renderComp.map((comp) => {
-              const CompName = comp;
-              return (
-                <CompName key={crypto.randomUUID()} os={os} uptime={uptime} />
-              );
-            })}
-          </section>
-          <CommandLine
-            handleSubmit={handleSubmit}
-            handleKeyDown={handleKeyDown}
-            command={command}
-            setCommand={setCommand}
-            os={os}
-          />
-        </section>
+        <RenderTerminal
+          renderComp={renderComp}
+          os={os}
+          handleSubmit={handleSubmit}
+          handleKeyDown={handleKeyDown}
+          command={command}
+          setCommand={setCommand}
+        />
       )}
     </>
   );

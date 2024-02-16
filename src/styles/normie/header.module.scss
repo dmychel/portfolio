@@ -1,24 +1,25 @@
-.header-master {
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.headerMaster {
   background-color: rgba(2, 90, 89, 0.63);
-  padding: 20px;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
+  padding: 30px;
   top: 0;
+  position: sticky;
+  z-index: 2;
 }
 
-.header-master h1 {
+.headerMaster h1 {
   cursor: pointer;
-  color: white;
+  width: 100%;
 }
 
-.header-master a:link, .header-master a:visited {
-  color: white;
+a {
   text-decoration: none;
 }
 
 @media screen and (max-width: 829px) {
-  .header-master {
+  .headerMaster {
     width: 100%;
     display: flex;
     justify-content: center;

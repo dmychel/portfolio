@@ -1,8 +1,11 @@
-.ascii-wrapper {
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.asciiWrapper {
   display: flex;
 }
 
-.ascii-art {
+.asciiArt {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,4 +1,4 @@
-import "/src/styles/terminal/command.css";
+import styles from "/src/styles/terminal/commandLine.module.scss";
 import PropTypes from "prop-types";
 
 const CommandLine = ({
@@ -9,7 +9,7 @@ const CommandLine = ({
   os,
 }) => {
   return (
-    <section className="command-line">
+    <section className={styles.commandLine}>
       <form onSubmit={handleSubmit}>
         <label>[visitor@{os} ~]$</label>
         <input

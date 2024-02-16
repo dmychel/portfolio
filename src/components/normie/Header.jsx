@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import "/src/styles/normie/header.css";
+import styles from "/src/styles/normie/header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = ({ setComponent }) => {
   return (
-    <section className="header-master">
+    <section className={styles.headerMaster}>
       <h1 onClick={() => setComponent(null)}>
         <Link to="/">Dylon Crowley-Perez</Link>
       </h1>

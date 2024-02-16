@@ -1,16 +1,16 @@
-import "/src/styles/normie/about.css";
+import styles from "/src/styles/normie/about.module.scss";
 
 const About = () => {
   return (
-    <section className="about-master">
-      <div className="about">
-        <div className="left-about">
+    <section className={styles.aboutMaster}>
+      <div className={styles.about}>
+        <div className={styles.leftAbout}>
           <h1>Whats up! My name is Dylon</h1>
           <p>
             A self taught developer with a burning passion to learn and create.
           </p>
         </div>
-        <div className="right-about">
+        <div className={styles.rightAbout}>
           <img src="/assets/imgs/hero.JPG" alt="hero image" />
         </div>
       </div>

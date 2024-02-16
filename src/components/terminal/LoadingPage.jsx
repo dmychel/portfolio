@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import PropTypes from "prop-types";
-import "/src/styles/terminal/loading.css";
+import styles from "/src/styles/terminal/loading.module.scss";
 
 const Loading = ({ os, setLoading }) => {
   setTimeout(() => {
@@ -74,7 +74,7 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  return <section className="loading">{determineMessage()}</section>;
+  return <section className={styles.loading}>{determineMessage()}</section>;
 };
 
 Loading.propTypes = {

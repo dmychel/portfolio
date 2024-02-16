@@ -1,0 +1,15 @@
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.normieApp {
+  display: flex;
+  flex-direction: column;
+  background: $normPrimary;
+  color: $normSecondary;
+  overflow-x: hidden;
+}
