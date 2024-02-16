@@ -1,4 +1,4 @@
-import styles from "/src/styles/terminal/command.module.scss";
+import styles from "/src/styles/terminal/commandLine.module.scss";
 import PropTypes from "prop-types";
 
 const CommandLine = ({
