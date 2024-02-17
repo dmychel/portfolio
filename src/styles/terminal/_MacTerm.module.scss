@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   color: $secondary;
+  height: $baseTermHeight;
+  width: $baseTermWidth;
   background-color: rgba(255, 255, 255, 0.815);
   border: 1.75px solid black;
   border-radius: 8px;
@@ -47,4 +49,8 @@ nav span {
 
 .max {
   background-color: green;
+}
+
+.terminal input {
+  color: black;
 }
