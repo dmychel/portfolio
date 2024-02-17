@@ -9,6 +9,7 @@ import Projects from "/src/components/terminal/Projects";
 import RenderTerminal from "./components/terminal/renders/RenderTerminal";
 import LoadingPage from "./components/terminal/LoadingPage";
 import PrintTheme from "./components/terminal/renders/PrintTheme";
+import ThemeSet from "./components/terminal/renders/ThemeSet";
 
 // STYLES
 
@@ -186,6 +187,12 @@ function App() {
         );
         break;
       }
+
+      case "theme set":
+        {
+          setRenderComp([...renderComp, ThemeSet]);
+        }
+        break;
 
       case "theme set alacritty":
         {
