@@ -22,7 +22,7 @@
 }
 
 .userInfo p {
-  color: cyan;
+  color: rgb(168, 168, 4);
 }
 
 @media screen and (max-width: 938px) {
@@ -36,7 +36,6 @@
   .userInfo span {
     justify-content: space-between;
   }
-
 }
 
 @media screen and (max-width: 610px) {
