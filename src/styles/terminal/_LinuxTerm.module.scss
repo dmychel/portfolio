@@ -8,3 +8,8 @@
   background-color: $termPrimary;
   overflow-y: scroll;
 }
+
+.terminal input {
+  border: 1px solid $secondary;
+  color: $secondary;
+}

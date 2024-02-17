@@ -21,21 +21,28 @@ const CommandList = () => {
           <p>Normie view</p>
         </span>
         <span>
+          <p className={styles.command}>&apos;theme set&apos;</p>
+          <p>Change terminal style</p>
+        </span>
+        <span>
           <p className={styles.command}>&apos;clear&apos;</p>
           <p>Clear the terminal</p>
         </span>
       </div>
       <div className={styles.keyboardShortcuts}>
         <div>
-          Press <span style={{ color: "cyan" }}>[Tab]</span> to auto complete
+          Press <span style={{ color: "rgb(153, 153, 0)" }}>[Tab]</span> to auto
+          complete
         </div>
         <div>
-          Press <span style={{ color: "cyan" }}>[Ctrl] + [Bck]</span> to clear
-          input
+          Press{" "}
+          <span style={{ color: "rgb(153, 153, 0)" }}>[Ctrl] + [Bck]</span> to
+          clear input
         </div>
         <div>
-          Press <span style={{ color: "cyan" }}>[&#8593;] [&darr;]</span> to
-          cycle through command history
+          Press{" "}
+          <span style={{ color: "rgb(153, 153, 0)" }}>[&#8593;] [&darr;]</span>{" "}
+          to cycle through command history
         </div>
       </div>
     </section>
