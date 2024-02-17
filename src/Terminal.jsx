@@ -209,7 +209,7 @@ function App() {
         break;
 
       default: {
-        console.log(
+        alert(
           `'${input}' is not a command. Type 'help' for a list of commands`
         );
       }
