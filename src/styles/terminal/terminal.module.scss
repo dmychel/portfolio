@@ -15,3 +15,9 @@
 .content {
   padding: $basePadding;
 }
+
+@media screen and (max-width: 660px) {
+  .content {
+    padding: 10px;
+  }
+}
