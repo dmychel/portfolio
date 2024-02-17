@@ -84,6 +84,7 @@ function App() {
     if (command.includes("ex")) setCommand("exit");
     if (command.includes("cl")) setCommand("clear");
     if (command.includes("he")) setCommand("help");
+    else return;
   };
 
   // COMMAND AUTOCOMPLETE/HISTORY FUNCTIONS
@@ -112,7 +113,7 @@ function App() {
     if (cdIndex === 6) {
       const input = arr.at(0);
       setCommand("cd " + input);
-      setCdIndex(1);
+      setCdIndex(0);
     } else {
       const input = arr.at(cdIndex + 1);
       setCommand("cd " + input);
