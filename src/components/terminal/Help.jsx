@@ -21,6 +21,10 @@ const CommandList = () => {
           <p>Normie view</p>
         </span>
         <span>
+          <p className={styles.command}>&apos;theme set&apos;</p>
+          <p>Change terminal style</p>
+        </span>
+        <span>
           <p className={styles.command}>&apos;clear&apos;</p>
           <p>Clear the terminal</p>
         </span>
