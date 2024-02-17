@@ -15,11 +15,47 @@
   background-color: #070b1400;
   outline: none;
   border: none;
-  color: #dbcc89;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  padding: 5px;
 }
 
 .commandLine form {
   display: flex;
   gap: 1em;
   width: 100%;
+}
+
+.commandMac {
+  background-color: #070b1400;
+  outline: none;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  padding: 5px;
+  color: black;
+}
+
+.commandMac form {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+}
+
+.commandMac form {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+}
+
+.commandMacs input {
+  background-color: #070b1400;
+  outline: none;
+  border: none;
+  color: black;
+  border: 1px solid white;
+  width: 100%;
+  padding: 5px;
 }
