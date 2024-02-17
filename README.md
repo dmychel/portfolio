@@ -29,8 +29,10 @@ Version 1.1.0 includes everything from the previous version with the addition of
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" align="left" alt="Javascript" width="30px" style="padding-right:10px;"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" align="left" alt="react" width="30px" style="padding-right:10px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" align="left" alt="SASS" width="30px" style="padding-right:10px;">
 <img src="https://raw.githubusercontent.com/vitejs/vite/5684fcd8d27110d098b3e1c19d851f44251588f1/docs/public/logo.svg" align="left" alt="vite" width="30px" style="padding-right:10px;">
 <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" align="left" alt="netlify" width="30px" style="padding-right:10px;">
+
 
 <br></br>
 
