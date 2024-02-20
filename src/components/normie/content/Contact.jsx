@@ -11,7 +11,8 @@ const Contact = () => {
           <p>
             Here are some of the ways you can reach out. I am most likely to see
             and respond to any messages sent to my email,
-            <span> dyloncrowley86@gmail.com.</span>
+            <br />
+            <span>Hey@DylonCrowley.tech</span>
           </p>
         </div>
         <div className={styles.contactIMG}>
