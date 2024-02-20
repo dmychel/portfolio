@@ -23,7 +23,7 @@ const Loading = ({ os, setLoading }) => {
           1000,
           `you're using windows..`,
           1000,
-          `try Linux :D`,
+          `you're using windows...`,
           1000,
           "migrating you to the terminal now",
         ]}
@@ -63,7 +63,7 @@ const Loading = ({ os, setLoading }) => {
           500,
           `you're using Linux..`,
           800,
-          `Linux the master race :)`,
+          `you're using Linux...`,
           500,
           `Welcome friend`,
           1000,
