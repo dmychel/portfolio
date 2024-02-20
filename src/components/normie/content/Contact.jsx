@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
         </div>
         <div className={styles.contactIMG}>
-          <a href="mailto:dyloncrowley86@gmail.com">
+          <a href="mailto:hey@dyloncrowley.tech">
             <img
               src="/assets/icons/mail.png"
               alt="Email"
