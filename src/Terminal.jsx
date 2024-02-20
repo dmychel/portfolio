@@ -216,6 +216,11 @@ function App() {
         }
         break;
 
+      case "resume":
+        {
+          window.open("/assets/imgs/resume.pdf", "_blank");
+        }
+        break;
       default: {
         alert(
           `'${input}' is not a command. Type 'help' for a list of commands`
