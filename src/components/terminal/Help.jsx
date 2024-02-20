@@ -13,6 +13,10 @@ const CommandList = () => {
           <p>A reason for you to hire me</p>
         </span>
         <span>
+          <p className={styles.command}>&apos;resume&apos;</p>
+          <p>View my resume</p>
+        </span>
+        <span>
           <p className={styles.command}>&apos;cd&apos;</p>
           <p>Change directory</p>
         </span>
