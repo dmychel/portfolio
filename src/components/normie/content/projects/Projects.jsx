@@ -43,8 +43,8 @@ const Projects = () => {
     {
       name: "Node Message Board",
       background: "/assets/imgs/message-background.jpg",
-      link: "https://cv-maker-webapp.netlify.app/",
-      repo: "https://github.com/dmychel/cv-maker",
+      link: "https://message-board-apba.onrender.com/",
+      repo: "https://github.com/dmychel/message-board",
       description: "A basic node application that displays messages from online users. This application leverages mutlitple technogolies such as: MongoDB, Express, and more. This was a exciting project to begin my backend journey.",
       tools: [
         {
