@@ -84,6 +84,7 @@ function App() {
     if (command.includes("ex")) setCommand("exit");
     if (command.includes("cl")) setCommand("clear");
     if (command.includes("he")) setCommand("help");
+    if (command.includes("res")) setCommand("resume");
     else return;
   };
 
