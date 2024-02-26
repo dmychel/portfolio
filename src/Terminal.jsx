@@ -27,6 +27,7 @@ function App() {
   // list of cd commands for autocomplete
   const cdCommands = [
     "windfall-matchup",
+    "message-board",
     "video-game-archive",
     "cv-maker",
     "email",
@@ -111,7 +112,7 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    if (cdIndex === 6) {
+    if (cdIndex === 7) {
       const input = arr.at(0);
       setCommand("cd " + input);
       setCdIndex(0);
@@ -157,7 +158,7 @@ function App() {
         break;
       }
 
-      case "cd message-board": {
+      case "cd node-message-board": {
         window.open("https://message-board-apba.onrender.com/", "_blank");
         break;
       }
