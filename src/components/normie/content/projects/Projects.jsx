@@ -45,7 +45,7 @@ const Projects = () => {
       background: "/assets/imgs/message-background.jpg",
       link: "https://message-board-apba.onrender.com/",
       repo: "https://github.com/dmychel/message-board",
-      description: "A basic node application that displays messages from online users. This application leverages mutlitple technogolies such as: MongoDB, Express, and more. This was a exciting project to begin my backend journey.",
+      description: "A basic node application that displays messages from online users. This application leverages multiple technologies such as: MongoDB, Express, and more. This was a exciting project to begin my back-end journey.",
       tools: [
         {
           name: "Javascript",
