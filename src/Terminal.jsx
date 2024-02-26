@@ -157,6 +157,11 @@ function App() {
         break;
       }
 
+      case "cd message-board": {
+        window.open("https://message-board-apba.onrender.com/", "_blank");
+        break;
+      }
+
       case "cd video-game-archive": {
         window.open("https://dmychel.github.io/game-archive/", "_blank");
         break;
