@@ -20,14 +20,6 @@ const Projects = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-        {
-          name: "HTML",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        },
-        {
-          name: "CSS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
       ],
     },
     {
@@ -46,14 +38,26 @@ const Projects = () => {
           name: "Webpack",
           img: "https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/icon.svg",
         },
+      ],
+    },
+    {
+      name: "Node Message Board",
+      background: "/assets/imgs/message-background.jpg",
+      link: "https://cv-maker-webapp.netlify.app/",
+      repo: "https://github.com/dmychel/cv-maker",
+      description: "A basic node application that displays messages from online users. This application leverages mutlitple technogolies such as: MongoDB, Express, and more. This was a exciting project to begin my backend journey.",
+      tools: [
         {
-          name: "HTML",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         },
+        { name: "EJS", img: "/assets/icons/ejs.png" },
         {
-          name: "CSS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          name: "Node.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
         },
+        { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+     
       ],
     },
     {
@@ -72,14 +76,6 @@ const Projects = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-        {
-          name: "HTML",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        },
-        {
-          name: "CSS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
       ],
     },
     {
@@ -99,14 +95,6 @@ const Projects = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-        {
-          name: "HTML",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        },
-        {
-          name: "CSS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
       ],
     },
   ];
