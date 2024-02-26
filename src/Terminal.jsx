@@ -27,7 +27,7 @@ function App() {
   // list of cd commands for autocomplete
   const cdCommands = [
     "windfall-matchup",
-    "message-board",
+    "node-message-board",
     "video-game-archive",
     "cv-maker",
     "email",
