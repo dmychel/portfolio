@@ -45,7 +45,8 @@ const Projects = () => {
       background: "/assets/imgs/message-background.jpg",
       link: "https://message-board-apba.onrender.com/",
       repo: "https://github.com/dmychel/message-board",
-      description: "A basic node application that displays messages from online users. This application leverages multiple technologies such as: MongoDB, Express, and more. This was a exciting project to begin my back-end journey.",
+      description:
+        "A basic dynamic node application that displays messages from online users. This was a exciting project to begin my back-end journey.",
       tools: [
         {
           name: "Javascript",
@@ -56,8 +57,10 @@ const Projects = () => {
           name: "Node.js",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
         },
-        { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-     
+        {
+          name: "MongoDB",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        },
       ],
     },
     {
