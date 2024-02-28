@@ -2,8 +2,10 @@
 @import "/src/styles/base/colors";
 
 .commandLine {
+  display: flex;
   padding-top: 10px;
   padding-bottom: 0px;
+  justify-self: flex-end;
   width: 100%;
 }
 
