@@ -2,6 +2,7 @@
 @import "/src/styles/base/colors";
 
 .terminal {
+    position: relative;
   height: $baseTermHeight;
   width: $baseTermWidth;
   color: white;
@@ -10,6 +11,5 @@
 }
 
 .terminal input {
-  border: 1px solid $secondary;
-  color: white;
+  color: white
 }
