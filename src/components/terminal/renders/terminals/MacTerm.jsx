@@ -27,7 +27,7 @@ const MacTerm = ({
         </nav>
         <div className={styles.title}>
           <img src="" alt="" />
-          <span>Dogmas PowerShell</span>
+          <span>Pear Terminal</span>
         </div>
       </div>
       <RenderContent
