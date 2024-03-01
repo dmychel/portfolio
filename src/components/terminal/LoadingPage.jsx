@@ -19,11 +19,11 @@ const Loading = ({ os, setLoading }) => {
         sequence={[
           "detecting operating system...",
           1000,
-          "oh no..",
+          "oh..",
           1000,
           `you're using windows..`,
           1000,
-          `at least it's not apple ;)`,
+          `you're using windows...`,
           1000,
           "migrating you to the terminal now",
         ]}
@@ -63,7 +63,7 @@ const Loading = ({ os, setLoading }) => {
           500,
           `you're using Linux..`,
           800,
-          `Linux the master race :)`,
+          `you're using Linux...`,
           500,
           `Welcome friend`,
           1000,

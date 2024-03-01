@@ -27,6 +27,7 @@ function App() {
   // list of cd commands for autocomplete
   const cdCommands = [
     "windfall-matchup",
+    "node-message-board",
     "video-game-archive",
     "cv-maker",
     "email",
@@ -84,6 +85,7 @@ function App() {
     if (command.includes("ex")) setCommand("exit");
     if (command.includes("cl")) setCommand("clear");
     if (command.includes("he")) setCommand("help");
+    if (command.includes("res")) setCommand("resume");
     else return;
   };
 
@@ -110,7 +112,7 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    if (cdIndex === 6) {
+    if (cdIndex === 7) {
       const input = arr.at(0);
       setCommand("cd " + input);
       setCdIndex(0);
@@ -153,6 +155,11 @@ function App() {
 
       case "cd windfall-matchup": {
         window.open("https://windfall-matchup.netlify.app/", "_blank");
+        break;
+      }
+
+      case "cd node-message-board": {
+        window.open("https://message-board-apba.onrender.com/", "_blank");
         break;
       }
 
@@ -216,6 +223,11 @@ function App() {
         }
         break;
 
+      case "resume":
+        {
+          window.open("/assets/imgs/resume.pdf", "_blank");
+        }
+        break;
       default: {
         alert(
           `'${input}' is not a command. Type 'help' for a list of commands`

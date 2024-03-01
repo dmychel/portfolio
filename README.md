@@ -1,18 +1,20 @@
 # My Portfolio!
 
-I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.netlify.app'>Click Me</a>
+I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.dev/'>Click Me</a>
 
 ## Why a terminal view?
 
 The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure if I would've ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
 
-## Version 1.2.0 (Current)
+## Version 1.2.1 (Current)
 
 This version includes everything from the previous version excpet for the uptime tracker. 
-<br></br>
+<br/>
 Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
-<br></br>
+<br/>
 Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
+<br/>
+2.1 Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version. 
 
 ## Version 1.0.0
 
@@ -27,8 +29,10 @@ Version 1.1.0 includes everything from the previous version with the addition of
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" align="left" alt="Javascript" width="30px" style="padding-right:10px;"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" align="left" alt="react" width="30px" style="padding-right:10px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" align="left" alt="SASS" width="30px" style="padding-right:10px;">
 <img src="https://raw.githubusercontent.com/vitejs/vite/5684fcd8d27110d098b3e1c19d851f44251588f1/docs/public/logo.svg" align="left" alt="vite" width="30px" style="padding-right:10px;">
 <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" align="left" alt="netlify" width="30px" style="padding-right:10px;">
+
 
 <br></br>
 

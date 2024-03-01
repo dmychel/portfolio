@@ -11,11 +11,12 @@ const Contact = () => {
           <p>
             Here are some of the ways you can reach out. I am most likely to see
             and respond to any messages sent to my email,
-            <span> dyloncrowley86@gmail.com.</span>
+            <br />
+            <span>Hey@DylonCrowley.tech</span>
           </p>
         </div>
         <div className={styles.contactIMG}>
-          <a href="mailto:dyloncrowley86@gmail.com">
+          <a href="mailto:hey@dyloncrowley.tech">
             <img
               src="/assets/icons/mail.png"
               alt="Email"
@@ -32,6 +33,9 @@ const Contact = () => {
           </a>
           <a href="https://github.com/dmychel" target="_blank" rel="noreferrer">
             <img src="/assets/icons/github.png" alt="Github" />
+          </a>
+          <a href="/assets/imgs/resume.pdf" target="_blank" rel="noreferrer">
+            <img src="/assets/icons/resume.png" alt="Resume" />
           </a>
         </div>
       </div>
