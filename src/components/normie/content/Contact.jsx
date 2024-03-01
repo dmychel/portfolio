@@ -34,6 +34,9 @@ const Contact = () => {
           <a href="https://github.com/dmychel" target="_blank" rel="noreferrer">
             <img src="/assets/icons/github.png" alt="Github" />
           </a>
+          <a href="/assets/imgs/resume.pdf" target="_blank" rel="noreferrer">
+            <img src="/assets/icons/resume.png" alt="Resume" />
+          </a>
         </div>
       </div>
     </section>
