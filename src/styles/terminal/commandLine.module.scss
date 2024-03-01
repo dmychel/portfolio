@@ -2,10 +2,8 @@
 @import "/src/styles/base/colors";
 
 .commandLine {
-  display: flex;
   padding-top: 10px;
   padding-bottom: 0px;
-  justify-self: flex-end;
   width: 100%;
 }
 
@@ -19,14 +17,11 @@
   outline: none;
   border: none;
   color: white;
-  border: 1px solid white;
-  width: 50%;
-  padding: 5px;
+  width: 100%;
 }
 
 .commandLine form {
   display: flex;
-  gap: 1em;
   width: 100%;
 }
 
@@ -56,7 +51,6 @@
 .commandMacs input {
   background-color: #070b1400;
   outline: none;
-  border: none;
   color: black;
   border: 1px solid white;
   width: 50%;
