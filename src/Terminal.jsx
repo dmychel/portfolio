@@ -39,19 +39,26 @@ function App() {
   // all useEffect functions
 
   useEffect(() => {
-    console.log(navigator.userAgent);
-    if (usersOS.includes("Windows"))
-      setOs("Windows"),
-        (document.body.style.backgroundImage =
-          "url('/assets/imgs/windows-background.jpg')");
-    if (usersOS.includes("Mac"))
-      setOs("Mac"),
-        (document.body.style.backgroundImage =
-          "url('/assets/imgs/apple-background.jpg')");
-    if (usersOS.includes("X11" || "Linux"))
-      setOs("Linux"),
-        (document.body.style.backgroundImage =
-          "url('/assets/imgs/arch-background.png')");
+    if (usersOS.includes("Windows")) {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/windows-background.jpg')";
+      return setOs("Windows");
+    }
+
+    if (usersOS.includes("Mac")) {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/apple-background.jpg')";
+      return setOs("Mac");
+    }
+
+    if (usersOS.includes("X11" || "Linux")) {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/arch-background.png')";
+      setOs("Linux");
+    } else {
+      document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
+      return setOs("Default");
+    }
   }, [usersOS]);
 
   // EVENT HANDLERS
@@ -199,6 +206,13 @@ function App() {
       case "theme set":
         {
           setRenderComp([...renderComp, ThemeSet]);
+        }
+        break;
+
+      case "theme set default":
+        {
+          setOs("Default");
+          setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 

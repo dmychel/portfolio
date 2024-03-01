@@ -2,13 +2,14 @@
 @import "/src/styles/base/colors";
 
 .terminal {
+    position: relative;
   height: $baseTermHeight;
   width: $baseTermWidth;
-  color: $secondary;
+  color: white;
   background-color: $termPrimary;
   overflow-y: scroll;
 }
 
 .terminal input {
-  color: $secondary;
+  color: white
 }

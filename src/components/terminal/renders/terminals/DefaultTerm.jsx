@@ -1,9 +1,10 @@
 import RenderContent from "../RenderContent";
-import { useEffect } from "react";
 import PropTypes from "prop-types";
-import styles from "/src/styles/terminal/_MacTerm.module.scss";
+import { useEffect } from "react";
 
-const MacTerm = ({
+import styles from "/src/styles/terminal/_DefaultTerm.module.scss";
+
+const DefaultTerm = ({
   renderComp,
   os,
   handleSubmit,
@@ -19,17 +20,6 @@ const MacTerm = ({
 
   return (
     <div className={styles.terminal} id="terminal">
-      <div className={styles.nav}>
-        <nav>
-          <span className={styles.exit}></span>
-          <span className={styles.min}></span>
-          <span className={styles.max}></span>
-        </nav>
-        <div className={styles.title}>
-          <img src="" alt="" />
-          <span>Pear Terminal</span>
-        </div>
-      </div>
       <RenderContent
         renderComp={renderComp}
         os={os}
@@ -42,7 +32,7 @@ const MacTerm = ({
   );
 };
 
-MacTerm.propTypes = {
+DefaultTerm.propTypes = {
   renderComp: PropTypes.array,
   os: PropTypes.string,
   handleSubmit: PropTypes.func,
@@ -51,4 +41,4 @@ MacTerm.propTypes = {
   setCommand: PropTypes.func,
 };
 
-export default MacTerm;
+export default DefaultTerm;

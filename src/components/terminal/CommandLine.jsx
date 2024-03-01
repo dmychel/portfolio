@@ -6,12 +6,11 @@ const CommandLine = ({
   handleKeyDown,
   command,
   setCommand,
-  os,
 }) => {
   return (
     <section className={styles.commandLine}>
       <form onSubmit={handleSubmit}>
-        <label>[visitor@{os} ~]$</label>
+        <label>{">"}</label>
         <input
           type="text"
           value={command}

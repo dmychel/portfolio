@@ -11,6 +11,9 @@ const Loading = ({ os, setLoading }) => {
     if (os === "Linux") return linuxMessage();
     if (os === "Windows") return windowsMessage();
     if (os === "Mac") return appleMessage();
+    else {
+      return defaultMessage();
+    }
   };
 
   const windowsMessage = () => {
@@ -70,6 +73,25 @@ const Loading = ({ os, setLoading }) => {
           "migrating you to the terminal now",
         ]}
         speed={80}
+      />
+    );
+  };
+
+  const defaultMessage = () => {
+    return (
+      <TypeAnimation
+        sequence={[
+          "detecting operating system...",
+          1000,
+          "oh..",
+          1000,
+          `I don't recognize this.`,
+          1000,
+          `are you on mobile..?`,
+          1000,
+          "migrating you to the terminal now",
+        ]}
+        speed={75}
       />
     );
   };

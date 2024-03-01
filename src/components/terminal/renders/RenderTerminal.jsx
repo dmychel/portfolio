@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import LinuxTerm from "./terminals/LinuxTerm";
 import PowerShell from "./terminals/PowerShell";
 import MacTerm from "./terminals/MacTerm";
+import DefaultTerm from "./terminals/DefaultTerm";
 
 const RenderTerminal = ({
   renderComp,
@@ -45,7 +46,18 @@ const RenderTerminal = ({
           setCommand={setCommand}
         />
       );
-    else return;
+    else {
+      return (
+        <DefaultTerm
+          renderComp={renderComp}
+          os={os}
+          handleSubmit={handleSubmit}
+          handleKeyDown={handleKeyDown}
+          command={command}
+          setCommand={setCommand}
+        />
+      );
+    }
   };
   return <section>{dynamicTerm()}</section>;
 };
