@@ -82,6 +82,29 @@ const Projects = () => {
       ],
     },
     {
+      name: "Terminal",
+      background: "/assets/imgs/terminal-preview.jpg",
+      link: "/terminal",
+      repo: "https://github.com/dmychel/portfolio",
+      description:
+        "A unique twist on my resume to show my passion for Linux and tech.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: 'SASS',
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+        }
+      ],
+    },
+    {
       name: "Serena Shopping",
       background: "/assets/imgs/serena-preview.png",
       link: "https://serena-shop.netlify.app/",
