@@ -1,3 +1,7 @@
+// imports
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
 .modal {
     z-index: 100;
     right: 0;
@@ -29,4 +33,17 @@
         max-width: 50%;
     }
   }
+
+// link styling
+a {
+    color: $normSecondary;
   
+    &:hover {
+      transform: scale(1.005);
+      color: purple;
+    }
+  
+    &:visited {
+      color: $normSecondary;
+    }
+  }
