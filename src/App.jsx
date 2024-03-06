@@ -8,7 +8,7 @@ const App = () => {
         <p>Select your path:</p>
       </div>
       <div className="options">
-        <Link to="normie">Normie View</Link>
+        <Link to="normie">Normal View</Link>
         <Link to="terminal">Developer View</Link>
       </div>
     </section>
