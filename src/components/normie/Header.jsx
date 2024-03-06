@@ -6,7 +6,7 @@ const Header = ({ setComponent }) => {
   return (
     <section className={styles.headerMaster}>
       <h1 onClick={() => setComponent(null)}>
-        <Link to="/">Dylon Crowley-Perez</Link>
+        <Link to='/menu'>Dylon Crowley-Perez</Link>
       </h1>
     </section>
   );
