@@ -1,9 +1,15 @@
 import styles from '/src/styles/normie/modal.module.scss'
 
 const Modal = () => {
+    const handleClick = () => {
+        console.log('clicked')
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none'
+    }
+
     return (
-        <div className={styles.modal}>
-            <span className={styles.exit}>&#10006;</span>
+        <div className={styles.modal} id='modal'>
+            <span className={styles.exit} onClick={handleClick}>&#10006;</span>
             <p>Welcome!</p>
             <p>
                 I&apos;d recommend trying out developer view by <span>clicking here</span>, or by navigating to the title in the header of the page.
