@@ -9,36 +9,39 @@ The simple reason - I'm not great at UI design. Being color blind it can be diff
 ## Version 1.3.0 (Current)
 
 This version includes everything from the previous version.
+This version includes everything from the previous version excpet for the uptime tracker.
+
 <br/>
 
 #### 1.3 additions: 
 - When the user changes there terminal theme, the background will also change based on the theme the user selects
 - Added a mobile terminal theme
+
+Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
+
 <br/>
 
 ### Bug fixes: 
 - Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
 
-## Version 1.0.0
+Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
-Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
+<br/>
+
+2.1 Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
 
 ## Version 1.1.0
 
 Version 1.1.0 includes everything from the previous version with the addition of the terminal view changing the page background based on the users operating system. There has also been a few minor styling changes to make the terminal illusion more believable.
 
-## Version 1.2.1 
+## Version 1.0.0
 
-This version includes everything from the previous version excpet for the uptime tracker. 
-<br/>
-#### 2.1 addtions: 
+Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
-- After the terminal detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
-- User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version. 
-<br/>
-#### Other: 
-This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
-<br/>
+
+## Version 1.1.0
+
+Version 1.1.0 includes everything from the previous version with the addition of the terminal view changing the page background based on the users operating system. There has also been a few minor styling changes to make the terminal illusion more believable.
 
 ## Built with
 
@@ -47,7 +50,6 @@ This projects' styling has been completely migrated to scss. While trying to add
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" align="left" alt="SASS" width="30px" style="padding-right:10px;">
 <img src="https://raw.githubusercontent.com/vitejs/vite/5684fcd8d27110d098b3e1c19d851f44251588f1/docs/public/logo.svg" align="left" alt="vite" width="30px" style="padding-right:10px;">
 <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" align="left" alt="netlify" width="30px" style="padding-right:10px;">
-
 
 <br></br>
 
