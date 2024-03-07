@@ -87,7 +87,7 @@ const Projects = () => {
       link: "/terminal",
       repo: "https://github.com/dmychel/portfolio",
       description:
-        "A unique twist on my resume to show my passion for Linux and tech.",
+        "A unique twist on my portfolio to show my passion for Linux and tech.",
       tools: [
         {
           name: "Javascript",
