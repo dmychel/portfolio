@@ -54,7 +54,7 @@
 .project:hover {
   transition-duration: 0.25s;
   transform: perspective(2000px) rotateX(-3deg) scale(1.1);
-  filter: drop-shadow(0 -2mm 1mm rgb(3, 181, 187));
+  // filter: drop-shadow(0 -2mm 1mm rgb(3, 181, 187));
 }
 
 .projectBackground {
@@ -91,10 +91,6 @@
   width: auto;
 }
 
-// links
-a {
-  text-decoration: underline;
-}
 
 @media screen and (max-width: 1246px) {
   .projectMaster {

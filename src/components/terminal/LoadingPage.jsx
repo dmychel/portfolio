@@ -8,13 +8,29 @@ const Loading = ({ os, setLoading }) => {
   }, 12000);
 
   const determineMessage = () => {
-    if (os === "Linux") return linuxMessage();
-    if (os === "Windows") return windowsMessage();
-    if (os === "Mac") return appleMessage();
-    else {
-      return defaultMessage();
+    if (os === "Linux") {
+      console.log('Linux')
+      return linuxMessage()
     }
-  };
+
+    if (os === "Windows") {
+      console.log('Windows')
+      return windowsMessage()
+    }
+
+    if (os === "Mac") {
+      console.log('Mac')
+      return appleMessage()
+    }
+
+    if (os === 'mobile') {
+      console.log('mobile')
+      return mobileMessage()
+    }
+    else {
+      return
+    }
+  }
 
   const windowsMessage = () => {
     return (
@@ -77,7 +93,7 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  const defaultMessage = () => {
+  const mobileMessage = () => {
     return (
       <TypeAnimation
         sequence={[
@@ -96,8 +112,16 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  return <section className={styles.loading}>{determineMessage()}</section>;
+  return (
+    <section className={styles.loading} > {determineMessage()}</section >
+  )
+
 };
+
+
+
+
+
 
 Loading.propTypes = {
   os: PropTypes.string,
