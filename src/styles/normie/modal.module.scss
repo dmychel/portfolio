@@ -43,14 +43,5 @@
 
 // link styling
 a {
-    color: $normSecondary;
-  
-    &:hover {
-      transform: scale(1.005);
-      color: purple;
-    }
-  
-    &:visited {
-      color: $normSecondary;
-    }
-  }
+    text-decoration: underline;
+}

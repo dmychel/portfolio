@@ -58,14 +58,16 @@ body {
 a {
   color: $normSecondary;
 
-  &:hover {
-    transform: scale(1.005);
-    color: purple;
-  }
-
   &:visited {
     color: $normSecondary;
   }
+  
+  &:hover {
+    transform: scale(1.005);
+    color: rgb(0, 77, 0)
+  }
+
+
 }
 
 @media screen and (max-width: 1000px) {
