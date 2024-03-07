@@ -4,44 +4,39 @@ I think it's pretty cool, you should check it out here => <a href='https://dylon
 
 ## Why a terminal view?
 
-The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure I would have ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
+The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure if I would've ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
 
 ## Version 1.3.0 (Current)
 
 This version includes everything from the previous version.
-This version includes everything from the previous version excpet for the uptime tracker.
 
-<br/>
+Two viewing modes: Normal view and Developer view. Normal view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
-#### 1.3 additions: 
-- When the user changes there terminal theme, the background will also change based on the theme the user selects
+#### 1.3 additions:
+- When the user changes their terminal theme, the background will also change based on the theme the user selects
 - Added a mobile terminal theme
 
-Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
-
-<br/>
-
-### Bug fixes: 
+#### Bug fixes:
 - Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
-
-Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
-
-<br/>
-
-2.1 Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
-
-## Version 1.1.0
-
-Version 1.1.0 includes everything from the previous version with the addition of the terminal view changing the page background based on the users operating system. There has also been a few minor styling changes to make the terminal illusion more believable.
 
 ## Version 1.0.0
 
 Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
-
 ## Version 1.1.0
 
 Version 1.1.0 includes everything from the previous version with the addition of the terminal view changing the page background based on the users operating system. There has also been a few minor styling changes to make the terminal illusion more believable.
+
+## Version 1.2.1
+
+This version includes everything from the previous version except for the uptime tracker.
+
+#### 2.1 additions: 
+-  After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
+-  User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
+
+#### Other: 
+-  This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
 ## Built with
 
