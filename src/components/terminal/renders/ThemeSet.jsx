@@ -5,8 +5,12 @@ const ThemeSet = () => {
     <div className={styles.themeSet}>
       <span>
         Theme options:
+        <br />
+        <br />
         <p>&apos;Alacritty&apos;</p>
+        <br />
         <p>&apos;PowerShell&apos;</p>
+        <br />
         <p>&apos;Mac&apos;</p>
       </span>
       <br />
