@@ -9,7 +9,7 @@ const UserInfo = ({ os }) => {
           OS: <p>{os}</p>
         </span>
         <span>
-          Kernal: <p>1.3.0-lts</p>
+          Kernal: <p>1.3.0 rolling</p>
         </span>
         <span>
           Packages: <p>351 packages audited (npm)</p>

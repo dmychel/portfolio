@@ -1,0 +1,47 @@
+// imports
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.modal {
+    z-index: 100;
+    right: 0;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.404);
+    max-width: 15%;
+    padding: 20px;
+    
+}
+
+.exit {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1248px) {
+  .modal { 
+    max-width: 30%;
+}
+}
+
+@media screen and (max-width: 562px) {
+    .modal { 
+        max-width: 50%;
+    }
+  }
+
+// link styling
+a {
+    text-decoration: underline;
+}

@@ -8,39 +8,35 @@ The simple reason - I'm not great at UI design. Being color blind it can be diff
 
 ## Version 1.3.0 (Current)
 
-Two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
+This version includes everything from the previous version.
 
-<br/>
+Two viewing modes: Normal view and Developer view. Normal view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
-This version detects your operating system and displays a custom terminal theme for you. You may also change your terminal theme by typing in a simple command. You can now view my resume in either terminal or normie view.
+#### 1.3 additions:
+- When the user changes their terminal theme, the background will also change based on the theme the user selects
+- Added a mobile terminal theme
 
-<br/>
+#### Bug fixes:
+- Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
 
-3.0 Additions/fixes: I realized when viewing the Developer view on mobile there was not a condition for rendering. When a user would open the dev view on mobile, instead of receiving a custom message and terminal, they were greeted with a blank screen for 3 seconds. This update addresses that,
+## Version 1.0.0
 
-## Version 1.2.1
-
-This version includes everything from the previous version excpet for the uptime tracker.
-
-<br/>
-
-Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
-
-<br/>
-
-Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
-
-<br/>
-
-2.1 Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
+Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
 
 ## Version 1.1.0
 
 Version 1.1.0 includes everything from the previous version with the addition of the terminal view changing the page background based on the users operating system. There has also been a few minor styling changes to make the terminal illusion more believable.
 
-## Version 1.0.0
+## Version 1.2.1
 
-Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
+This version includes everything from the previous version except for the uptime tracker.
+
+#### 2.1 additions: 
+-  After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
+-  User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
+
+#### Other: 
+-  This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
 ## Built with
 

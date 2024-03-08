@@ -54,10 +54,10 @@ function App() {
     if (usersOS.includes("X11" || "Linux")) {
       document.body.style.backgroundImage =
         "url('/assets/imgs/arch-background.png')";
-      setOs("Linux");
+      return setOs("Linux");
     } else {
       document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
-      return setOs("Default");
+      return setOs("Mobile");
     }
   }, [usersOS]);
 
@@ -129,6 +129,30 @@ function App() {
       setCdIndex(cdIndex + 1);
     }
   };
+
+  const setTheme = (theme) => {
+    if (theme === "Windows") {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/windows-background.jpg')";
+      return setOs("Windows");
+    }
+
+    if (theme === "Mac") {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/apple-background.jpg')";
+      return setOs("Mac");
+    }
+
+    if ((theme === "X11") || (theme === "Linux")) {
+      document.body.style.backgroundImage =
+        "url('/assets/imgs/arch-background.png')";
+      return setOs("Linux");
+    }
+    if (theme === 'Mobile') {
+      document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
+      return setOs("Mobile");
+    }
+  }
 
   // COMMAND HANDLER
   const handleCommand = (input) => {
@@ -209,30 +233,30 @@ function App() {
         }
         break;
 
-      case "theme set default":
+      case "theme set mobile":
         {
-          setOs("Default");
+          setTheme('Mobile')
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set alacritty":
         {
-          setOs("Linux");
+          setTheme('Linux')
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set powershell":
         {
-          setOs("Windows");
+          setTheme('Windows')
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set mac":
         {
-          setOs("Mac");
+          setTheme('Mac')
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;

@@ -26,7 +26,7 @@ body {
   background-repeat: none;
 }
 
-.app {
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@ body {
   font-size: 2rem;
 }
 
-.app > .title {
+.menu > .title {
   text-align: left;
 }
 
@@ -50,7 +50,7 @@ body {
   gap: $baseGap;
 }
 
-.app span {
+.menu span {
   cursor: pointer;
 }
 
@@ -58,18 +58,20 @@ body {
 a {
   color: $normSecondary;
 
-  &:hover {
-    transform: scale(1.005);
-    color: purple;
-  }
-
   &:visited {
     color: $normSecondary;
   }
+  
+  &:hover {
+    transform: scale(1.005);
+    color: rgb(0, 77, 0)
+  }
+
+
 }
 
 @media screen and (max-width: 1000px) {
-  .app {
+  .menu {
     height: 50vh;
     width: 50vw;
   }

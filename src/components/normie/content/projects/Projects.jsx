@@ -5,7 +5,7 @@ const Projects = () => {
   const projectArr = [
     {
       name: "Onistuka Mock Website",
-      background: "/assets/imgs/onitsuka-preview.png",
+      background: "/assets/imgs/onitstuka-preview.png",
       link: "https://onitsuka-tiger-mock.netlify.app/",
       repo: "https://github.com/dmychel/eCommerce-site",
       description:
@@ -128,7 +128,6 @@ const Projects = () => {
       ],
     },
   ];
-
   return (
     <section className={styles.projectMaster}>
       <div className={styles.title}>

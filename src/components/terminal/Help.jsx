@@ -22,7 +22,7 @@ const CommandList = () => {
         </span>
         <span>
           <p className={styles.command}>&apos;exit&apos;</p>
-          <p>Normie view</p>
+          <p>Normal view</p>
         </span>
         <span>
           <p className={styles.command}>&apos;theme set&apos;</p>
