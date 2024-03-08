@@ -4,6 +4,29 @@ import ProjectChild from "./ProjectChild";
 const Projects = () => {
   const projectArr = [
     {
+      name: "Onistuka Mock Website",
+      background: "/assets/imgs/onitsuka-preview.png",
+      link: "https://onitsuka-tiger-mock.netlify.app/",
+      repo: "https://github.com/dmychel/eCommerce-site",
+      description:
+        "A mock eCommerce website to flex my UI design skills I've been working to improve.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: 'SASS',
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+        }
+      ],
+    },
+    {
       name: "Windfall Matchup",
       background: "/assets/imgs/memory-preview.png",
       link: "https://windfall-matchup.netlify.app/",
@@ -82,12 +105,12 @@ const Projects = () => {
       ],
     },
     {
-      name: "Serena Shopping",
-      background: "/assets/imgs/serena-preview.png",
-      link: "https://serena-shop.netlify.app/",
-      repo: "https://github.com/dmychel/shopping-cart",
+      name: "Terminal",
+      background: "/assets/imgs/terminal-preview.jpg",
+      link: "/terminal",
+      repo: "https://github.com/dmychel/portfolio",
       description:
-        "A simple web app that mocks the checkout process of an ecommerce website.",
+        "A unique twist on my portfolio to show my passion for Linux and tech.",
       tools: [
         {
           name: "Javascript",
@@ -98,6 +121,10 @@ const Projects = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: 'SASS',
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+        }
       ],
     },
   ];
