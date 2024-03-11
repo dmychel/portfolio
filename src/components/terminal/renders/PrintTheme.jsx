@@ -8,7 +8,7 @@ const PrintTheme = ({ os }) => {
     if (os === "Windows") return <p>~theme set to PowerShell</p>;
     if (os === "Mac") return <p>~theme set to Mac Terminal</p>;
     else {
-      return <p>~theme set to Mobile Terminal</p>
+      return <p>~theme set to Android Terminal</p>
     }
   };
 
