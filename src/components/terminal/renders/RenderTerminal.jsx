@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import LinuxTerm from "./terminals/LinuxTerm";
 import PowerShell from "./terminals/PowerShell";
 import MacTerm from "./terminals/MacTerm";
-import DefaultTerm from "./terminals/DefaultTerm";
+import AndroidTerm from "./terminals/AndroidTerm";
 
 const RenderTerminal = ({
   renderComp,
@@ -48,7 +48,7 @@ const RenderTerminal = ({
       );
     else {
       return (
-        <DefaultTerm
+        <AndroidTerm
           renderComp={renderComp}
           os={os}
           handleSubmit={handleSubmit}
