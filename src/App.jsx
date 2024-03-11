@@ -1,9 +1,8 @@
 import NormieView from "./NormieView";
 
-
 const App = () => {
   return (
-      <NormieView/>
+    <NormieView />
   );
 };
 
