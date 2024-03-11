@@ -54,3 +54,11 @@ nav span {
 .terminal input {
   color: black;
 }
+
+
+@media screen and  (max-width: 428px ) {
+  .terminal {
+    height: 90vh;
+    width: 90vw;
+  }
+}
