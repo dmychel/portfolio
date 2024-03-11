@@ -2,9 +2,9 @@ import RenderContent from "../RenderContent";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
-import styles from "/src/styles/terminal/_DefaultTerm.module.scss";
+import styles from "/src/styles/terminal/_AndroidTerm.module.scss";
 
-const DefaultTerm = ({
+const AndroidTerm = ({
   renderComp,
   os,
   handleSubmit,
@@ -32,7 +32,7 @@ const DefaultTerm = ({
   );
 };
 
-DefaultTerm.propTypes = {
+AndroidTerm.propTypes = {
   renderComp: PropTypes.array,
   os: PropTypes.string,
   handleSubmit: PropTypes.func,
@@ -41,4 +41,4 @@ DefaultTerm.propTypes = {
   setCommand: PropTypes.func,
 };
 
-export default DefaultTerm;
+export default AndroidTerm;
