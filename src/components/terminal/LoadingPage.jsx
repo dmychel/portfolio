@@ -23,9 +23,9 @@ const Loading = ({ os, setLoading }) => {
       return appleMessage()
     }
 
-    if (os === 'mobile') {
-      console.log('mobile')
-      return mobileMessage()
+    if (os === 'Android') {
+      console.log('android')
+      return androidMessage()
     }
     else {
       return
@@ -93,7 +93,7 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  const mobileMessage = () => {
+  const androidMessage = () => {
     return (
       <TypeAnimation
         sequence={[
@@ -101,9 +101,9 @@ const Loading = ({ os, setLoading }) => {
           1000,
           "oh..",
           1000,
-          `I don't recognize this.`,
+          `you're using a version of android..`,
           1000,
-          `are you on mobile..?`,
+          `you're using a version of android...?`,
           1000,
           "migrating you to the terminal now",
         ]}

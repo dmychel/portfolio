@@ -57,7 +57,7 @@ function App() {
       return setOs("Linux");
     } else {
       document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
-      return setOs("Mobile");
+      return setOs("Android");
     }
   }, [usersOS]);
 
@@ -148,9 +148,9 @@ function App() {
         "url('/assets/imgs/arch-background.png')";
       return setOs("Linux");
     }
-    if (theme === 'Mobile') {
+    if (theme === 'Android') {
       document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
-      return setOs("Mobile");
+      return setOs("Android");
     }
   }
 
@@ -233,9 +233,9 @@ function App() {
         }
         break;
 
-      case "theme set mobile":
+      case "theme set android":
         {
-          setTheme('Mobile')
+          setTheme('Android')
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
