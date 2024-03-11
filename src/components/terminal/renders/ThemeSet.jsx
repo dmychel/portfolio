@@ -12,6 +12,8 @@ const ThemeSet = () => {
         <p>&apos;PowerShell&apos;</p>
         <br />
         <p>&apos;Mac&apos;</p>
+        <br />
+        <p>&apos;Android&apos;</p>
       </span>
       <br />
       <br />
