@@ -33,7 +33,7 @@ function App() {
     "email",
     "linkedin",
     "github",
-    "serena-shopping",
+    "onitsuka-mock",
   ];
 
   // all useEffect functions
@@ -143,16 +143,16 @@ function App() {
       return setOs("Mac");
     }
 
-    if ((theme === "X11") || (theme === "Linux")) {
+    if (theme === "X11" || theme === "Linux") {
       document.body.style.backgroundImage =
         "url('/assets/imgs/arch-background.png')";
       return setOs("Linux");
     }
-    if (theme === 'Android') {
+    if (theme === "Android") {
       document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
       return setOs("Android");
     }
-  }
+  };
 
   // COMMAND HANDLER
   const handleCommand = (input) => {
@@ -204,8 +204,8 @@ function App() {
         break;
       }
 
-      case "cd serena-shopping": {
-        window.open("https://serena-shop.netlify.app/", "_blank");
+      case "cd onitsuka-mock": {
+        window.open("https://onitsuka-tiger-mock.netlify.app/", "_blank");
         break;
       }
 
@@ -235,28 +235,28 @@ function App() {
 
       case "theme set android":
         {
-          setTheme('Android')
+          setTheme("Android");
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set alacritty":
         {
-          setTheme('Linux')
+          setTheme("Linux");
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set powershell":
         {
-          setTheme('Windows')
+          setTheme("Windows");
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
 
       case "theme set mac":
         {
-          setTheme('Mac')
+          setTheme("Mac");
           setRenderComp([...renderComp, PrintTheme]);
         }
         break;
