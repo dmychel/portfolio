@@ -7,9 +7,21 @@
 }
 
 .normieApp {
+  animation: fadeIn 1.25s;
   display: flex;
   flex-direction: column;
   background: $normPrimary;
   color: $normSecondary;
   overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10%);
+    opacity: 30%;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 100;
+  }
 }
