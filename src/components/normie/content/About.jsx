@@ -1,4 +1,4 @@
-import styles from "/src/styles/normie/about.module.scss";
+import styles from "/src/styles/normie.module.scss";
 
 const About = () => {
   return (

@@ -1,4 +1,4 @@
-import styles from "/src/styles/normie/projects.module.scss";
+import styles from "/src/styles/normie.module.scss";
 import ProjectChild from "./ProjectChild";
 
 const Projects = () => {
@@ -21,9 +21,9 @@ const Projects = () => {
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
         {
-          name: 'SASS',
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-        }
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
       ],
     },
     {
@@ -122,9 +122,9 @@ const Projects = () => {
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
         {
-          name: 'SASS',
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-        }
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
       ],
     },
   ];
