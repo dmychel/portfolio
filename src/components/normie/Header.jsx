@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
-import styles from "/src/styles/normie.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = ({ setComponent }) => {
   return (
-    <section className={styles.headerMaster}>
+    <header>
       <h1 onClick={() => setComponent(null)}>
         <Link to="/menu">Dylon Crowley-Perez</Link>
       </h1>
-    </section>
+    </header>
   );
 };
 
