@@ -1,0 +1,85 @@
+.normieApp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #111821;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  height: 10vh;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  position: sticky;
+}
+
+header a {
+  color: white;
+}
+
+.aboutMaster {
+  height: 90vh;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.rightAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5em;
+  text-align: left;
+  gap: 1.5em;
+  width: 60%;
+  color: #f247d3;
+}
+
+.rightAbout {
+  width: 40%;
+}
+
+.rightAbout img {
+  width: 25em;
+  height: 25em;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: -1%;
+}
+
+.projectMaster {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  border: 2px solid wheat;
+}
+
+section {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
