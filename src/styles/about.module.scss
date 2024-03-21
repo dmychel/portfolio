@@ -8,6 +8,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  animation: slideLeft 1s ease;
 }
 
 .about {
@@ -33,6 +34,7 @@
   width: 100%;
   padding: 2em;
   background-color: #181818b3;
+  transition: ease 2s;
 }
 
 .images img {
@@ -41,7 +43,8 @@
   height: auto;
 }
 
-img {
+.images img {
+  animation: fill 1s ease;
   display: none;
 }
 
@@ -56,17 +59,50 @@ img {
   gap: 2em;
 }
 
-button {
-  font-size: 3rem;
+.about button {
+  font-size: 4rem;
   background-color: transparent;
   color: #cacaca;
   border: none;
   cursor: pointer;
 }
+.about button:hover {
+  transform: scale(1.1);
+  color: #37fa85;
+}
 
 .info {
-  border: 1px solid yellow;
   padding: 2em;
   font-size: 2rem;
+  line-height: 2em;
   width: 40%;
+}
+
+.slide_left {
+  animation: slideLeft 1s ease;
+}
+
+.slide_right {
+  animation: slideRight 1s ease;
+}
+
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
