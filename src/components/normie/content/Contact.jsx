@@ -11,10 +11,11 @@ const Contact = () => {
           contact me:
           <br />
           <br />
-          Email me at{" "}
-          <a href="mailto:dyloncrowley86@gmail.com"> Hey@DylonCrowley.tech</a>
+          Email me at <a href="mailto:dyloncrowley86@gmail.com" target="_blank"
+            rel="noreferrer">Hey@DylonCrowley.tech</a>
           <br />
-          Message me on <a href="">LinkedIn</a>
+          Message me on <a href="https://www.linkedin.com/in/dylon-crowley-perez-248b0823b/" target="_blank"
+            rel="noreferrer">LinkedIn</a>
         </p>
       </div>
 
