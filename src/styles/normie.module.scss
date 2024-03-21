@@ -1,85 +1,99 @@
-.normieApp {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: #111821;
-  color: white;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  padding-left: 1em;
-  height: 10vh;
-  width: 100%;
-  font-size: 1rem;
-  color: white;
-  position: sticky;
-}
-
-header a {
-  color: white;
-}
-
-.aboutMaster {
-  height: 90vh;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  font-size: 1.75rem;
-}
-
-.rightAbout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.leftAbout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: 5em;
-  text-align: left;
-  gap: 1.5em;
-  width: 60%;
-  color: #f247d3;
-}
-
-.rightAbout {
-  width: 40%;
-}
-
-.rightAbout img {
-  width: 25em;
-  height: 25em;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: -1%;
-}
-
-.projectMaster {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 100%;
-}
-
-.title {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  border: 2px solid wheat;
+body {
+  background-color: #2f2f2f;
+  color: #cacaca;
 }
 
 section {
-  padding: 1em;
+  margin-top: 1000px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #2f2f2f8c;
+}
+
+header a {
+  color: #cacaca;
+}
+
+.normie_app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
+  height: 100%;
+  gap: 3em;
+}
+
+.project_container h2 {
+  font-size: 3rem;
+  margin-left: 5%;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.background {
+  width: auto;
+  height: auto;
+  object-fit: fill;
+}
+
+.background img {
+  width: 100%;
+  height: auto;
+}
+
+.contact_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 5% 10% 0 10%;
+  font-size: 2.5rem;
+}
+
+.contact_container h2 {
+  margin-left: 5%;
+}
+
+.contact_info {
+  line-height: 1.5em;
+  margin: 0 5% 0 5%;
+}
+
+.contact_imgs {
   display: flex;
   align-items: center;
+  gap: 2em;
+  width: 100%;
+  margin: 0 5% 0 5%;
 }
