@@ -69,13 +69,15 @@ const About = () => {
           </div>
         </div>
         <div className={styles.info}>
-          <h3>Hello!</h3>
-          <h2>My name is Dylon</h2>
+          <h2>Breaker, Web Developer, Photographer</h2>
+          <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
-            quibusdam eos unde ex sint asperiores quod soluta culpa tempora
-            atque dolorem nulla! Iure modi exercitationem labore. Reiciendis
-            ratione consequuntur eveniet!
+            My name is Dylon. I am a very ambitious person who is determined to
+            make &apos;delusional&apos; goals become reality. I strongly believe
+            that you can achieve anything with enough hard work.
+            <br />
+            <br />
+            Let&apos;s connect.
           </p>
         </div>
       </div>
