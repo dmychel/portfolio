@@ -212,6 +212,14 @@ nav {
   transform: scale(1.1);
 }
 
+a {
+    color: #37fa85;
+
+    &:visited {
+        color: #37fa85; 
+    }
+}
+
 @keyframes slideLeft {
   from {
     transform: translateX(500%);
