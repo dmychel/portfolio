@@ -128,10 +128,40 @@ nav {
 }
 
 .card {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+
+.project_info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.543);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: 1px solid #37fa85;
+  transition: ease 0.25s;
+}
+
+.project_info:hover {
+  opacity: 1;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.tools img {
+  width: 10%;
 }
 
 .background {
@@ -193,11 +223,9 @@ nav {
 
 @keyframes slideUp {
   from {
-    opacity: 0.25;
-    transform: translateY(500%);
+    transform: translateY(50%);
   }
   to {
-    opacity: 1;
     transform: translateY(0%);
   }
 }
