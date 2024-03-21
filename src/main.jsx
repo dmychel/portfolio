@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Terminal from "./Terminal";
 import NormieView from "./NormieView";
-import Menu from "/src/components/Menu";
 
 const router = createBrowserRouter([
   {
@@ -18,10 +17,6 @@ const router = createBrowserRouter([
   {
     path: "normie",
     element: <NormieView />,
-  },
-  {
-    path: "menu",
-    element: <Menu />,
   },
 ]);
 
