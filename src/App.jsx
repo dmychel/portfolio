@@ -1,7 +1,7 @@
-import Menu from "./components/Menu";
+import NormieView from "./NormieView";
 
 const App = () => {
-  return <Menu />;
+  return <NormieView />;
 };
 
 export default App;
