@@ -22,8 +22,8 @@ const Header = ({ setComponent }) => {
               <span>&#10006;</span>
             </div>
             <div className={styles.nav_options}>
-              <h2>Portfolio</h2>
-              <h2>About</h2>
+              <Link to="/">Portfolio</Link>
+              <Link to="/about">About</Link>
             </div>
           </div>
         ) : (
