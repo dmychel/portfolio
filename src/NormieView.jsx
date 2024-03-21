@@ -1,12 +1,14 @@
 import styles from "/src/styles/normie.module.scss";
 import Header from "./components/normie/Header";
-import Content from "./components/normie/content/Content";
+import Projects from "./components/normie/content/projects/Projects";
+import Contact from "./components/normie/content/Contact";
 
 const NormieView = () => {
   return (
-    <div className={styles.normieApp}>
+    <div className={styles.normie_app}>
       <Header />
-      <Content />
+      <Projects />
+      <Contact />
     </div>
   );
 };
