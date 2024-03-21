@@ -27,6 +27,52 @@ const Projects = () => {
       ],
     },
     {
+      name: "Terminal",
+      background: "/assets/imgs/terminal-preview.jpg",
+      link: "/terminal",
+      repo: "https://github.com/dmychel/portfolio",
+      description:
+        "A unique twist on my portfolio to show my passion for Linux and tech.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
+      ],
+    },
+    {
+      name: "Node Message Board",
+      background: "/assets/imgs/message-background.jpg",
+      link: "https://message-board-apba.onrender.com/",
+      repo: "https://github.com/dmychel/message-board",
+      description:
+        "A basic dynamic node application that displays messages from online users. This was a exciting project to begin my back-end journey.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        { name: "EJS", img: "/assets/icons/ejs.png" },
+        {
+          name: "Node.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          name: "MongoDB",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        },
+      ],
+    },
+    {
       name: "Windfall Matchup",
       background: "/assets/imgs/memory-preview.png",
       link: "https://windfall-matchup.netlify.app/",
@@ -63,29 +109,7 @@ const Projects = () => {
         },
       ],
     },
-    {
-      name: "Node Message Board",
-      background: "/assets/imgs/message-background.jpg",
-      link: "https://message-board-apba.onrender.com/",
-      repo: "https://github.com/dmychel/message-board",
-      description:
-        "A basic dynamic node application that displays messages from online users. This was a exciting project to begin my back-end journey.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        { name: "EJS", img: "/assets/icons/ejs.png" },
-        {
-          name: "Node.js",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-        },
-        {
-          name: "MongoDB",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-        },
-      ],
-    },
+
     {
       name: "CV Maker",
       background: "/assets/imgs/cv-background.png",
@@ -102,29 +126,6 @@ const Projects = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-      ],
-    },
-    {
-      name: "Terminal",
-      background: "/assets/imgs/terminal-preview.jpg",
-      link: "/terminal",
-      repo: "https://github.com/dmychel/portfolio",
-      description:
-        "A unique twist on my portfolio to show my passion for Linux and tech.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "React",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        },
-        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-        {
-          name: "SASS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-        },
       ],
     },
   ];
