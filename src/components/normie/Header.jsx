@@ -1,9 +1,8 @@
-import PropTypes from "prop-types";
 import styles from "/src/styles/normie.module.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ setComponent }) => {
+const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   function toggleMenu() {
@@ -11,7 +10,7 @@ const Header = ({ setComponent }) => {
   }
   return (
     <header>
-      <h1 onClick={() => setComponent(null)}>
+      <h1>
         <Link to="/">Dylon Crowley-Perez</Link>
       </h1>
 
@@ -36,10 +35,6 @@ const Header = ({ setComponent }) => {
       </nav>
     </header>
   );
-};
-
-Header.propTypes = {
-  setComponent: PropTypes.func,
 };
 
 export default Header;
