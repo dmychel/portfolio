@@ -5,7 +5,7 @@ const Projects = () => {
   const projectArr = [
     {
       name: "Onistuka Mock Website",
-      background: "/assets/imgs/onitstuka-preview.png",
+      background: "/assets/imgs/onitsuka-preview.png",
       link: "https://onitsuka-tiger-mock.netlify.app/",
       repo: "https://github.com/dmychel/eCommerce-site",
       description:
@@ -129,11 +129,9 @@ const Projects = () => {
     },
   ];
   return (
-    <section className={styles.projectMaster}>
-      <div className={styles.title}>
-        <h2>Work</h2>
-      </div>
-      <div className={styles.projectWrapper}>
+    <section className={styles.project_container}>
+      <h2>Web Developer Portfolio</h2>
+      <div className={styles.projects}>
         {projectArr.map((obj, index) => (
           <ProjectChild project={obj} key={index} />
         ))}
