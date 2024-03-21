@@ -12,7 +12,7 @@ const Header = ({ setComponent }) => {
   return (
     <header>
       <h1 onClick={() => setComponent(null)}>
-        <Link to="/menu">Dylon Crowley-Perez</Link>
+        <Link to="/">Dylon Crowley-Perez</Link>
       </h1>
 
       <nav>
