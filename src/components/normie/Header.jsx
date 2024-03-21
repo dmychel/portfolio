@@ -7,6 +7,12 @@ const Header = ({ setComponent }) => {
       <h1 onClick={() => setComponent(null)}>
         <Link to="/menu">Dylon Crowley-Perez</Link>
       </h1>
+
+      <nav>
+        <span></span>
+        <span></span>
+        <span></span>
+      </nav>
     </header>
   );
 };
