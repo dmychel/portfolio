@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Terminal from "./Terminal";
-import NormieView from "./NormieView";
 
 const router = createBrowserRouter([
   {
@@ -13,10 +12,6 @@ const router = createBrowserRouter([
   {
     path: "terminal",
     element: <Terminal />,
-  },
-  {
-    path: "normie",
-    element: <NormieView />,
   },
 ]);
 
