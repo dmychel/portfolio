@@ -38,7 +38,7 @@
 }
 
 .images img {
-  object-fit:contain;
+  object-fit: contain;
   width: 100%;
   height: auto;
 }
@@ -87,21 +87,42 @@
 }
 
 @media screen and (max-width: 1340px) {
-  .about_container {
-    height: 100%;
-  }
   .about {
-    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
   }
 
   .info {
     width: 100%;
+    font-size: 1.5rem;
   }
 
   .slider {
+    height: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .info {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .about_container {
+    height: 100%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .slider {
+    width: 50%;
+  }
+
+  .nav button {
+    font-size: 3rem;
   }
 }
 
