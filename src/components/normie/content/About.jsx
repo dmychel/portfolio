@@ -72,9 +72,9 @@ const About = () => {
           <h2>Breaker, Web Developer, Photographer</h2>
           <br />
           <p>
-            My name is Dylon. I am a very ambitious person who is determined to
-            make &apos;delusional&apos; goals become reality. I strongly believe
-            that you can achieve anything with enough hard work.
+            Hey I&apos;m Dylon. I am a very ambitious person who is determined
+            to make &apos;delusional&apos; goals become reality. I strongly
+            believe that you can achieve anything with enough hard work.
             <br />
             <br />
             Let&apos;s connect.
