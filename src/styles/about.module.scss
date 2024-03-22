@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-around;
   height: 80%;
-  margin: 0 5% 5% 5%;
+  margin: 0 2% 5% 2%;
 }
 
 .slider {
@@ -38,7 +38,7 @@
 }
 
 .images img {
-  object-fit: cover;
+  object-fit:contain;
   width: 100%;
   height: auto;
 }
@@ -84,6 +84,25 @@
 
 .slide_right {
   animation: slideRight 1s ease;
+}
+
+@media screen and (max-width: 1340px) {
+  .about_container {
+    height: 100%;
+  }
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
 }
 
 @keyframes fill {
