@@ -231,6 +231,10 @@ a {
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
+
+  .contact_container {
+    font-size: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 1078px) {
@@ -265,10 +269,6 @@ a {
   }
   .project_container h2 {
     font-size: 2rem;
-  }
-
-  .contact_container {
-    font-size: 1.75rem;
   }
 }
 
