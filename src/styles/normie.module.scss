@@ -137,11 +137,14 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100%;
   opacity: 0;
   border: 1px solid #37fa85;
   transition: ease 0.25s;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .project_info:hover {
@@ -206,51 +209,67 @@ nav {
 }
 
 a {
+  color: #37fa85;
+
+  &:visited {
     color: #37fa85;
-
-    &:visited {
-        color: #37fa85; 
-    }
+  }
 }
 
-@media screen and (max-width:1078px){
-    .nav_page {
-        width: 30%;
-    }
+@media screen and (max-width: 1280px) {
+  header a {
+    color: #cacaca;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav_menu span {
+    width: 0.75em;
+    height: 0.75em;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
 }
 
+@media screen and (max-width: 1078px) {
+  .nav_page {
+    width: 30%;
+  }
+}
 
 @media screen and (max-width: 715px) {
-    .project_container  {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+  .project_container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .project_container h2 {
-        margin: 0 5% 0 5%;
-    }
+  .project_container h2 {
+    margin: 0 5% 0 5%;
+  }
 
-    .projects {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 
-    .nav_page {
-        width: 100%;
-    }
+  .nav_page {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 524px) {
-    header a {
-        font-size: 2rem;
-    }
-     .project_container h2 {
-        font-size: 2rem;
-    }
+  header a {
+    font-size: 2rem;
+  }
+  .project_container h2 {
+    font-size: 2rem;
+  }
 
-    .contact_container {
-        font-size: 1.75rem;
-    }
+  .contact_container {
+    font-size: 1.75rem;
+  }
 }
 
 @keyframes slideLeft {
