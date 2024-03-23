@@ -121,6 +121,11 @@ nav {
   gap: 2em;
 }
 
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   position: relative;
   display: flex;
