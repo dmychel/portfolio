@@ -77,8 +77,6 @@ const Projects = () => {
       background: "/assets/imgs/memory-preview.png",
       link: "https://windfall-matchup.netlify.app/",
       repo: "https://github.com/dmychel/memory-game",
-      description:
-        "The traditional matching game we all played in elementary school, but with a Legend of Zelda Wind Waker coat of paint.",
       tools: [
         {
           name: "Javascript",
