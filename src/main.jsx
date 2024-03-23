@@ -4,11 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import About from "./components/normie/content/About";
 import Terminal from "./Terminal";
+import ProjectPage from "./components/normie/content/projects/ProjectPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/project",
+    element: <ProjectPage />,
   },
   {
     path: "/about",
