@@ -29,10 +29,9 @@ const Projects = () => {
     {
       name: "Terminal",
       background: "/assets/imgs/terminal-preview.jpg",
-      link: "/terminal",
       repo: "https://github.com/dmychel/portfolio",
       description:
-        "A unique twist on my portfolio to show my passion for Linux and tech.",
+        "A unique twist on my portfolio to show my passion for Linux and tech. *This project is in the process of being migrated, thank you for your patience.*",
       tools: [
         {
           name: "Javascript",
