@@ -10,21 +10,6 @@ There has been a major visual overhaul that looks much more modern and is more r
 
 Removed the optional terminal view - While I think it was a unique twist on a portfolio, it added to many things to look at. In the next update the Terminal view will be moved to it's own project.
 
-## Version 1.3.0
-
-This version includes everything from the previous version.
-
-Two viewing modes: Normal view and Developer view. Normal view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
-
-#### 1.3 additions:
-
-- When the user changes their terminal theme, the background will also change based on the theme the user selects
-- Added a mobile terminal theme
-
-#### Bug fixes:
-
-- Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
-
 ## Version 1.0.0
 
 Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
@@ -45,6 +30,21 @@ This version includes everything from the previous version except for the uptime
 #### Other:
 
 - This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
+
+## Version 1.3.0
+
+This version includes everything from the previous version.
+
+Two viewing modes: Normal view and Developer view. Normal view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
+
+#### 1.3 additions:
+
+- When the user changes their terminal theme, the background will also change based on the theme the user selects
+- Added a mobile terminal theme
+
+#### Bug fixes:
+
+- Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
 
 ## Built with
 
