@@ -78,6 +78,46 @@
   animation: hithere 2s ease;
 }
 
+@media screen and (max-width: 1280px) {
+  .project {
+    font-size: 1rem;
+  }
+
+  .project button {
+    font-size: 1rem;
+  }
+
+  .tools {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .project {
+    margin: 2% 3% 0 3%;
+  }
+
+  .preview {
+    width: 80%;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .tools {
+    width: 100%;
+  }
+
+  .project button {
+    font-size: 1rem;
+  }
+
+  .tools {
+    font-size: 1rem;
+  }
+}
+
 @keyframes hithere {
   30% {
     transform: scale(1.2);
