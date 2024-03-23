@@ -1,19 +1,17 @@
-import styles from "/src/styles/terminal/about.module.scss";
-
 const About = () => {
   return (
-    <section className={styles.about}>
-      <div className={styles.intro}>
+    <section>
+      <div>
         Hello stranger... My name is <span>Dylon</span>, I am a{" "}
         <span>self taught developer</span> with a strong passion to learn and
         create. Hopefully I&apos;ve peaked your interest.
         <br></br>
-        <span style={{ color: "yellow" }}>
-          Tip: Try typing &apos;<span style={{ color: "cyan" }}>cd github</span>
+        <span>
+          Tip: Try typing &apos;<span>cd github</span>
           &apos;
         </span>
       </div>
-      <div className={styles.contact}>
+      <div>
         <div>
           <span>
             <img src="/assets/icons/mail.png" alt="mail" />

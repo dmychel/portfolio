@@ -1,5 +1,3 @@
-import styles from "/src/styles/terminal/printTheme.module.scss";
-
 import PropTypes from "prop-types";
 
 const PrintTheme = ({ os }) => {
@@ -8,11 +6,11 @@ const PrintTheme = ({ os }) => {
     if (os === "Windows") return <p>~theme set to PowerShell</p>;
     if (os === "Mac") return <p>~theme set to Mac Terminal</p>;
     else {
-      return <p>~theme set to Android Terminal</p>
+      return <p>~theme set to Android Terminal</p>;
     }
   };
 
-  return <div className={styles.themePrint}>{parseOs()}</div>;
+  return <div>{parseOs()}</div>;
 };
 
 PrintTheme.propTypes = {
