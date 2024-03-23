@@ -5,7 +5,6 @@ import Header from "/src/components/normie/Header";
 const ProjectPage = () => {
   const location = useLocation();
   const project = location.state.project;
-  console.log(project);
   return (
     <section className={styles.project_container}>
       <Header />
