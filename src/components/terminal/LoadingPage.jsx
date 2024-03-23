@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
 import PropTypes from "prop-types";
-import styles from "/src/styles/terminal/loading.module.scss";
 
 const Loading = ({ os, setLoading }) => {
   setTimeout(() => {
@@ -9,28 +8,27 @@ const Loading = ({ os, setLoading }) => {
 
   const determineMessage = () => {
     if (os === "Linux") {
-      console.log('Linux')
-      return linuxMessage()
+      console.log("Linux");
+      return linuxMessage();
     }
 
     if (os === "Windows") {
-      console.log('Windows')
-      return windowsMessage()
+      console.log("Windows");
+      return windowsMessage();
     }
 
     if (os === "Mac") {
-      console.log('Mac')
-      return appleMessage()
+      console.log("Mac");
+      return appleMessage();
     }
 
-    if (os === 'Android') {
-      console.log('android')
-      return androidMessage()
+    if (os === "Android") {
+      console.log("android");
+      return androidMessage();
+    } else {
+      return;
     }
-    else {
-      return
-    }
-  }
+  };
 
   const windowsMessage = () => {
     return (
@@ -112,16 +110,8 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  return (
-    <section className={styles.loading} > {determineMessage()}</section >
-  )
-
+  return <section> {determineMessage()}</section>;
 };
-
-
-
-
-
 
 Loading.propTypes = {
   os: PropTypes.string,

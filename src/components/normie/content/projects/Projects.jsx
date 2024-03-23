@@ -1,11 +1,11 @@
-import styles from "/src/styles/normie/projects.module.scss";
+import styles from "/src/styles/normie.module.scss";
 import ProjectChild from "./ProjectChild";
 
 const Projects = () => {
   const projectArr = [
     {
       name: "Onistuka Mock Website",
-      background: "/assets/imgs/onitstuka-preview.png",
+      background: "/assets/imgs/onitsuka-preview.png",
       link: "https://onitsuka-tiger-mock.netlify.app/",
       repo: "https://github.com/dmychel/eCommerce-site",
       description:
@@ -21,9 +21,54 @@ const Projects = () => {
         },
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
         {
-          name: 'SASS',
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-        }
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
+      ],
+    },
+    {
+      name: "Terminal",
+      background: "/assets/imgs/terminal-preview.jpg",
+      repo: "https://github.com/dmychel/portfolio",
+      description:
+        "A unique twist on my portfolio to show my passion for Linux and tech. *This project is in the process of being migrated, thank you for your patience.*",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
+      ],
+    },
+    {
+      name: "Node Message Board",
+      background: "/assets/imgs/message-background.jpg",
+      link: "https://message-board-apba.onrender.com/",
+      repo: "https://github.com/dmychel/message-board",
+      description:
+        "A basic dynamic node application that displays messages from online users. This was a exciting project to begin my back-end journey.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        { name: "EJS", img: "/assets/icons/ejs.png" },
+        {
+          name: "Node.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          name: "MongoDB",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        },
       ],
     },
     {
@@ -31,8 +76,6 @@ const Projects = () => {
       background: "/assets/imgs/memory-preview.png",
       link: "https://windfall-matchup.netlify.app/",
       repo: "https://github.com/dmychel/memory-game",
-      description:
-        "The traditional matching game we all played in elementary school, but with a Legend of Zelda Wind Waker coat of paint.",
       tools: [
         {
           name: "Javascript",
@@ -63,29 +106,7 @@ const Projects = () => {
         },
       ],
     },
-    {
-      name: "Node Message Board",
-      background: "/assets/imgs/message-background.jpg",
-      link: "https://message-board-apba.onrender.com/",
-      repo: "https://github.com/dmychel/message-board",
-      description:
-        "A basic dynamic node application that displays messages from online users. This was a exciting project to begin my back-end journey.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        { name: "EJS", img: "/assets/icons/ejs.png" },
-        {
-          name: "Node.js",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-        },
-        {
-          name: "MongoDB",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-        },
-      ],
-    },
+
     {
       name: "CV Maker",
       background: "/assets/imgs/cv-background.png",
@@ -104,36 +125,11 @@ const Projects = () => {
         { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
       ],
     },
-    {
-      name: "Terminal",
-      background: "/assets/imgs/terminal-preview.jpg",
-      link: "/terminal",
-      repo: "https://github.com/dmychel/portfolio",
-      description:
-        "A unique twist on my portfolio to show my passion for Linux and tech.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "React",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        },
-        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
-        {
-          name: 'SASS',
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-        }
-      ],
-    },
   ];
   return (
-    <section className={styles.projectMaster}>
-      <div className={styles.title}>
-        <h2>Work</h2>
-      </div>
-      <div className={styles.projectWrapper}>
+    <section className={styles.project_container}>
+      <h2>Web Developer Portfolio</h2>
+      <div className={styles.projects}>
         {projectArr.map((obj, index) => (
           <ProjectChild project={obj} key={index} />
         ))}

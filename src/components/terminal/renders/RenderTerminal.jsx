@@ -4,6 +4,8 @@ import PowerShell from "./terminals/PowerShell";
 import MacTerm from "./terminals/MacTerm";
 import AndroidTerm from "./terminals/AndroidTerm";
 
+import styles from "/src/styles/terminal/terminal.module.scss";
+
 const RenderTerminal = ({
   renderComp,
   os,
@@ -59,7 +61,7 @@ const RenderTerminal = ({
       );
     }
   };
-  return <section>{dynamicTerm()}</section>;
+  return <section className={styles.terminal}>{dynamicTerm()}</section>;
 };
 
 RenderTerminal.propTypes = {

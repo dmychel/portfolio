@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Terminal from "./Terminal";
-import NormieView from "./NormieView";
-import Menu from "./components/terminal/Menu";
+import About from "./components/normie/content/About";
+import ProjectPage from "./components/normie/content/projects/ProjectPage";
 
 const router = createBrowserRouter([
   {
@@ -12,17 +11,13 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "terminal",
-    element: <Terminal />,
+    path: "/project",
+    element: <ProjectPage />,
   },
   {
-    path: "normie",
-    element: <NormieView />,
+    path: "/about",
+    element: <About />,
   },
-  {
-    path: "menu",
-    element: <Menu />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,8 +1,6 @@
-import styles from "/src/styles/terminal/themeSet.module.scss";
-
 const ThemeSet = () => {
   return (
-    <div className={styles.themeSet}>
+    <div>
       <span>
         Theme options:
         <br />

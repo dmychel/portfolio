@@ -1,9 +1,7 @@
 import NormieView from "./NormieView";
 
 const App = () => {
-  return (
-    <NormieView />
-  );
+  return <NormieView />;
 };
 
 export default App;

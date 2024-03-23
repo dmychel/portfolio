@@ -1,23 +1,4 @@
-@import "/src/styles/base/base";
-@import "/src/styles/base/colors";
-
 * {
   padding: 0;
   margin: 0;
-  font-family: monospace;
-}
-
-@font-face {
-  font-family: "noto-sans";
-  src: url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf");
-}
-
-.content {
-  padding: $basePadding;
-}
-
-@media screen and (max-width: 660px) {
-  .content {
-    padding: 10px;
-  }
 }
