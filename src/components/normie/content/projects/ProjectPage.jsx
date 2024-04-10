@@ -27,6 +27,7 @@ const ProjectPage = () => {
             ))}
           </div>
           <p>{project.description}</p>
+          <p>{project.about}</p>
           <p>
             There is a lot more info regarding the project on the{" "}
             <a href={project.repo} target="_blank" rel="noreferrer">

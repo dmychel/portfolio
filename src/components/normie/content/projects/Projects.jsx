@@ -4,25 +4,30 @@ import ProjectChild from "./ProjectChild";
 const Projects = () => {
   const projectArr = [
     {
-      name: "Onistuka Mock Website",
-      background: "/assets/imgs/onitsuka-preview.png",
-      link: "https://onitsuka-tiger-mock.netlify.app/",
-      repo: "https://github.com/dmychel/eCommerce-site",
+      name: "Yakuza API",
+      background: "/assets/imgs/yakuza-api.png",
+      link: "https://yakuza-api.netlify.app/",
+      repo: "https://github.com/dmychel/yakuza-api",
       description:
-        "A mock eCommerce website to flex my UI design skills I've been working to improve.",
+        "A restful API I created to serve media assets from the Yakzua series",
+      about:
+        "When delving into a new technology or concept, the development community often emphasizes the importance of learning by creating projects that address real-world problems. However, brainstorming project ideas for technologies you have very little to no experince with can be challenging. What issues are there to solve when you're you've never used the technology? After several attempts with mundane CRUD apps, I recalled my search for a Yakuza API to utilize its resources, which led to the inception of this project. Although still in its beta stage, I'm uncertain about the extent to which I intend to expand it. Nevertheless, I plan to create and maintain a roadmap to guide its development.",
       tools: [
         {
           name: "Javascript",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         },
         {
-          name: "React",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          name: "Node.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
         },
-        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
         {
-          name: "SASS",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+          name: "MongoDB",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        },
+        {
+          name: "Express",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
         },
       ],
     },
@@ -48,6 +53,30 @@ const Projects = () => {
         },
       ],
     },
+    {
+      name: "Onistuka Mock Website",
+      background: "/assets/imgs/onitsuka-preview.png",
+      link: "https://onitsuka-tiger-mock.netlify.app/",
+      repo: "https://github.com/dmychel/eCommerce-site",
+      description:
+        "A mock eCommerce website to flex my UI design skills I've been working to improve.",
+      tools: [
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
+        {
+          name: "SASS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+        },
+      ],
+    },
+
     {
       name: "Node Message Board",
       background: "/assets/imgs/message-background.jpg",
@@ -104,25 +133,6 @@ const Projects = () => {
           name: "Webpack",
           img: "https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/icon.svg",
         },
-      ],
-    },
-
-    {
-      name: "CV Maker",
-      background: "/assets/imgs/cv-background.png",
-      link: "https://cv-maker-webapp.netlify.app/",
-      repo: "https://github.com/dmychel/cv-maker",
-      description: "A fully editable resume buidler built with React and Vite.",
-      tools: [
-        {
-          name: "Javascript",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "React",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        },
-        { name: "Vite", img: "https://v2.vitejs.dev/logo.svg" },
       ],
     },
   ];
