@@ -1,7 +1,5 @@
-import NormieView from "./NormieView";
-
 const App = () => {
-  return <NormieView />;
+  return;
 };
 
 export default App;
