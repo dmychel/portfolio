@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ProjectRender from "../components/ProjectRender";
 
 function Projects() {
+  const projectArr = [
+    {
+      title: "Yakuza API",
+      description:
+        "A restful API I created to serve media assets from the Yakzua series",
+      live: "https://yakuza-api.netlify.app/",
+      repo: "https://github.com/dmychel/yakuza-api",
+      image: "/assets/imgs/yakuza-api.png",
+    },
+  ];
   return (
     <motion.div
       className="projects"
@@ -20,8 +31,7 @@ function Projects() {
       }}
       transition={{ type: "spring", stiffness: 35 }}
     >
-      <h1>Projects</h1>
-      <Link to="/">Go Back</Link>
+      <ProjectRender projects={projectArr} />
     </motion.div>
   );
 }
