@@ -1,14 +1,24 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion"
 
 function ProjectRender({ projects }) {
   return projects.map((object) => (
-    <div className="project" key={object.title}>
+    <motion.div className="project" key={object.title}
+      initial={{
+        opacity: 0,
+        y: "200vh"
+      }}
+      animate={{
+        opacity: 1,
+        y: 0
+      }}
+      transition={{ delay: 1.25, type: "spring", stiffness: 50 }}>
       <div className="left">
 
         <div className="tools">
           <p>{object.title}</p>
-          {object.tools.map((tool) => (
-            <img src={tool.url} alt={tool.name} key={tool.name} />
+          {object.tools.map((tool, index) => (
+            <img src={tool.url} alt={tool.name} key={index} />
           ))}
 
         </div>
@@ -20,7 +30,7 @@ function ProjectRender({ projects }) {
       <div className="right">
         <a href={object.live} target="_blank" rel="noreferrer">&#128279;</a>
       </div>
-    </div>
+    </motion.div>
   ));
 }
 
