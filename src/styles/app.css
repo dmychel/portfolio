@@ -51,12 +51,12 @@ div {
 .projects,
 .about,
 .labs {
-  padding: 8px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 0;
+  gap: 2em;
   border: 2px solid white;
   height: 100%;
   width: 100%;
