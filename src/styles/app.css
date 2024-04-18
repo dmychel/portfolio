@@ -5,7 +5,6 @@
 
 body {
   overflow: hidden;
-  height: 100vh;
   background: rgb(19, 19, 19);
   color: #fff;
   font-family: "Noto Sans", sans-serif;
@@ -21,6 +20,33 @@ div {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  top: 0;
+  position: sticky;
+  padding: 12px;
+  text-align: left;
+  width: fit-content;
+  background-color: rgba(255, 127, 80, 0.785);
+  border-radius: 8px;
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+}
+
+.back:hover {
+  background-color: rgb(255, 127, 80);
+  transition: ease 0.25s;
 }
 
 .grid {
@@ -55,20 +81,18 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 2em;
-  border: 2px solid white;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
 }
 
-
 .projects h2,
 .skills h2 {
   padding: 24px;
   background-color: rgb(1, 165, 40);
-  width: 60%;
+  width: 70%;
   border-top-left-radius: 24px;
   border-top-right-radius: 8px;
 }
@@ -76,7 +100,6 @@ div {
 .skills h2 {
   background-color: #1e9ad8;
 }
-
 
 .projects_wrapper,
 .skills {
@@ -87,12 +110,10 @@ div {
   width: 100%;
 }
 
-
-
 .project,
 .skill_tools {
   padding: 12px;
-  width: 60%;
+  width: 70%;
   background-color: rgba(0, 155, 39, 0.479);
   display: flex;
   align-items: center;
@@ -111,7 +132,6 @@ div {
 .skill_tools img {
   width: 40px;
 }
-
 
 .project:last-child,
 .skill_tools:last-child {
@@ -167,7 +187,16 @@ div {
   }
 }
 
-@media screen and (min-width:1311px) {
+@media screen and (min-width: 1000px) {
+  .project,
+  .skill_tools,
+  .projects h2,
+  .skills h2 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1311px) {
   .grid {
     grid-template-columns: repeat(3, 400px);
   }
