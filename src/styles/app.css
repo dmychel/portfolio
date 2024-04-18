@@ -55,29 +55,66 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   gap: 0;
   border: 2px solid white;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
-.projects h2 {
+
+.projects h2,
+.skills h2 {
   padding: 24px;
-  background-color: rgb(3, 90, 24);
+  background-color: rgb(1, 165, 40);
   width: 60%;
   border-top-left-radius: 24px;
   border-top-right-radius: 8px;
 }
 
-.project {
+.skills h2 {
+  background-color: #1e9ad8;
+}
+
+
+.projects_wrapper,
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.project,
+.skill_tools {
   padding: 12px;
   width: 60%;
-  background-color: rgb(5, 136, 38);
+  background-color: rgba(0, 155, 39, 0.479);
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 24px;
 }
 
-.project:last-child {
+.skill_tools {
+  background-color: #44aadd70;
+}
+
+.skill_tools {
+  justify-content: space-around;
+}
+
+.skill_tools img {
+  width: 40px;
+}
+
+
+.project:last-child,
+.skill_tools:last-child {
   border-bottom-right-radius: 24px;
   border-bottom-left-radius: 8px;
 }
