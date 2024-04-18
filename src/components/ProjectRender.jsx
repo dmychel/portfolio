@@ -6,10 +6,11 @@ function ProjectRender({ projects }) {
       <div className="left">
 
         <div className="tools">
+          <p>{object.title}</p>
           {object.tools.map((tool) => (
             <img src={tool.url} alt={tool.name} key={tool.name} />
           ))}
-          <p>{object.live}</p>
+
         </div>
         <div className="info">
           <p>{object.description}</p>
