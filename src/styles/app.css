@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow: hidden;
   height: 100vh;
@@ -46,12 +51,68 @@ div {
 .projects,
 .about,
 .labs {
+  padding: 8px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  gap: 0;
   border: 2px solid white;
   height: 100%;
   width: 100%;
+}
+
+.projects h2 {
+  padding: 24px;
+  background-color: rgb(3, 90, 24);
+  width: 60%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 8px;
+}
+
+.project {
+  padding: 12px;
+  width: 60%;
+  background-color: rgb(5, 136, 38);
+  display: flex;
+  padding: 24px;
+}
+
+.project:last-child {
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 8px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  height: 100%;
+  width: 90%;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 10%;
+  height: 100%;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.project .tools {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  width: 100%;
+}
+
+.project .tools img {
+  width: 5%;
+  height: auto;
 }
 
 @media screen and (min-width: 650px) {
