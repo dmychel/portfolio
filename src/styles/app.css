@@ -23,7 +23,7 @@ div {
   height: 85vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   grid-template-rows: repeat(auto-fit, 1fr);
   align-items: center;
   justify-content: center;
@@ -62,10 +62,15 @@ div {
 
   .card:nth-child(2) {
     grid-column: span 1;
-    grid-row: span 1;
   }
+
   .card:nth-child(3) {
     grid-column: span 1;
-    grid-row: span 1;
+  }
+}
+
+@media screen and (min-width:1311px) {
+  .grid {
+    grid-template-columns: repeat(3, 400px);
   }
 }
