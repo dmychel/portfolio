@@ -1,6 +1,7 @@
 import ProjectRender from "./ProjectRender"
 import { Link } from "react-router-dom"
 
+
 function PreviewProject() {
     const projects = [
         {
@@ -19,6 +20,7 @@ function PreviewProject() {
                     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
                 },
             ],
+            page: "/yakuza-api",
         },
         {
             title: "Terminal",
@@ -40,6 +42,7 @@ function PreviewProject() {
                     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
                 },
             ],
+            page: "/terminal",
         },
         {
             title: "Onitsuka",
@@ -59,6 +62,7 @@ function PreviewProject() {
                     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
                 },
             ],
+            page: "/onitsuka",
         },
     ]
     return (
