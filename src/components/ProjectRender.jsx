@@ -9,7 +9,15 @@ function ProjectRender({ projects }) {
       <Link to={object.page}> <div className="tools">
         <h4>{object.title}</h4>
         {object.tools.map((tool, index) => (
-          <img src={tool.url} alt={tool.name} key={index} />
+          <motion.img src={tool.url} alt={tool.name} key={index} initial={{
+            y: 20,
+            opacity: 0
+          }}
+            animate={{
+              y: 0,
+              opacity: 1
+            }}
+            transition={{ delay: 1.15 }} />
         ))}
       </div>
         <div className="info">
