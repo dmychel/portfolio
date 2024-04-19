@@ -69,7 +69,8 @@ function PreviewProject() {
         <section className="preview_project">
             <h3>Projects</h3>
             <ProjectRender projects={projects} />
-            <Link to='/projects'>See more</Link>
+            <p style={{ color: "#50FA7B" }}>View more projects <Link to='/projects'>here</Link>.</p>
+
         </section>
     )
 }

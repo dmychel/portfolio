@@ -13,6 +13,9 @@ import "/src/styles/app.css";
 const App = () => {
   return (
     <section className="app">
+      <header>
+        <h1>Dylon Crowley-Perez</h1>
+      </header>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
