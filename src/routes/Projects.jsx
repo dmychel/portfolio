@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProjectRender from "../components/ProjectRender";
 
 function Projects() {
+  window.scrollTo(0, 0);
+
   const projectArr = [
     {
       title: "Yakuza API",
@@ -108,7 +110,8 @@ function Projects() {
   ];
 
   return (
-    <motion.section className="preview_project"
+    <motion.section
+      className="preview_project"
       initial={{
         opacity: 0,
         y: "200vh",
@@ -117,7 +120,8 @@ function Projects() {
         opacity: 1,
         y: 0,
       }}
-      transition={{ delay: 0.45, type: "spring", stiffness: 50 }}>
+      transition={{ delay: 0.45, type: "spring", stiffness: 50 }}
+    >
       <motion.h2
         initial={{
           opacity: 0,
@@ -127,16 +131,23 @@ function Projects() {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 1, type: "spring", stiffness: 45 }}>Projects</motion.h2>
-      <motion.span initial={{
-        opacity: 0,
-        x: "-200vw",
-      }}
+        transition={{ delay: 1, type: "spring", stiffness: 45 }}
+      >
+        Projects
+      </motion.h2>
+      <motion.span
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
         animate={{
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 1, type: "spring", stiffness: 45 }}><Link to='/'>Back</Link></motion.span>
+        transition={{ delay: 1, type: "spring", stiffness: 45 }}
+      >
+        <Link to="/">Back</Link>
+      </motion.span>
       <ProjectRender projects={projectArr} />
     </motion.section>
   );
