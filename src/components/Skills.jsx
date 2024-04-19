@@ -1,36 +1,9 @@
 import { motion } from "framer-motion"
 
 function Skills() {
-    const variants = {
-        hidden: { opacity: 0, },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
-    }
-
-    const stagger = {
-        hidden: {
-            opacity: 0,
-            y: 10
-        },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 2,
-            },
-        }
-    }
-
-
-
 
     return (
         <motion.section className="skills"
-            variants={variants}
             initial={{
                 opacity: 0,
                 y: "200vh",
