@@ -13,17 +13,20 @@ body {
   padding: 1em;
   background-color: #282A36;
   color: #F8F8F2;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 section {
-  margin-top: 1em;
   width: 100%;
 }
 
 .index {
   display: flex;
   flex-wrap: wrap;
-  gap: 4em;
+  gap: 3em;
   height: 100%;
 }
 
@@ -115,6 +118,7 @@ section {
   border-radius: 2px;
 }
 
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -130,6 +134,7 @@ section {
 .contact nav {
   font-size: 36px;
   cursor: pointer;
+  transition: all ease-in-out 0.15s;
 }
 
 .contact nav span:last-child {
