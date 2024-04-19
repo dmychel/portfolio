@@ -1,24 +1,20 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function ProjectRender({ projects }) {
   return projects.map((object) => (
+
     <div className="project" key={object.title}>
-      <div className="left">
-        <div className="tools">
-          <p>{object.title}</p>
-          {object.tools.map((tool, index) => (
-            <img src={tool.url} alt={tool.name} key={index} />
-          ))}
-        </div>
+      <Link to={object.page}> <div className="tools">
+        <h4>{object.title}</h4>
+        {object.tools.map((tool, index) => (
+          <img src={tool.url} alt={tool.name} key={index} />
+        ))}
+      </div>
         <div className="info">
           <p>{object.description}</p>
-        </div>
-      </div>
-      <div className="right">
-        <a href={object.live} target="_blank" rel="noreferrer">
-          &#128279;
-        </a>
-      </div>
+        </div></Link>
+
     </div>
   ));
 }
