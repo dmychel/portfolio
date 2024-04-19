@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 function ProjectRender({ projects }) {
   return projects.map((object) => (
 
-    <div className="project" key={object.title}>
+    <motion.div className="project" key={object.title} whileHover={{ x: 50, scale: 1.05, }} >
       <Link to={object.page}> <div className="tools">
         <h4>{object.title}</h4>
         {object.tools.map((tool, index) => (
@@ -16,7 +16,7 @@ function ProjectRender({ projects }) {
           <p>{object.description}</p>
         </div></Link>
 
-    </div>
+    </motion.div>
   ));
 }
 
