@@ -94,6 +94,27 @@ section {
   border-radius: 2px;
 }
 
+.project_page {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+}
+
+.project_page span {
+  width: 100%;
+}
+
+.project_info,
+.project_links {
+  width: 100%;
+}
+
+.project_links {
+  display: flex;
+  gap: 1em;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
