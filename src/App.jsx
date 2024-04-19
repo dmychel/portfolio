@@ -3,7 +3,7 @@ import Index from "./routes/Index";
 import Projects from "./routes/Projects";
 import About from "./routes/About";
 import Labs from "./routes/Labs";
-import ProjectPage from "./routes/projectPages/YakuzaAPI";
+import ProjectPage from "./routes/ProjectPage";
 import Error from "./routes/Error";
 
 import "/src/styles/app.css";
