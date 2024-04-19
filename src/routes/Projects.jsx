@@ -20,7 +20,7 @@ function Projects() {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
         },
       ],
-      id: 1,
+      page: "/yakuza-api",
     },
     {
       title: "Terminal",
@@ -42,7 +42,7 @@ function Projects() {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
         },
       ],
-      id: 2,
+      page: "/terminal",
     },
     {
       title: "Onitsuka",
@@ -62,7 +62,7 @@ function Projects() {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
         },
       ],
-      id: 3,
+      page: "/onitsuka",
     },
     {
       title: "Message Board",
@@ -83,7 +83,7 @@ function Projects() {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
         },
       ],
-      id: 4,
+      page: "/message-board",
     },
     {
       title: "Windfall Matchup",
@@ -103,83 +103,42 @@ function Projects() {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
         },
       ],
-      id: 5,
+      page: "/windfall-matchup",
     },
   ];
 
   return (
-    <section className="wrapper">
-      <div className="projects">
-        <motion.span
-          className="back"
-          initial={{ x: "-150vw", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 40 }}
-        >
-          <Link to="/">Back</Link>
-        </motion.span>
-        <motion.div
-          className="skills"
-          initial={{
-            opacity: 0,
-            y: "200vh",
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{ delay: 0.25, type: "spring", stiffness: 50 }}
-        >
-          <h2>Skills</h2>
-          <div className="skill_tools">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-              alt="Javascript"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-              alt="React"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-              alt="Node"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-              alt="Express"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
-              alt="MongoDB"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-              alt="Sass"
-            />
-          </div>
-        </motion.div>
-        <motion.div
-          className="projects_wrapper"
-          initial={{
-            opacity: 0,
-            y: "200vh",
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{ delay: 0.5, type: "spring", stiffness: 50 }}
-        >
-          <h2>Projects</h2>
-          <ProjectRender projects={projectArr} />
-        </motion.div>
-      </div>
-    </section>
+    <motion.section className="preview_project"
+      initial={{
+        opacity: 0,
+        y: "200vh",
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{ delay: 0.45, type: "spring", stiffness: 50 }}>
+      <motion.h2
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 1, type: "spring", stiffness: 45 }}>Projects</motion.h2>
+      <motion.span initial={{
+        opacity: 0,
+        x: "-200vw",
+      }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 1, type: "spring", stiffness: 45 }}><Link to='/'>Back</Link></motion.span>
+      <ProjectRender projects={projectArr} />
+    </motion.section>
   );
 }
 
