@@ -1,4 +1,5 @@
 import ProjectRender from "./ProjectRender"
+import { motion } from 'framer-motion'
 import { Link } from "react-router-dom"
 
 
@@ -66,12 +67,20 @@ function PreviewProject() {
         },
     ]
     return (
-        <section className="preview_project">
-            <h3>Projects</h3>
+        <motion.section className="preview_project" initial={{
+            opacity: 0,
+            y: "200vh",
+        }}
+            animate={{
+                opacity: 1,
+                y: 0,
+            }}
+            transition={{ delay: 0.45, type: "spring", stiffness: 50 }}>
+            <h2>Projects</h2>
             <ProjectRender projects={projects} />
             <p style={{ color: "#50FA7B" }}>View more projects <Link to='/projects'>here</Link>.</p>
 
-        </section>
+        </motion.section>
     )
 }
 
