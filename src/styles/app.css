@@ -60,11 +60,19 @@ section {
   gap: 0.75em;
 }
 
+.preview_project a {
+  color: #bd93f9;
+}
+
 .project {
   border-radius: 8px;
   padding: 0.75em;
   background-color: #8be9fd;
   box-shadow: 0 8px 10px #0f1016;
+}
+
+.project:hover {
+  background-color: yellow;
 }
 
 .project a {
