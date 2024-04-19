@@ -17,7 +17,7 @@ function ProjectRender({ projects }) {
               y: 0,
               opacity: 1
             }}
-            transition={{ delay: 1.15 }} />
+            transition={{ delay: 1.25 }} />
         ))}
       </div>
         <div className="info">
