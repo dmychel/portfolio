@@ -1,5 +1,63 @@
+import { motion } from "framer-motion"
+
 function Skills() {
-    return
+    return (
+        <motion.section className="skills" initial={{
+            opacity: 0,
+            y: "200vh",
+        }}
+            animate={{
+                opacity: 1,
+                y: 0,
+            }}
+            transition={{ delay: 0.25, type: "spring", stiffness: 50 }}>
+
+            <h2>Technologies I Like</h2>
+            <div className="skill_tools">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    alt="Javascript"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    alt="React"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="Node"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+                    alt="Express"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                    alt="MongoDB"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                    alt="Sass"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                    alt="Linux"
+                />
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                    alt="Figma"
+                />
+
+
+            </div>
+        </motion.section>
+    )
 }
 
 export default Skills
