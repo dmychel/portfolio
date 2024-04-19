@@ -11,8 +11,8 @@ body {
   margin: auto;
   max-width: 40rem;
   padding: 1em;
-  background-color: #282A36;
-  color: #F8F8F2;
+  background-color: #282a36;
+  color: #f8f8f2;
   font-family: "Jersey 15", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -31,7 +31,7 @@ section {
 }
 
 .index a {
-  color: #BD93F9;
+  color: #bd93f9;
 }
 
 .intro {
@@ -42,11 +42,11 @@ section {
 }
 
 .intro p {
-  background-color: #50FA7B;
+  background-color: #50fa7b;
   border-radius: 8px;
   padding: 0.75em;
-  color: #282A36;
-  filter: drop-shadow(0 1.5mm 1mm #0f1016);
+  color: #282a36;
+  box-shadow: 0 8px 10px #0f1016;
 }
 
 .intro p:last-child {
@@ -63,17 +63,12 @@ section {
 .project {
   border-radius: 8px;
   padding: 0.75em;
-  background-color: #8BE9FD;
-  filter: drop-shadow(0 1.5mm 1mm #0f1016);
-  transition: ease;
-}
-
-.project:hover {
-  background-color: yellow;
+  background-color: #8be9fd;
+  box-shadow: 0 8px 10px #0f1016;
 }
 
 .project a {
-  color: #282A36;
+  color: #282a36;
 }
 
 .tools {
@@ -87,7 +82,7 @@ section {
   width: 20px;
   height: auto;
   padding: 5px;
-  background-color: #282A36;
+  background-color: #282a36;
   border-radius: 2px;
 }
 
@@ -95,15 +90,14 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1em;
-
 }
 
 .skill_tools {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #FF79C6;
-  filter: drop-shadow(0 1.5mm 1mm #0f1016);
+  background-color: #ff79c6;
+  box-shadow: 0 8px 10px #0f1016;
   border-radius: 8px;
   padding: 8px;
   width: 100%;
@@ -114,10 +108,9 @@ section {
   height: auto;
   box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.253);
   padding: 5px;
-  background-color: #282A36;
+  background-color: #282a36;
   border-radius: 2px;
 }
-
 
 .contact {
   display: flex;
