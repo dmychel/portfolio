@@ -9,7 +9,7 @@ a {
 
 body {
   margin: auto;
-  max-width: 36rem;
+  max-width: 40rem;
   padding: 1em;
   background-color: #282A36;
   color: #F8F8F2;
@@ -17,16 +17,38 @@ body {
 
 section {
   margin-top: 1em;
+  width: 100%;
 }
 
 .index {
   display: flex;
   flex-wrap: wrap;
+  gap: 4em;
   height: 100%;
 }
 
 .index a {
   color: #BD93F9;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 5%;
+}
+
+.intro p {
+  background-color: #50FA7B;
+  border-radius: 8px;
+  padding: 0.75em;
+  color: #282A36;
+  filter: drop-shadow(0 1.5mm 1mm #0f1016);
+}
+
+.intro p:last-child {
+  background-color: transparent;
+  padding: 0;
 }
 
 .preview_project {
@@ -37,29 +59,55 @@ section {
 
 .project {
   border-radius: 8px;
-  padding: 0.5em;
-  background-color: #6272A4;
+  padding: 0.75em;
+  background-color: #8BE9FD;
   filter: drop-shadow(0 1.5mm 1mm #0f1016);
 }
 
-.left {
-  width: 90%;
+.project a {
+  color: #282A36;
 }
 
 .tools {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 1.5em;
   width: 100%;
 }
 
 .tools img {
-  width: 30px;
+  width: 20px;
   height: auto;
+  padding: 5px;
+  background-color: #282A36;
+  border-radius: 2px;
 }
 
-.right {
-  margin: auto;
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+.skill_tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FF79C6;
+  filter: drop-shadow(0 1.5mm 1mm #0f1016);
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+}
+
+.skill_tools img {
+  width: 30px;
+  height: auto;
+  box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.253);
+  padding: 5px;
+  background-color: #282A36;
+  border-radius: 2px;
 }
 
 .contact {
