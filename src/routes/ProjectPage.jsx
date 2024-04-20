@@ -1,11 +1,14 @@
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function ProjectPage() {
+function ProjectPage({ currentProject }) {
+  const object = currentProject;
+  console.log(object.tools);
+
   return (
     <section className="project_page">
-      <h3>Yakuza API</h3>
+      <h3>{object.title}</h3>
       <motion.span
         initial={{
           opacity: 0,
@@ -15,31 +18,35 @@ function ProjectPage() {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 1, type: "spring", stiffness: 45 }}
+        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
       >
         <Link to="/">Back</Link>
       </motion.span>
       <div className="project_info">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
-          soluta harum quos repellendus incidunt voluptate eos, iusto delectus
-          eum commodi asperiores earum a saepe minima quisquam temporibus non
-          nulla!
-        </p>
+        <p>{object.description}</p>
       </div>
       <div className="project_image">
-        <img src="" alt="Preview" />
+        <img src={object.image} alt="Preview" />
       </div>
-      <div className="skills"></div>
+      <div className="skills">
+        {object.tools.map((tool, index) => (
+          <img src={tool.url} alt={tool.name} key={index} />
+        ))}
+      </div>
       <div className="project_links">
-        <a href="">Live</a>
-        <a href="">Repo</a>
+        <a href={object.live} target="_blank" rel="noreferrer">
+          Live
+        </a>
+        <a href={object.repo} target="_blank" rel="noreferrer">
+          Repo
+        </a>
       </div>
     </section>
   );
 }
 
 ProjectPage.propTypes = {
-  object: PropTypes.object,
+  currentProject: PropTypes.object,
 };
+
 export default ProjectPage;
