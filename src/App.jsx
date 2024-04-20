@@ -7,8 +7,11 @@ import ProjectPage from "./routes/ProjectPage";
 import Error from "./routes/Error";
 
 import "/src/styles/app.css";
+import { useState } from "react";
 
 const App = () => {
+  const [currentProject, setCurrentProject] = useState(null);
+
   return (
     <section className="app">
       <header>
@@ -16,10 +19,16 @@ const App = () => {
       </header>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route
+            path="/"
+            element={<Index setCurrentProject={setCurrentProject} />}
+          />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/project-page" element={<ProjectPage />}></Route>
+          <Route
+            path="/project-page"
+            element={<ProjectPage currentProject={currentProject} />}
+          ></Route>
           <Route path="/labs" element={<Labs />} />
           <Route path="*" element={<Error />} />
         </Routes>
