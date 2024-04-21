@@ -23,7 +23,7 @@ const App = () => {
             path="/"
             element={<Index setCurrentProject={setCurrentProject} />}
           />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects setCurrentProject={setCurrentProject} />} />
           <Route path="/about" element={<About />} />
           <Route
             path="/project-page"
