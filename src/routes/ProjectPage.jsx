@@ -45,7 +45,21 @@ function ProjectPage({ currentProject }) {
         }}
         transition={{ delay: 0.24, type: "spring", stiffness: 45 }}
       >
-        <p>{object.description}</p>
+        <motion.div
+          className="project_image"
+          initial={{
+            opacity: 0,
+            x: "-200vw",
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
+        >
+          <img src={object.image} alt="Image Preview" />
+        </motion.div>
+        <p>{object.summary}</p>
       </motion.div>
       <motion.div
         className="project_links"
@@ -66,20 +80,7 @@ function ProjectPage({ currentProject }) {
           Repo
         </a>
       </motion.div>
-      <motion.div
-        className="project_image"
-        initial={{
-          opacity: 0,
-          x: "-200vw",
-        }}
-        animate={{
-          opacity: 1,
-          x: 0,
-        }}
-        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
-      >
-        <img src={object.image} alt="Image Preview" />
-      </motion.div>
+
       <motion.div
         className="skill_tools"
         initial={{
