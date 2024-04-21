@@ -123,15 +123,20 @@ section {
 .project_image {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  margin: 1em 0 1em 0;
 }
 
 .project_image img {
   width: 100%;
-  height: auto;
+  min-height: 200px;
+  border: 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: yellow;
+  color: #0f1016;
 }
 
 .skills {
