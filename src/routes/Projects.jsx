@@ -156,8 +156,9 @@ function Projects({ setCurrentProject }) {
     </motion.section>
   );
 }
+
 Projects.Proptypes = {
-  setCurrentProject: PropTypes.object
+  setCurrentProject: PropTypes.func
 }
 
 export default Projects;
