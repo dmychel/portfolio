@@ -101,6 +101,10 @@ section {
   gap: 0.75em;
 }
 
+.project_page a {
+  color: #bd93f9;
+}
+
 .project_page span {
   width: 100%;
 }
