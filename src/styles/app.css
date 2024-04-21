@@ -49,10 +49,10 @@ section {
   box-shadow: 0 8px 10px #0f1016;
 }
 
-.intro p:last-child {
+/* .intro p:last-child {
   background-color: transparent;
   padding: 0;
-}
+} */
 
 .preview_project {
   display: flex;
