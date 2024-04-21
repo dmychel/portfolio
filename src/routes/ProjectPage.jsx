@@ -26,9 +26,9 @@ function ProjectPage({ currentProject }) {
         <p>{object.description}</p>
       </div>
       <div className="project_image">
-        <img src={object.image} alt="Preview" />
+        <img src={object.image} alt={object.image} />
       </div>
-      <div className="skills">
+      <div className="skill_tools" style={{ justifyContent: "left", gap: "2em", width: "fit-content" }}>
         {object.tools.map((tool, index) => (
           <img src={tool.url} alt={tool.name} key={index} />
         ))}
