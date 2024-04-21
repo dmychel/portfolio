@@ -143,9 +143,11 @@ section {
 }
 
 .skill_tools {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
   justify-content: space-around;
+  align-items: center;
+  gap: 0.5em;
   background-color: #ff79c6;
   box-shadow: 0 8px 10px #0f1016;
   border-radius: 8px;
