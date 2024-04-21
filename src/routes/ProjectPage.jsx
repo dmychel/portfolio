@@ -57,7 +57,7 @@ function ProjectPage({ currentProject }) {
           }}
           transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
         >
-          <img src={object.image} alt="Image Preview" />
+          <img src={object.image} alt="Error Loading Image :(" />
         </motion.div>
         <p>{object.summary}</p>
       </motion.div>
