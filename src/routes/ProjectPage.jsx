@@ -8,7 +8,16 @@ function ProjectPage({ currentProject }) {
 
   return (
     <section className="project_page">
-      <h3>{object.title}</h3>
+      <motion.h3
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 0.85, type: "spring", stiffness: 45 }}>{object.title}</motion.h3>
       <motion.span
         initial={{
           opacity: 0,
@@ -18,29 +27,65 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
+        transition={{ delay: 0.55, type: "spring", stiffness: 45 }}
       >
-        <Link to="/">Back</Link>
+        <Link to="/projects">Back</Link>
       </motion.span>
-      <div className="project_info">
+      <motion.div className="project_info"
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 0.24, type: "spring", stiffness: 45 }}>
         <p>{object.description}</p>
-      </div>
-      <div className="project_image">
-        <img src={object.image} alt={object.image} />
-      </div>
-      <div className="skill_tools" style={{ justifyContent: "left", gap: "2em", width: "fit-content" }}>
-        {object.tools.map((tool, index) => (
-          <img src={tool.url} alt={tool.name} key={index} />
-        ))}
-      </div>
-      <div className="project_links">
+      </motion.div>
+      <motion.div className="project_links"
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}>
         <a href={object.live} target="_blank" rel="noreferrer">
           Live
         </a>
         <a href={object.repo} target="_blank" rel="noreferrer">
           Repo
         </a>
-      </div>
+      </motion.div>
+      <motion.div className="project_image"
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}>
+        <img src={object.image} alt={object.image} />
+      </motion.div>
+      <motion.div className="skill_tools" style={{ justifyContent: "left", gap: "2em", width: "fit-content", margin: "auto" }}
+        initial={{
+          opacity: 0,
+          x: "-200vw",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ type: "spring", stiffness: 45 }}>
+        {object.tools.map((tool, index) => (
+          <motion.img src={tool.url} alt={tool.name} key={index} />
+        ))}
+      </motion.div>
     </section>
   );
 }
