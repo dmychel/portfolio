@@ -10,6 +10,7 @@ function PreviewProject({ setCurrentProject }) {
       description:
         "A restful API I created to serve media assets from the Yakzua series",
       live: "https://yakuza-api.netlify.app/",
+      repo: "https://github.com/dmychel/yakuza-api",
       image: "https://64.media.tumblr.com/46bd487b81e3b49b3b3f523c5efd8683/e7f01d6be5be4ec0-2a/s2048x3072/604e8f9cbfcff03ac091f7d07d5dcc797478240c.pnj",
       tools: [
         {
@@ -21,7 +22,6 @@ function PreviewProject({ setCurrentProject }) {
           url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
         },
       ],
-      page: "/yakuza-api",
     },
     {
       title: "Terminal",
@@ -29,6 +29,7 @@ function PreviewProject({ setCurrentProject }) {
         "A unique twist on my portfolio to show my passion for Linux and tech. *This project is in the process of being migrated, thank you for your patience.*",
       live: "",
       image: "https://64.media.tumblr.com/d352971e6dbf1425eb1b694ae0aee2aa/0d06ed392c6e1280-08/s2048x3072/a1d176d5521aa3ea01288d85de5fa0c205b02635.jpg",
+      repo: "https://github.com/dmychel/portfolio",
       tools: [
         {
           name: "reactJS",
@@ -49,6 +50,7 @@ function PreviewProject({ setCurrentProject }) {
       description: "A mock eCommerce website",
       live: "https://onitsuka-tiger-mock.netlify.app/",
       image: "https://64.media.tumblr.com/8dcf7ffed9c4b7d37d38488d91d69d00/355392f59f6cbd85-17/s2048x3072/104f08ed8a7328fba8302215c2f6e76cae4bce25.pnj",
+      repo: "https://github.com/dmychel/eCommerce-site",
       tools: [
         {
           name: "reactJS",
