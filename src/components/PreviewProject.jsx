@@ -12,7 +12,6 @@ function PreviewProject({ setCurrentProject }) {
     }
   }
   parseProjects();
-  console.log(projects);
 
   return (
     <motion.section

@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 function ProjectPage({ currentProject }) {
   const object = currentProject;
-  console.log(object.tools);
 
   return (
     <section className="project_page">
