@@ -82,12 +82,6 @@ function ProjectPage({ currentProject }) {
       </motion.div>
       <motion.div
         className="skill_tools"
-        style={{
-          justifyContent: "left",
-          gap: "2em",
-          width: "fit-content",
-          margin: "auto",
-        }}
         initial={{
           opacity: 0,
           x: "-200vw",
