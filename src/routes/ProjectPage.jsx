@@ -17,7 +17,10 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 0.85, type: "spring", stiffness: 45 }}>{object.title}</motion.h3>
+        transition={{ delay: 0.85, type: "spring", stiffness: 45 }}
+      >
+        {object.title}
+      </motion.h3>
       <motion.span
         initial={{
           opacity: 0,
@@ -31,7 +34,8 @@ function ProjectPage({ currentProject }) {
       >
         <Link to="/projects">Back</Link>
       </motion.span>
-      <motion.div className="project_info"
+      <motion.div
+        className="project_info"
         initial={{
           opacity: 0,
           x: "-200vw",
@@ -40,10 +44,12 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 0.24, type: "spring", stiffness: 45 }}>
+        transition={{ delay: 0.24, type: "spring", stiffness: 45 }}
+      >
         <p>{object.description}</p>
       </motion.div>
-      <motion.div className="project_links"
+      <motion.div
+        className="project_links"
         initial={{
           opacity: 0,
           x: "-200vw",
@@ -52,7 +58,8 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}>
+        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
+      >
         <a href={object.live} target="_blank" rel="noreferrer">
           Live
         </a>
@@ -60,7 +67,8 @@ function ProjectPage({ currentProject }) {
           Repo
         </a>
       </motion.div>
-      <motion.div className="project_image"
+      <motion.div
+        className="project_image"
         initial={{
           opacity: 0,
           x: "-200vw",
@@ -69,10 +77,18 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}>
-        <img src={object.image} alt={object.image} />
+        transition={{ delay: 0.25, type: "spring", stiffness: 45 }}
+      >
+        <img src={object.image} alt="Image Preview" />
       </motion.div>
-      <motion.div className="skill_tools" style={{ justifyContent: "left", gap: "2em", width: "fit-content", margin: "auto" }}
+      <motion.div
+        className="skill_tools"
+        style={{
+          justifyContent: "left",
+          gap: "2em",
+          width: "fit-content",
+          margin: "auto",
+        }}
         initial={{
           opacity: 0,
           x: "-200vw",
@@ -81,7 +97,8 @@ function ProjectPage({ currentProject }) {
           opacity: 1,
           x: 0,
         }}
-        transition={{ type: "spring", stiffness: 45 }}>
+        transition={{ type: "spring", stiffness: 45 }}
+      >
         {object.tools.map((tool, index) => (
           <motion.img src={tool.url} alt={tool.name} key={index} />
         ))}
