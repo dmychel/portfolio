@@ -115,7 +115,24 @@ section {
   gap: 1em;
 }
 
+.project_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid;
+}
+
+.project_image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skills {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1em;
