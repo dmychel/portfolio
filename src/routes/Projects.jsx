@@ -1,7 +1,10 @@
+// functions
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { projectArr } from "../components/projectsData";
 import PropTypes from 'prop-types'
+
+// components
 import ProjectRender from "../components/ProjectRender";
 
 function Projects({ setCurrentProject }) {

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { setLocal } from "./localStorage";
 
 function ProjectRender({ projects, setCurrentProject }) {
+
+  // sets useState and local storage
   function handleClick(project) {
     return setCurrentProject(project), setLocal(project)
   }

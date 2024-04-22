@@ -1,12 +1,16 @@
+// functions
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+// routes
 import Index from "./routes/Index";
 import Projects from "./routes/Projects";
 import About from "./routes/About";
 import Labs from "./routes/Labs";
 import ProjectPage from "./routes/ProjectPage";
 import Error from "./routes/Error";
+// css
 import "/src/styles/app.css";
 
 
@@ -18,7 +22,6 @@ const App = () => {
     if (project) {
       setCurrentProject(project);
     }
-    console.log('hello')
   }, []);
 
   return (

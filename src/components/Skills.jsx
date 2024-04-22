@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 
 function Skills() {
-
     return (
         <motion.section className="skills"
             initial={{
