@@ -31,7 +31,7 @@ function PreviewProject({ setCurrentProject }) {
         projects={projects}
         setCurrentProject={setCurrentProject}
       />
-      <p style={{ color: "#50FA7B" }}>
+      <p style={{ color: "#BD93F9" }}>
         View more projects <Link to="/projects">here</Link>.
       </p>
     </motion.section>
