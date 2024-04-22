@@ -1,8 +1,13 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { setLocal } from "./localStorage";
 
 function ProjectRender({ projects, setCurrentProject }) {
+  function handleClick(project) {
+    return setCurrentProject(project), setLocal(project)
+  }
+
   return projects.map((object) => (
     <motion.div
       className="project"
@@ -10,7 +15,7 @@ function ProjectRender({ projects, setCurrentProject }) {
       whileHover={{ y: 5, scale: 1.05 }}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <Link to="/project-page" onClick={() => setCurrentProject(object)}>
+      <Link to="/project-page" onClick={() => handleClick(object)}>
         <div className="tools">
           <h4>{object.title}</h4>
           {object.tools.map((tool, index) => (
