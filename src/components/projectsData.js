@@ -8,7 +8,7 @@ export const projectArr = [
     live: "https://yakuza-api.netlify.app/",
     repo: "https://github.com/dmychel/yakuza-api",
     image:
-      "https://64.media.tumblr.com/46bd487b81e3b49b3b3f523c5efd8683/e7f01d6be5be4ec0-2a/s2048x3072/604e8f9cbfcff03ac091f7d07d5dcc797478240c.pnj",
+      "https://64.media.tumblr.com/ba61beb21460e565e103e19f19dc54cc/375fb08e88b7ee72-64/s2048x3072/d44509212f8b4d63ce4bbfaa981cbeb0e4637dd1.pnj",
     tools: [
       {
         name: "Javascript",
