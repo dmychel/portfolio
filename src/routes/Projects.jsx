@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { projectArr } from "../components/projectsData";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 import ProjectRender from "../components/ProjectRender";
 
 function Projects({ setCurrentProject }) {
@@ -43,18 +43,15 @@ function Projects({ setCurrentProject }) {
         }}
         transition={{ delay: 1, type: "spring", stiffness: 45 }}
       >
-        <Link to="/">Back</Link>
+        <Link to="/">.../home</Link>
       </motion.span>
-      <ProjectRender
-        projects={projectArr}
-        setCurrentProject={setCurrentProject}
-      />
+      <ProjectRender projects={projectArr} setCurrentProject={setCurrentProject} />
     </motion.section>
   );
 }
 
 Projects.Proptypes = {
-  setCurrentProject: PropTypes.func,
-};
+  setCurrentProject: PropTypes.func
+}
 
 export default Projects;
