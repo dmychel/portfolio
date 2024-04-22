@@ -4,7 +4,7 @@ export const projectArr = [
     description:
       "A restful API I created to serve media assets from the Yakzua series",
     summary:
-      "When delving into a new technology or concept, the development community often emphasizes the importance of learning by creating projects that address real-world problems. However, brainstorming project ideas for technologies you have very little to no experince with can be challenging. What issues are there to solve when you're you've never used the technology? After several attempts with mundane CRUD apps, I recalled my search for a Yakuza API to utilize its resources, which led to the inception of this project. Although still in its beta stage, I'm uncertain about the extent to which I intend to expand it. Nevertheless, I plan to create and maintain a roadmap to guide its development.",
+      "When delving into a new technology or concept, the development community often emphasizes the importance of learning by creating projects that address real-world problems. However, brainstorming project ideas for technologies, you have very little to no experince with can be challenging. What issues are there to solve when you're you've never used the technology? After several attempts with mundane CRUD apps, I recalled my search for a Yakuza API to utilize its resources, which led to the inception of this project. Although still in its beta stage, I'm uncertain about the extent to which I intend to expand it. Nevertheless, I plan to add and maintain this project.",
     live: "https://yakuza-api.netlify.app/",
     image:
       "https://64.media.tumblr.com/46bd487b81e3b49b3b3f523c5efd8683/e7f01d6be5be4ec0-2a/s2048x3072/604e8f9cbfcff03ac091f7d07d5dcc797478240c.pnj",
