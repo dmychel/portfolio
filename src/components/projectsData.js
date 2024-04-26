@@ -6,7 +6,7 @@ export const projectArr = [
     summary:
       "When delving into a new technology or concept, the development community often emphasizes the importance of learning by creating projects that address real-world problems. However, brainstorming project ideas for technologies, you have very little to no experince with can be challenging. What issues are there to solve when you're you've never used the technology? After several attempts with mundane CRUD apps, I recalled my search for a Yakuza API to utilize its resources, which led to the inception of this project. Although still in its beta stage, I'm uncertain about the extent to which I intend to expand it. Nevertheless, I plan to add and maintain this project.",
     live: "https://yakuza-api.netlify.app/",
-    repo: "https://github.com/dmychel/yakuza-api",
+    repo: "https://github.com/dmychel/rest_api",
     image:
       "https://64.media.tumblr.com/ba61beb21460e565e103e19f19dc54cc/375fb08e88b7ee72-64/s2048x3072/d44509212f8b4d63ce4bbfaa981cbeb0e4637dd1.pnj",
     tools: [
